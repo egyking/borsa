@@ -1,0 +1,49 @@
+name: Daily EGX Update
+
+on:
+  schedule:
+    - cron: "0 14 * * 1-5"  # 16:00 Cairo time, Sun-Thu
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r backend/requirements.txt
+
+      - name: Train/Update model
+        env:
+          FIREBASE_SERVICE_ACCOUNT_PATH: ${{ github.workspace }}/firebase-service-account.json
+        run: |
+          python backend/train_model.py
+
+      - name: Update Firebase recommendations
+        env:
+          FIREBASE_SERVICE_ACCOUNT_PATH: ${{ github.workspace }}/firebase-service-account.json
+        run: |
+          python -c "
+import sys, os
+sys.path.insert(0, 'backend')
+from main import app
+from fastapi.testclient import TestClient
+client = TestClient(app)
+resp = client.post('/api/update-all')
+print(resp.json())
+"
+
+      - name: Commit updated model
+        run: |
+          git config user.name "borsa-bot"
+          git config user.email "bot@borsa.app"
+          git add data/model.pkl data/scaler.pkl
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: daily model update $(date +'%Y-%m-%d')"
+          git push
