@@ -6,12 +6,21 @@ build/
 __pycache__/
 *.egg-info/
 .pytest_cache/
-data/*.csv
-data/*.pkl
-data/*.json
 venv/
 .venv/
 *.log
 .DS_Store
 Thumbs.db
 firebase-service-account.json
+
+# Raw price cache (regenerated on demand)
+data/cache/
+data/*.csv
+
+# Trained models & snapshot are committed so the deployed app works.
+data/*.pkl
+!data/model_short.pkl
+!data/model_long.pkl
+!data/scaler.pkl
+data/*.json
+!data/snapshot.json

@@ -1,35 +1,70 @@
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+// Snapshot-first data layer.
+// Primary source = the static snapshot.json produced daily by the GitHub Action
+// (free, instant, no rate limits). Optional live backend via VITE_API_URL.
 
-async function fetchJSON(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`API error: ${res.status}`);
+const API_BASE = import.meta.env.VITE_API_URL || "";
+const SNAPSHOT_URL = import.meta.env.VITE_SNAPSHOT_URL || "/snapshot.json";
+
+let _snapshotCache = null;
+let _snapshotPromise = null;
+
+async function fetchJSON(url, opts) {
+  const res = await fetch(url, opts);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
 
-export async function getSymbols() {
-  return fetchJSON(`${API_BASE}/api/symbols`);
+export async function loadSnapshot(force = false) {
+  if (_snapshotCache && !force) return _snapshotCache;
+  if (_snapshotPromise && !force) return _snapshotPromise;
+  _snapshotPromise = (async () => {
+    // Try the live backend snapshot first if configured, else the static file.
+    const sources = API_BASE
+      ? [`${API_BASE}/api/snapshot`, SNAPSHOT_URL]
+      : [SNAPSHOT_URL];
+    let lastErr;
+    for (const url of sources) {
+      try {
+        const data = await fetchJSON(url);
+        if (data && Array.isArray(data.stocks)) {
+          _snapshotCache = data;
+          return data;
+        }
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    throw lastErr || new Error("No snapshot available");
+  })();
+  return _snapshotPromise;
 }
 
-export async function getPrices() {
-  return fetchJSON(`${API_BASE}/api/prices`);
+export async function getStocks() {
+  const snap = await loadSnapshot();
+  return snap.stocks || [];
 }
 
-export async function getHistory(symbol, period = "1y") {
-  return fetchJSON(`${API_BASE}/api/history/${symbol}?period=${period}`);
+export async function getStock(symbol) {
+  const snap = await loadSnapshot();
+  const sym = symbol.endsWith(".CA") ? symbol : `${symbol}.CA`;
+  return (snap.stocks || []).find((s) => s.symbol === sym) || null;
 }
 
-export async function getIndicators(symbol, period = "1y") {
-  return fetchJSON(`${API_BASE}/api/indicators/${symbol}?period=${period}`);
+export async function getGold() {
+  const snap = await loadSnapshot();
+  return snap.gold || null;
 }
 
-export async function getRecommendation(symbol) {
-  return fetchJSON(`${API_BASE}/api/recommend/${symbol}`);
+export async function getMeta() {
+  const snap = await loadSnapshot();
+  return { generatedAt: snap.generated_at, currency: snap.currency || "EGP" };
 }
 
-export async function updateAll() {
-  return fetchJSON(`${API_BASE}/api/update-all`, { method: "POST" });
-}
-
-export async function getHealth() {
-  return fetchJSON(`${API_BASE}/api/health`);
+// ---- Currency helpers (EGX trades in Egyptian Pounds) --------------------
+export function fmtEGP(value, digits = 2) {
+  if (value == null || Number.isNaN(value)) return "—";
+  return `${Number(value).toLocaleString("ar-EG", {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  })} ج.م`;
 }

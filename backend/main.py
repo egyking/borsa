@@ -1,152 +1,181 @@
 import os
 import sys
-from datetime import datetime, timedelta
+import json
+from datetime import datetime, timezone
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from data_fetcher import fetch_historical, fetch_latest, EGX_SYMBOLS
+from config import (EGX_SYMBOLS, EGX_STOCKS, stock_name, CURRENCY,
+                    SNAPSHOT_PATH, PUBLIC_SNAPSHOT_PATH)
+from data_fetcher import fetch_historical, fetch_latest
 from indicators import calculate_indicators, FEATURE_COLUMNS
-from model import load_model, predict_both_timeframes, predict
-import firebase_admin
-from firebase_admin import credentials, firestore
+from model import load_models, predict_both_timeframes
 
-app = FastAPI(title="Borsa - EGX Stock Advisor API")
+app = FastAPI(title="Borsa — EGX Stock & Gold Advisor API", version="2.0")
 
+# Safe CORS: credentials are not used, so an open origin list is valid.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
-firebase_app = None
-base_dir = os.path.dirname(os.path.abspath(__file__))
-svc_paths = [
-    os.getenv("FIREBASE_SERVICE_ACCOUNT_PATH"),
-    os.path.join(base_dir, "..", "firebase-service-account.json"),
-    os.path.join(base_dir, "..", "..", "firebase-service-account.json"),
-    os.path.join(base_dir, "firebase-service-account.json"),
-]
+# ---- Optional Firebase (recommendations mirror) --------------------------
 db = None
-for p in svc_paths:
-    if p and os.path.exists(p):
-        try:
-            cred = credentials.Certificate(p)
-            firebase_app = firebase_admin.initialize_app(cred)
+try:
+    import firebase_admin
+    from firebase_admin import credentials, firestore
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    for p in (os.getenv("FIREBASE_SERVICE_ACCOUNT_PATH"),
+              os.path.join(base_dir, "..", "firebase-service-account.json"),
+              os.path.join(base_dir, "firebase-service-account.json")):
+        if p and os.path.exists(p):
+            firebase_admin.initialize_app(credentials.Certificate(p))
             db = firestore.client()
             print(f"Firebase initialized from {p}")
             break
-        except Exception:
-            continue
-if db is None:
-    print("Firebase init skipped: no service account found")
+except Exception as e:  # pragma: no cover
+    print(f"Firebase init skipped: {e}")
 
-model, scaler = load_model()
-if model is None:
-    print("WARNING: No trained model found. Run train_model.py first.")
+model_short, model_long, scaler = load_models()
+if model_short is None:
+    print("INFO: no ML model found — serving rule-based (TA) recommendations.")
+
+
+def _load_snapshot():
+    for p in (SNAPSHOT_PATH, PUBLIC_SNAPSHOT_PATH):
+        if p and os.path.exists(p):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                continue
+    return None
+
+
+def _snapshot_stock(symbol: str):
+    snap = _load_snapshot()
+    if not snap:
+        return None
+    for s in snap.get("stocks", []):
+        if s["symbol"] == symbol:
+            return s
+    return None
+
+
+def _norm(symbol: str) -> str:
+    return symbol if symbol.endswith(".CA") else f"{symbol}.CA"
+
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "model_loaded": model is not None}
+    snap = _load_snapshot()
+    return {
+        "status": "ok",
+        "model_loaded": model_short is not None,
+        "snapshot": bool(snap),
+        "snapshot_at": snap.get("generated_at") if snap else None,
+    }
+
 
 @app.get("/api/symbols")
 def get_symbols():
-    return {"symbols": EGX_SYMBOLS}
+    return {"currency": CURRENCY,
+            "symbols": [{"symbol": s, "name": n} for s, n in EGX_STOCKS.items()]}
+
+
+@app.get("/api/snapshot")
+def get_snapshot():
+    snap = _load_snapshot()
+    if not snap:
+        raise HTTPException(404, "Snapshot not generated yet. Run snapshot.py")
+    return snap
+
 
 @app.get("/api/prices")
 def get_prices():
-    data = fetch_latest(EGX_SYMBOLS)
-    return data
+    snap = _load_snapshot()
+    if snap:
+        return {s["symbol"]: {"close": s["close"], "change_pct": s.get("change_pct"),
+                              "date": s["date"]} for s in snap.get("stocks", [])}
+    return fetch_latest(EGX_SYMBOLS)
+
+
+@app.get("/api/gold")
+def get_gold():
+    snap = _load_snapshot()
+    if snap and snap.get("gold"):
+        return snap["gold"]
+    from gold import get_gold_snapshot
+    return get_gold_snapshot()
+
 
 @app.get("/api/history/{symbol}")
-def get_history(symbol: str, period: str = "1y"):
-    if f"{symbol}.CA" not in EGX_SYMBOLS and symbol not in EGX_SYMBOLS:
-        raise HTTPException(404, f"Symbol {symbol} not in tracked list")
-    if not symbol.endswith(".CA"):
-        symbol = f"{symbol}.CA"
-    df = fetch_historical(symbol, period)
-    records = []
-    for idx, row in df.iterrows():
-        records.append({
-            "date": str(idx.date()),
-            "open": round(float(row["open"]), 2),
-            "high": round(float(row["high"]), 2),
-            "low": round(float(row["low"]), 2),
-            "close": round(float(row["close"]), 2),
-            "volume": int(row["volume"]),
-        })
-    return {"symbol": symbol, "data": records}
+def get_history(symbol: str, period: str = "2y"):
+    cached = _snapshot_stock(_norm(symbol))
+    if cached and cached.get("history"):
+        return {"symbol": _norm(symbol), "currency": CURRENCY, "data": cached["history"]}
+    df = fetch_historical(_norm(symbol), period)
+    data = [{"date": str(idx.date()), "close": round(float(r["close"]), 2),
+             "open": round(float(r["open"]), 2), "high": round(float(r["high"]), 2),
+             "low": round(float(r["low"]), 2), "volume": int(r["volume"])}
+            for idx, r in df.iterrows()]
+    return {"symbol": _norm(symbol), "currency": CURRENCY, "data": data}
+
 
 @app.get("/api/indicators/{symbol}")
-def get_indicators(symbol: str, period: str = "1y"):
-    if not symbol.endswith(".CA"):
-        symbol = f"{symbol}.CA"
-    df = fetch_historical(symbol, period)
+def get_indicators(symbol: str, period: str = "2y"):
+    cached = _snapshot_stock(_norm(symbol))
+    if cached and cached.get("indicators"):
+        return {"symbol": _norm(symbol), "date": cached["date"],
+                "close": cached["close"], "indicators": cached["indicators"]}
+    df = fetch_historical(_norm(symbol), period)
     enriched = calculate_indicators(df)
     latest = enriched.iloc[-1]
-    return {
-        "symbol": symbol,
-        "date": str(latest.name.date()),
-        "close": round(float(latest["close"]), 2),
-        "indicators": {col: round(float(latest[col]), 2) for col in FEATURE_COLUMNS if col in latest},
-    }
+    return {"symbol": _norm(symbol), "date": str(latest.name.date()),
+            "close": round(float(latest["close"]), 2),
+            "indicators": {c: round(float(latest[c]), 2)
+                           for c in FEATURE_COLUMNS if c in latest}}
+
 
 @app.get("/api/recommend/{symbol}")
 def get_recommendation(symbol: str):
-    global model, scaler
-    if model is None:
-        model, scaler = load_model()
-    if model is None:
-        raise HTTPException(503, "Model not trained yet")
+    sym = _norm(symbol)
+    cached = _snapshot_stock(sym)
+    if cached:
+        return {"symbol": sym, "name": cached.get("name"), "date": cached["date"],
+                "close": cached["close"], "currency": CURRENCY,
+                "short_term": cached["short_term"], "long_term": cached["long_term"]}
+    df = fetch_historical(sym, "2y")
+    rec = predict_both_timeframes(df, model_short, model_long, scaler)
+    latest = df.iloc[-1]
+    return {"symbol": sym, "name": stock_name(sym), "date": str(latest.name.date()),
+            "close": round(float(latest["close"]), 2), "currency": CURRENCY, **rec}
 
-    if not symbol.endswith(".CA"):
-        symbol = f"{symbol}.CA"
-
-    df_short = fetch_historical(symbol, "6mo")
-    df_long = fetch_historical(symbol, "2y")
-
-    rec = predict_both_timeframes(df_short, df_long, model, scaler)
-    latest = df_short.iloc[-1]
-    return {
-        "symbol": symbol,
-        "date": str(latest.name.date()),
-        "close": round(float(latest["close"]), 2),
-        **rec,
-    }
 
 @app.post("/api/update-all")
 def update_all_recommendations():
-    global model, scaler
-    if model is None:
-        model, scaler = load_model()
-    if model is None:
-        raise HTTPException(503, "Model not trained yet")
+    """Regenerate the snapshot and mirror recommendations to Firestore."""
+    from snapshot import generate
+    snap = generate()
+    os.makedirs(os.path.dirname(SNAPSHOT_PATH), exist_ok=True)
+    with open(SNAPSHOT_PATH, "w", encoding="utf-8") as f:
+        json.dump(snap, f, ensure_ascii=False, indent=2)
+    if db is not None:
+        for s in snap["stocks"]:
+            doc = {"symbol": s["symbol"], "close": s["close"], "date": s["date"],
+                   "short_term": s["short_term"]["signal"],
+                   "long_term": s["long_term"]["signal"],
+                   "updated_at": datetime.now(timezone.utc).isoformat()}
+            db.collection("recommendations").document(s["symbol"].replace(".", "_")).set(doc)
+    return {"count": len(snap["stocks"]), "gold": bool(snap.get("gold")),
+            "generated_at": snap["generated_at"]}
 
-    results = []
-    for sym in EGX_SYMBOLS:
-        try:
-            df_short = fetch_historical(sym, "6mo")
-            df_long = fetch_historical(sym, "2y")
-            rec = predict_both_timeframes(df_short, df_long, model, scaler)
-            latest = df_short.iloc[-1]
-            entry = {
-                "symbol": sym,
-                "date": str(latest.name.date()),
-                "close": round(float(latest["close"]), 2),
-                **rec,
-                "updated_at": datetime.utcnow().isoformat(),
-            }
-            results.append(entry)
-            if db is not None:
-                db.collection("recommendations").document(sym.replace(".", "_")).set(entry)
-        except Exception as e:
-            results.append({"symbol": sym, "error": str(e)})
-
-    return {"count": len(results), "results": results}
 
 if __name__ == "__main__":
     import uvicorn

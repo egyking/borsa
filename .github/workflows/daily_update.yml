@@ -1,13 +1,19 @@
-name: Daily EGX Update
+name: Daily EGX & Gold Update
 
 on:
   schedule:
-    - cron: "0 14 * * 1-5"  # 16:00 Cairo time, Sun-Thu
+    # 14:00 UTC ≈ 16:00 Cairo (after market close). EGX trades Sun–Thu (cron 0–4).
+    - cron: "0 14 * * 0-4"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
     steps:
       - uses: actions/checkout@v4
 
@@ -15,35 +21,30 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
 
       - name: Install dependencies
-        run: |
-          pip install -r backend/requirements.txt
+        run: pip install -r backend/requirements.txt
 
-      - name: Train/Update model
+      - name: Write Firebase service account (optional)
+        if: ${{ env.FIREBASE_SERVICE_ACCOUNT != '' }}
+        run: printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > firebase-service-account.json
+
+      - name: Train models
+        run: python backend/train_model.py
+        continue-on-error: true
+
+      - name: Generate snapshot (prices, recommendations, gold)
         env:
           FIREBASE_SERVICE_ACCOUNT_PATH: ${{ github.workspace }}/firebase-service-account.json
-        run: |
-          python backend/train_model.py
+        run: python backend/snapshot.py
 
-      - name: Update Firebase recommendations
-        env:
-          FIREBASE_SERVICE_ACCOUNT_PATH: ${{ github.workspace }}/firebase-service-account.json
-        run: |
-          python -c "
-import sys, os
-sys.path.insert(0, 'backend')
-from main import app
-from fastapi.testclient import TestClient
-client = TestClient(app)
-resp = client.post('/api/update-all')
-print(resp.json())
-"
-
-      - name: Commit updated model
+      - name: Commit updated artifacts
         run: |
           git config user.name "borsa-bot"
           git config user.email "bot@borsa.app"
-          git add data/model.pkl data/scaler.pkl
-          git diff --quiet && git diff --staged --quiet || git commit -m "auto: daily model update $(date +'%Y-%m-%d')"
+          rm -f firebase-service-account.json
+          git add -f data/model_short.pkl data/model_long.pkl data/scaler.pkl \
+                     data/snapshot.json frontend/public/snapshot.json
+          git diff --staged --quiet || git commit -m "auto: daily update $(date +'%Y-%m-%d')"
           git push
