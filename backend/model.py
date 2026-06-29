@@ -5,8 +5,16 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "model.pkl")
-SCALER_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "scaler.pkl")
+_BASE = os.path.dirname(os.path.abspath(__file__))
+for _p in [os.path.join(_BASE, "..", "data"), os.path.join(_BASE, "data")]:
+    _d = os.path.abspath(_p)
+    if os.path.isdir(_d) or os.path.exists(os.path.dirname(_d)):
+        _DATA_DIR = _d
+        break
+else:
+    _DATA_DIR = os.path.join(_BASE, "..", "data")
+MODEL_PATH = os.path.join(_DATA_DIR, "model.pkl")
+SCALER_PATH = os.path.join(_DATA_DIR, "scaler.pkl")
 
 SIGNAL_MAP = {0: "sell", 1: "hold", 2: "buy"}
 

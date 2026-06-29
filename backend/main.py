@@ -24,20 +24,26 @@ app.add_middleware(
 )
 
 firebase_app = None
-try:
-    svc_path = os.getenv("FIREBASE_SERVICE_ACCOUNT_PATH", "../firebase-service-account.json")
-    abs_path = os.path.join(os.path.dirname(__file__), svc_path)
-    if os.path.exists(abs_path):
-        cred = credentials.Certificate(abs_path)
-        firebase_app = firebase_admin.initialize_app(cred)
-        db = firestore.client()
-        print("Firebase initialized")
-    else:
-        print(f"No Firebase service account at {abs_path}, running without Firebase")
-        db = None
-except Exception as e:
-    print(f"Firebase init skipped: {e}")
-    db = None
+base_dir = os.path.dirname(os.path.abspath(__file__))
+svc_paths = [
+    os.getenv("FIREBASE_SERVICE_ACCOUNT_PATH"),
+    os.path.join(base_dir, "..", "firebase-service-account.json"),
+    os.path.join(base_dir, "..", "..", "firebase-service-account.json"),
+    os.path.join(base_dir, "firebase-service-account.json"),
+]
+db = None
+for p in svc_paths:
+    if p and os.path.exists(p):
+        try:
+            cred = credentials.Certificate(p)
+            firebase_app = firebase_admin.initialize_app(cred)
+            db = firestore.client()
+            print(f"Firebase initialized from {p}")
+            break
+        except Exception:
+            continue
+if db is None:
+    print("Firebase init skipped: no service account found")
 
 model, scaler = load_model()
 if model is None:
