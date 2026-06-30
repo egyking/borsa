@@ -4,6 +4,7 @@ import { RefreshCw, TrendingUp, TrendingDown, BarChart3, AlertCircle, Clock } fr
 import StockCard from "../components/StockCard";
 import GoldCard from "../components/GoldCard";
 import ModelPerformance from "../components/ModelPerformance";
+import TopOpportunities from "../components/TopOpportunities";
 import * as api from "../services/api";
 
 export default function Dashboard() {
@@ -88,6 +89,8 @@ export default function Dashboard() {
           </div>
         </div>
       )}
+
+      {!loading && !error && <TopOpportunities stocks={stocks} gold={gold} navigate={navigate} />}
 
       {!loading && <ModelPerformance evaluation={evaluation} />}
 
