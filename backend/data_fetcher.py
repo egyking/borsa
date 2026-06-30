@@ -35,6 +35,12 @@ def fetch_historical(symbol: str, period: str = "2y", retries: int = 4) -> pd.Da
                 raise ValueError(f"No data for {symbol}")
             df.columns = [c.lower() for c in df.columns]
             df.index.name = "date"
+            # Different markets report bars in their own exchange timezone
+            # (e.g. GC=F in US/Eastern, EGP=X in London time). Drop tz info
+            # so daily bars from different sources align on calendar date
+            # when merged (e.g. gold.py reindexing FX onto the gold index).
+            if df.index.tz is not None:
+                df.index = df.index.tz_localize(None)
             return df[["open", "high", "low", "close", "volume"]]
         except Exception as e:
             last_err = e
@@ -50,6 +56,21 @@ def fetch_historical(symbol: str, period: str = "2y", retries: int = 4) -> pd.Da
 MAX_PERIOD = "5y"
 
 
+def _read_csv_cache(path: str) -> pd.DataFrame:
+    """Read a cached OHLCV CSV with a clean, tz-naive, date-only index.
+
+    Cache files may predate the tz-naive fix in fetch_historical (or mix
+    sources with different exchange UTC offsets, e.g. GC=F -04:00 vs EGP=X
+    +01:00). Parsing only the date portion of each timestamp sidesteps tz
+    arithmetic entirely -- correct for daily bars, where time-of-day is not
+    meaningful and offset-aware conversion would shift some rows a day.
+    """
+    df = pd.read_csv(path, index_col=0)
+    df.index = pd.to_datetime(df.index.astype(str).str.split(" ").str[0])
+    df.index.name = "date"
+    return df
+
+
 def fetch_cached(symbol: str, period: str = MAX_PERIOD, max_age_hours: float = 12) -> pd.DataFrame:
     """Fetch with an on-disk CSV cache to survive rate limits across runs.
 
@@ -62,7 +83,7 @@ def fetch_cached(symbol: str, period: str = MAX_PERIOD, max_age_hours: float = 1
         age_h = (time.time() - os.path.getmtime(path)) / 3600
         if age_h < max_age_hours:
             try:
-                return pd.read_csv(path, index_col=0, parse_dates=True)
+                return _read_csv_cache(path)
             except Exception:
                 pass
     try:
@@ -71,7 +92,7 @@ def fetch_cached(symbol: str, period: str = MAX_PERIOD, max_age_hours: float = 1
         return df
     except Exception:
         if os.path.exists(path):  # stale cache is better than nothing
-            return pd.read_csv(path, index_col=0, parse_dates=True)
+            return _read_csv_cache(path)
         raise
 
 
