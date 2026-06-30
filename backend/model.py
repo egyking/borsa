@@ -28,10 +28,10 @@ HORIZONS = {
 
 def create_model():
     return RandomForestClassifier(
-        n_estimators=300,
-        max_depth=12,
+        n_estimators=120,
+        max_depth=10,
         min_samples_split=10,
-        min_samples_leaf=5,
+        min_samples_leaf=8,
         class_weight="balanced",
         random_state=42,
         n_jobs=-1,
