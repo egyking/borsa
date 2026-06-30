@@ -1,40 +1,36 @@
 {
-  "generated_at": "2026-06-30T08:57:21.380149+00:00",
+  "generated_at": "2026-06-30T16:32:57.236500+00:00",
   "currency": "EGP",
   "stocks": [
     {
       "symbol": "COMI.CA",
       "name": "البنك التجاري الدولي CIB",
       "sector": "بنوك",
-      "close": 129.82,
-      "change_pct": -2.02,
-      "date": "2026-06-28",
+      "close": 126.89,
+      "change_pct": -2.26,
+      "date": "2026-06-29",
       "indicators": {
-        "rsi": 49.33,
-        "macd": -0.25,
-        "macd_signal": 0.0,
-        "macd_hist": -0.25,
-        "sma_20": 132.89,
-        "sma_50": 135.14,
-        "sma_200": 115.9,
-        "ema_12": 132.98,
-        "ema_26": 133.23,
-        "bb_upper": 136.53,
-        "bb_lower": 129.26,
-        "bb_width": 0.05,
-        "stoch_k": 0.28,
-        "stoch_d": 23.02,
-        "volume_ratio": 0.6,
-        "obv": 156046287.0,
-        "obv_sma_20": 164003374.75,
-        "roc_10": -3.67,
-        "atr": 1.96
+        "rsi": 35.45,
+        "macd": -0.72,
+        "macd_signal": -0.14,
+        "macd_hist": -0.58,
+        "sma_20": 132.65,
+        "sma_50": 134.88,
+        "sma_200": 116.07,
+        "ema_12": 132.05,
+        "ema_26": 132.76,
+        "bb_upper": 137.16,
+        "bb_lower": 128.15,
+        "bb_width": 0.07,
+        "stoch_k": 6.26,
+        "stoch_d": 14.56,
+        "volume_ratio": 1.74,
+        "obv": 464079362.0,
+        "obv_sma_20": 476535405.3,
+        "roc_10": -5.83,
+        "atr": 2.05
       },
       "history": [
-        {
-          "date": "2024-12-25",
-          "close": 75.51
-        },
         {
           "date": "2024-12-26",
           "close": 74.85
@@ -1490,49 +1486,67 @@
         {
           "date": "2026-06-28",
           "close": 129.82
+        },
+        {
+          "date": "2026-06-29",
+          "close": 126.89
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.416,
-        "score": -0.128,
-        "prob_buy": 0.288,
-        "prob_hold": 0.295,
-        "prob_sell": 0.416,
+        "confidence": 0.398,
+        "score": -0.075,
+        "prob_buy": 0.323,
+        "prob_hold": 0.278,
+        "prob_sell": 0.398,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ستوكاستيك في منطقة تشبّع بيعي"
+          "ستوكاستيك في منطقة تشبّع بيعي",
+          "حجم تداول مرتفع (1.7× المتوسط)"
         ],
         "risk": {
-          "entry": 129.82,
-          "stop_loss": 132.77,
-          "take_profit": 126.57,
-          "atr_pct": 1.51,
+          "entry": 126.89,
+          "stop_loss": 129.97,
+          "take_profit": 123.72,
+          "atr_pct": 1.62,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.794,
-        "score": 0.738,
-        "prob_buy": 0.794,
-        "prob_hold": 0.15,
-        "prob_sell": 0.056,
+        "confidence": 0.729,
+        "score": 0.707,
+        "prob_buy": 0.729,
+        "prob_hold": 0.249,
+        "prob_sell": 0.022,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ستوكاستيك في منطقة تشبّع بيعي"
+          "ستوكاستيك في منطقة تشبّع بيعي",
+          "حجم تداول مرتفع (1.7× المتوسط)"
         ],
         "risk": {
-          "entry": 129.82,
-          "stop_loss": 126.87,
-          "take_profit": 142.8,
-          "atr_pct": 1.51,
+          "entry": 126.89,
+          "stop_loss": 123.81,
+          "take_profit": 139.58,
+          "atr_pct": 1.62,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -1558,8 +1572,8 @@
         "stoch_k": 9.68,
         "stoch_d": 4.67,
         "volume_ratio": 0.46,
-        "obv": 5558361057.0,
-        "obv_sma_20": 5943462513.6,
+        "obv": 5552672067.0,
+        "obv_sma_20": 5937773523.6,
         "roc_10": -5.77,
         "atr": 0.18
       },
@@ -3027,10 +3041,10 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.398,
-        "score": 0.127,
-        "prob_buy": 0.398,
-        "prob_hold": 0.331,
+        "confidence": 0.438,
+        "score": 0.167,
+        "prob_buy": 0.438,
+        "prob_hold": 0.291,
         "prob_sell": 0.271,
         "reasons": [
           "مؤشر RSI عند 19 (تشبّع بيعي — فرصة شراء محتملة)",
@@ -3045,15 +3059,21 @@
           "atr_pct": 3.74,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.562,
-        "score": 0.397,
-        "prob_buy": 0.562,
-        "prob_hold": 0.273,
-        "prob_sell": 0.165,
+        "confidence": 0.593,
+        "score": 0.435,
+        "prob_buy": 0.593,
+        "prob_hold": 0.25,
+        "prob_sell": 0.157,
         "reasons": [
           "مؤشر RSI عند 19 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -3067,7 +3087,13 @@
           "atr_pct": 3.74,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -3093,8 +3119,8 @@
         "stoch_k": 3.75,
         "stoch_d": 19.82,
         "volume_ratio": 1.09,
-        "obv": 78137785.0,
-        "obv_sma_20": 77934089.25,
+        "obv": 77328861.0,
+        "obv_sma_20": 77125165.25,
         "roc_10": -7.27,
         "atr": 0.95
       },
@@ -4562,11 +4588,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.415,
-        "score": 0.011,
-        "prob_buy": 0.298,
-        "prob_hold": 0.415,
-        "prob_sell": 0.287,
+        "confidence": 0.412,
+        "score": 0.062,
+        "prob_buy": 0.325,
+        "prob_hold": 0.412,
+        "prob_sell": 0.263,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
@@ -4579,15 +4605,21 @@
           "atr_pct": 2.58,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.436,
-        "score": -0.126,
-        "prob_buy": 0.219,
-        "prob_hold": 0.436,
-        "prob_sell": 0.345,
+        "confidence": 0.465,
+        "score": -0.095,
+        "prob_buy": 0.22,
+        "prob_hold": 0.465,
+        "prob_sell": 0.315,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
@@ -4600,7 +4632,13 @@
           "atr_pct": 2.58,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -4626,8 +4664,8 @@
         "stoch_k": 46.24,
         "stoch_d": 49.69,
         "volume_ratio": 0.41,
-        "obv": 879582382.0,
-        "obv_sma_20": 889137925.1,
+        "obv": 878865968.0,
+        "obv_sma_20": 888421511.1,
         "roc_10": -0.87,
         "atr": 0.5
       },
@@ -6095,11 +6133,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.404,
-        "score": -0.058,
-        "prob_buy": 0.269,
-        "prob_hold": 0.404,
-        "prob_sell": 0.327,
+        "confidence": 0.416,
+        "score": -0.072,
+        "prob_buy": 0.256,
+        "prob_hold": 0.416,
+        "prob_sell": 0.328,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)"
@@ -6111,15 +6149,21 @@
           "atr_pct": 1.9,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.539,
-        "score": -0.179,
-        "prob_buy": 0.141,
-        "prob_hold": 0.539,
-        "prob_sell": 0.32,
+        "confidence": 0.524,
+        "score": -0.237,
+        "prob_buy": 0.119,
+        "prob_hold": 0.524,
+        "prob_sell": 0.356,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)"
@@ -6131,7 +6175,13 @@
           "atr_pct": 1.9,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -6157,8 +6207,8 @@
         "stoch_k": 3.78,
         "stoch_d": 21.25,
         "volume_ratio": 0.73,
-        "obv": 547698992.0,
-        "obv_sma_20": 542519763.35,
+        "obv": 545875564.0,
+        "obv_sma_20": 540696335.35,
         "roc_10": -3.08,
         "atr": 1.81
       },
@@ -7626,11 +7676,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.389,
-        "score": -0.112,
-        "prob_buy": 0.277,
-        "prob_hold": 0.334,
-        "prob_sell": 0.389,
+        "confidence": 0.471,
+        "score": -0.254,
+        "prob_buy": 0.217,
+        "prob_hold": 0.312,
+        "prob_sell": 0.471,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -7643,15 +7693,21 @@
           "atr_pct": 1.96,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.506,
-        "score": 0.462,
-        "prob_buy": 0.506,
-        "prob_hold": 0.45,
-        "prob_sell": 0.044,
+        "confidence": 0.493,
+        "score": 0.443,
+        "prob_buy": 0.493,
+        "prob_hold": 0.457,
+        "prob_sell": 0.05,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -7664,7 +7720,13 @@
           "atr_pct": 1.96,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -7690,8 +7752,8 @@
         "stoch_k": 14.37,
         "stoch_d": 26.25,
         "volume_ratio": 1.05,
-        "obv": 416866992.0,
-        "obv_sma_20": 417121510.75,
+        "obv": 418382694.0,
+        "obv_sma_20": 418637212.75,
         "roc_10": -1.61,
         "atr": 1.68
       },
@@ -9158,33 +9220,12 @@
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.392,
-        "score": -0.17,
-        "prob_buy": 0.222,
-        "prob_hold": 0.385,
-        "prob_sell": 0.392,
-        "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ستوكاستيك في منطقة تشبّع بيعي"
-        ],
-        "risk": {
-          "entry": 85.01,
-          "stop_loss": 87.53,
-          "take_profit": 82.88,
-          "atr_pct": 1.98,
-          "level": "low"
-        },
-        "source": "ml"
-      },
-      "long_term": {
         "signal": "hold",
-        "confidence": 0.731,
-        "score": 0.105,
-        "prob_buy": 0.187,
-        "prob_hold": 0.731,
-        "prob_sell": 0.082,
+        "confidence": 0.448,
+        "score": -0.057,
+        "prob_buy": 0.248,
+        "prob_hold": 0.448,
+        "prob_sell": 0.304,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -9197,7 +9238,40 @@
           "atr_pct": 1.98,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
+      },
+      "long_term": {
+        "signal": "hold",
+        "confidence": 0.643,
+        "score": 0.273,
+        "prob_buy": 0.315,
+        "prob_hold": 0.643,
+        "prob_sell": 0.042,
+        "reasons": [
+          "MACD سلبي (زخم هابط)",
+          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
+          "ستوكاستيك في منطقة تشبّع بيعي"
+        ],
+        "risk": {
+          "entry": 85.01,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 1.98,
+          "level": "low"
+        },
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -9223,8 +9297,8 @@
         "stoch_k": 35.12,
         "stoch_d": 44.05,
         "volume_ratio": 0.35,
-        "obv": 2074222508.0,
-        "obv_sma_20": 2084145960.15,
+        "obv": 2070447718.0,
+        "obv_sma_20": 2080371170.15,
         "roc_10": -2.35,
         "atr": 0.39
       },
@@ -10692,11 +10766,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.419,
-        "score": 0.028,
+        "confidence": 0.41,
+        "score": 0.021,
         "prob_buy": 0.305,
-        "prob_hold": 0.419,
-        "prob_sell": 0.277,
+        "prob_hold": 0.41,
+        "prob_sell": 0.285,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -10708,15 +10782,21 @@
           "atr_pct": 2.13,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.448,
-        "score": 0.231,
-        "prob_buy": 0.391,
-        "prob_hold": 0.448,
-        "prob_sell": 0.16,
+        "confidence": 0.449,
+        "score": 0.198,
+        "prob_buy": 0.375,
+        "prob_hold": 0.449,
+        "prob_sell": 0.177,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -10728,7 +10808,13 @@
           "atr_pct": 2.13,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -10754,8 +10840,8 @@
         "stoch_k": 35.36,
         "stoch_d": 26.12,
         "volume_ratio": 0.53,
-        "obv": 202781024.0,
-        "obv_sma_20": 204102818.0,
+        "obv": 203044528.0,
+        "obv_sma_20": 204366322.0,
         "roc_10": -4.12,
         "atr": 1.07
       },
@@ -12223,11 +12309,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.413,
-        "score": -0.02,
-        "prob_buy": 0.283,
-        "prob_hold": 0.413,
-        "prob_sell": 0.304,
+        "confidence": 0.46,
+        "score": 0.012,
+        "prob_buy": 0.276,
+        "prob_hold": 0.46,
+        "prob_sell": 0.264,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -12239,15 +12325,21 @@
           "atr_pct": 2.35,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.421,
-        "score": 0.23,
-        "prob_buy": 0.421,
-        "prob_hold": 0.388,
-        "prob_sell": 0.191,
+        "confidence": 0.46,
+        "score": 0.354,
+        "prob_buy": 0.46,
+        "prob_hold": 0.433,
+        "prob_sell": 0.106,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -12259,7 +12351,13 @@
           "atr_pct": 2.35,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -12285,8 +12383,8 @@
         "stoch_k": 50.29,
         "stoch_d": 55.92,
         "volume_ratio": 1.0,
-        "obv": 58428751.0,
-        "obv_sma_20": 57211315.35,
+        "obv": 58520769.0,
+        "obv_sma_20": 57303333.35,
         "roc_10": 5.66,
         "atr": 5.81
       },
@@ -13754,11 +13852,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.427,
-        "score": -0.099,
-        "prob_buy": 0.328,
-        "prob_hold": 0.246,
-        "prob_sell": 0.427,
+        "confidence": 0.394,
+        "score": -0.075,
+        "prob_buy": 0.318,
+        "prob_hold": 0.288,
+        "prob_sell": 0.394,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -13770,15 +13868,21 @@
           "atr_pct": 3.75,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.76,
-        "score": 0.68,
-        "prob_buy": 0.76,
-        "prob_hold": 0.159,
-        "prob_sell": 0.081,
+        "confidence": 0.758,
+        "score": 0.695,
+        "prob_buy": 0.758,
+        "prob_hold": 0.179,
+        "prob_sell": 0.063,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -13790,7 +13894,13 @@
           "atr_pct": 3.75,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -13816,8 +13926,8 @@
         "stoch_k": 17.97,
         "stoch_d": 23.65,
         "volume_ratio": 0.58,
-        "obv": 3802351587.0,
-        "obv_sma_20": 3809398806.55,
+        "obv": 3799236347.0,
+        "obv_sma_20": 3806283566.55,
         "roc_10": -8.49,
         "atr": 0.53
       },
@@ -15284,12 +15394,12 @@
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.353,
-        "score": -0.033,
-        "prob_buy": 0.32,
-        "prob_hold": 0.327,
-        "prob_sell": 0.353,
+        "signal": "buy",
+        "confidence": 0.352,
+        "score": 0.001,
+        "prob_buy": 0.352,
+        "prob_hold": 0.298,
+        "prob_sell": 0.35,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -15297,20 +15407,26 @@
         ],
         "risk": {
           "entry": 14.65,
-          "stop_loss": 15.44,
-          "take_profit": 14.28,
+          "stop_loss": 13.86,
+          "take_profit": 15.02,
           "atr_pct": 3.61,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.634,
-        "score": 0.582,
-        "prob_buy": 0.634,
-        "prob_hold": 0.314,
-        "prob_sell": 0.052,
+        "confidence": 0.638,
+        "score": 0.586,
+        "prob_buy": 0.638,
+        "prob_hold": 0.311,
+        "prob_sell": 0.051,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -15323,7 +15439,13 @@
           "atr_pct": 3.61,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -15349,8 +15471,8 @@
         "stoch_k": 73.17,
         "stoch_d": 79.74,
         "volume_ratio": 0.81,
-        "obv": 167848250.0,
-        "obv_sma_20": 151512745.75,
+        "obv": 167691241.0,
+        "obv_sma_20": 151355736.75,
         "roc_10": 17.72,
         "atr": 0.86
       },
@@ -16818,11 +16940,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.372,
-        "score": -0.007,
-        "prob_buy": 0.365,
-        "prob_hold": 0.262,
-        "prob_sell": 0.372,
+        "confidence": 0.375,
+        "score": -0.001,
+        "prob_buy": 0.374,
+        "prob_hold": 0.251,
+        "prob_sell": 0.375,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -16834,15 +16956,21 @@
           "atr_pct": 3.56,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.515,
-        "score": -0.295,
-        "prob_buy": 0.22,
-        "prob_hold": 0.265,
-        "prob_sell": 0.515,
+        "confidence": 0.479,
+        "score": -0.238,
+        "prob_buy": 0.241,
+        "prob_hold": 0.28,
+        "prob_sell": 0.479,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -16854,7 +16982,13 @@
           "atr_pct": 3.56,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -18349,11 +18483,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.368,
-        "score": -0.049,
-        "prob_buy": 0.318,
-        "prob_hold": 0.314,
-        "prob_sell": 0.368,
+        "confidence": 0.375,
+        "score": -0.074,
+        "prob_buy": 0.301,
+        "prob_hold": 0.324,
+        "prob_sell": 0.375,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -18366,15 +18500,21 @@
           "atr_pct": 3.82,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.536,
-        "score": 0.462,
-        "prob_buy": 0.536,
-        "prob_hold": 0.389,
-        "prob_sell": 0.075,
+        "confidence": 0.499,
+        "score": 0.398,
+        "prob_buy": 0.499,
+        "prob_hold": 0.4,
+        "prob_sell": 0.101,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -18387,7 +18527,13 @@
           "atr_pct": 3.82,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -18413,8 +18559,8 @@
         "stoch_k": 17.31,
         "stoch_d": 30.13,
         "volume_ratio": 0.51,
-        "obv": 1723477804.0,
-        "obv_sma_20": 1761922122.4,
+        "obv": 1723091114.0,
+        "obv_sma_20": 1761535432.4,
         "roc_10": -0.93,
         "atr": 0.17
       },
@@ -19881,12 +20027,12 @@
         }
       ],
       "short_term": {
-        "signal": "hold",
-        "confidence": 0.357,
-        "score": -0.0,
-        "prob_buy": 0.321,
-        "prob_hold": 0.357,
-        "prob_sell": 0.322,
+        "signal": "buy",
+        "confidence": 0.345,
+        "score": 0.025,
+        "prob_buy": 0.345,
+        "prob_hold": 0.335,
+        "prob_sell": 0.32,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -19894,20 +20040,26 @@
         ],
         "risk": {
           "entry": 6.37,
-          "stop_loss": null,
-          "take_profit": null,
+          "stop_loss": 6.11,
+          "take_profit": 6.53,
           "atr_pct": 2.71,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.629,
-        "score": 0.575,
-        "prob_buy": 0.629,
-        "prob_hold": 0.317,
-        "prob_sell": 0.054,
+        "confidence": 0.605,
+        "score": 0.536,
+        "prob_buy": 0.605,
+        "prob_hold": 0.326,
+        "prob_sell": 0.069,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -19920,7 +20072,13 @@
           "atr_pct": 2.71,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -19946,8 +20104,8 @@
         "stoch_k": 21.92,
         "stoch_d": 28.77,
         "volume_ratio": 0.17,
-        "obv": 1713883578.0,
-        "obv_sma_20": 1668579911.35,
+        "obv": 1705539994.0,
+        "obv_sma_20": 1660236327.35,
         "roc_10": -7.37,
         "atr": 0.39
       },
@@ -21415,11 +21573,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.373,
-        "score": 0.076,
-        "prob_buy": 0.373,
-        "prob_hold": 0.331,
-        "prob_sell": 0.297,
+        "confidence": 0.394,
+        "score": 0.087,
+        "prob_buy": 0.394,
+        "prob_hold": 0.298,
+        "prob_sell": 0.307,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -21431,15 +21589,21 @@
           "atr_pct": 3.43,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.528,
-        "score": 0.487,
-        "prob_buy": 0.528,
-        "prob_hold": 0.432,
-        "prob_sell": 0.04,
+        "confidence": 0.591,
+        "score": 0.544,
+        "prob_buy": 0.591,
+        "prob_hold": 0.362,
+        "prob_sell": 0.047,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -21451,7 +21615,13 @@
           "atr_pct": 3.43,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -21477,8 +21647,8 @@
         "stoch_k": 12.99,
         "stoch_d": 30.11,
         "volume_ratio": 0.73,
-        "obv": 214989241.0,
-        "obv_sma_20": 214614942.6,
+        "obv": 214176471.0,
+        "obv_sma_20": 213802172.6,
         "roc_10": -3.23,
         "atr": 1.97
       },
@@ -22945,12 +23115,12 @@
         }
       ],
       "short_term": {
-        "signal": "hold",
-        "confidence": 0.359,
-        "score": 0.008,
-        "prob_buy": 0.324,
-        "prob_hold": 0.359,
-        "prob_sell": 0.317,
+        "signal": "buy",
+        "confidence": 0.392,
+        "score": 0.166,
+        "prob_buy": 0.392,
+        "prob_hold": 0.382,
+        "prob_sell": 0.226,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -22958,20 +23128,26 @@
         ],
         "risk": {
           "entry": 90.0,
-          "stop_loss": null,
-          "take_profit": null,
+          "stop_loss": 87.04,
+          "take_profit": 92.25,
           "atr_pct": 2.19,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.586,
-        "score": 0.551,
-        "prob_buy": 0.586,
-        "prob_hold": 0.379,
-        "prob_sell": 0.035,
+        "confidence": 0.657,
+        "score": 0.639,
+        "prob_buy": 0.657,
+        "prob_hold": 0.324,
+        "prob_sell": 0.019,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -22984,7 +23160,13 @@
           "atr_pct": 2.19,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -24479,11 +24661,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.415,
-        "score": 0.072,
-        "prob_buy": 0.328,
-        "prob_hold": 0.415,
-        "prob_sell": 0.257,
+        "confidence": 0.378,
+        "score": 0.088,
+        "prob_buy": 0.355,
+        "prob_hold": 0.378,
+        "prob_sell": 0.267,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -24496,15 +24678,21 @@
           "atr_pct": 2.24,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.506,
-        "score": -0.123,
-        "prob_buy": 0.186,
-        "prob_hold": 0.506,
-        "prob_sell": 0.308,
+        "confidence": 0.507,
+        "score": -0.041,
+        "prob_buy": 0.226,
+        "prob_hold": 0.507,
+        "prob_sell": 0.267,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -24517,7 +24705,13 @@
           "atr_pct": 2.24,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -24543,8 +24737,8 @@
         "stoch_k": 49.17,
         "stoch_d": 49.17,
         "volume_ratio": 0.0,
-        "obv": 178314989.0,
-        "obv_sma_20": 177344432.45,
+        "obv": 176709443.0,
+        "obv_sma_20": 175738886.45,
         "roc_10": -2.32,
         "atr": 2.56
       },
@@ -26011,32 +26205,38 @@
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.413,
-        "score": -0.095,
-        "prob_buy": 0.318,
-        "prob_hold": 0.27,
-        "prob_sell": 0.413,
+        "signal": "buy",
+        "confidence": 0.467,
+        "score": 0.178,
+        "prob_buy": 0.467,
+        "prob_hold": 0.244,
+        "prob_sell": 0.289,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
         ],
         "risk": {
           "entry": 133.9,
-          "stop_loss": 137.74,
-          "take_profit": 130.55,
+          "stop_loss": 130.06,
+          "take_profit": 137.25,
           "atr_pct": 1.91,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.62,
-        "score": 0.585,
-        "prob_buy": 0.62,
-        "prob_hold": 0.345,
-        "prob_sell": 0.035,
+        "confidence": 0.832,
+        "score": 0.816,
+        "prob_buy": 0.832,
+        "prob_hold": 0.152,
+        "prob_sell": 0.016,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -26048,7 +26248,13 @@
           "atr_pct": 1.91,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -26074,8 +26280,8 @@
         "stoch_k": 1.62,
         "stoch_d": 3.0,
         "volume_ratio": 0.67,
-        "obv": 128980736.0,
-        "obv_sma_20": 133512188.1,
+        "obv": 129397608.0,
+        "obv_sma_20": 133929060.1,
         "roc_10": -8.03,
         "atr": 2.07
       },
@@ -27543,11 +27749,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.532,
-        "score": 0.322,
-        "prob_buy": 0.532,
-        "prob_hold": 0.259,
-        "prob_sell": 0.209,
+        "confidence": 0.545,
+        "score": 0.36,
+        "prob_buy": 0.545,
+        "prob_hold": 0.27,
+        "prob_sell": 0.185,
         "reasons": [
           "مؤشر RSI عند 9 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -27561,15 +27767,21 @@
           "atr_pct": 3.1,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.563,
-        "score": 0.347,
-        "prob_buy": 0.563,
-        "prob_hold": 0.221,
-        "prob_sell": 0.216,
+        "confidence": 0.578,
+        "score": 0.391,
+        "prob_buy": 0.578,
+        "prob_hold": 0.235,
+        "prob_sell": 0.187,
         "reasons": [
           "مؤشر RSI عند 9 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -27583,7 +27795,13 @@
           "atr_pct": 3.1,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -27609,8 +27827,8 @@
         "stoch_k": 4.48,
         "stoch_d": 3.23,
         "volume_ratio": 0.83,
-        "obv": 110989457.0,
-        "obv_sma_20": 116693311.15,
+        "obv": 110942827.0,
+        "obv_sma_20": 116646681.15,
         "roc_10": -7.51,
         "atr": 1.12
       },
@@ -29078,11 +29296,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.448,
-        "score": 0.206,
-        "prob_buy": 0.448,
-        "prob_hold": 0.31,
-        "prob_sell": 0.242,
+        "confidence": 0.423,
+        "score": 0.164,
+        "prob_buy": 0.423,
+        "prob_hold": 0.318,
+        "prob_sell": 0.259,
         "reasons": [
           "مؤشر RSI عند 9 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -29096,15 +29314,21 @@
           "atr_pct": 3.24,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.496,
-        "score": 0.004,
+        "confidence": 0.517,
+        "score": 0.026,
         "prob_buy": 0.254,
-        "prob_hold": 0.496,
-        "prob_sell": 0.25,
+        "prob_hold": 0.517,
+        "prob_sell": 0.228,
         "reasons": [
           "مؤشر RSI عند 9 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -29118,7 +29342,13 @@
           "atr_pct": 3.24,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -29144,8 +29374,8 @@
         "stoch_k": 16.85,
         "stoch_d": 6.17,
         "volume_ratio": 0.64,
-        "obv": 411454871.0,
-        "obv_sma_20": 413281426.25,
+        "obv": 410794284.0,
+        "obv_sma_20": 412620839.25,
         "roc_10": -2.93,
         "atr": 0.33
       },
@@ -30613,11 +30843,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.42,
-        "score": 0.079,
-        "prob_buy": 0.33,
-        "prob_hold": 0.42,
-        "prob_sell": 0.25,
+        "confidence": 0.418,
+        "score": 0.075,
+        "prob_buy": 0.328,
+        "prob_hold": 0.418,
+        "prob_sell": 0.254,
         "reasons": [
           "مؤشر RSI عند 24 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -30631,15 +30861,21 @@
           "atr_pct": 2.05,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.423,
-        "score": 0.12,
-        "prob_buy": 0.423,
-        "prob_hold": 0.274,
-        "prob_sell": 0.303,
+        "confidence": 0.417,
+        "score": 0.159,
+        "prob_buy": 0.417,
+        "prob_hold": 0.325,
+        "prob_sell": 0.258,
         "reasons": [
           "مؤشر RSI عند 24 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -30653,7 +30889,13 @@
           "atr_pct": 2.05,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -30679,8 +30921,8 @@
         "stoch_k": 10.05,
         "stoch_d": 10.54,
         "volume_ratio": 0.55,
-        "obv": 221724661.0,
-        "obv_sma_20": 224008823.05,
+        "obv": 221865038.0,
+        "obv_sma_20": 224149200.05,
         "roc_10": -4.24,
         "atr": 0.39
       },
@@ -32148,11 +32390,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.429,
-        "score": -0.007,
-        "prob_buy": 0.282,
-        "prob_hold": 0.429,
-        "prob_sell": 0.289,
+        "confidence": 0.424,
+        "score": -0.025,
+        "prob_buy": 0.275,
+        "prob_hold": 0.424,
+        "prob_sell": 0.301,
         "reasons": [
           "مؤشر RSI عند 20 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -32166,15 +32408,21 @@
           "atr_pct": 1.77,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.579,
-        "score": 0.056,
-        "prob_buy": 0.239,
-        "prob_hold": 0.579,
-        "prob_sell": 0.182,
+        "confidence": 0.591,
+        "score": 0.128,
+        "prob_buy": 0.268,
+        "prob_hold": 0.591,
+        "prob_sell": 0.141,
         "reasons": [
           "مؤشر RSI عند 20 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
@@ -32188,7 +32436,13 @@
           "atr_pct": 1.77,
           "level": "low"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -32214,8 +32468,8 @@
         "stoch_k": 45.11,
         "stoch_d": 20.08,
         "volume_ratio": 1.35,
-        "obv": 160443083.0,
-        "obv_sma_20": 166109121.7,
+        "obv": 160331443.0,
+        "obv_sma_20": 165997481.7,
         "roc_10": -6.01,
         "atr": 0.65
       },
@@ -33683,11 +33937,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.37,
-        "score": 0.109,
-        "prob_buy": 0.37,
-        "prob_hold": 0.368,
-        "prob_sell": 0.262,
+        "confidence": 0.374,
+        "score": 0.117,
+        "prob_buy": 0.374,
+        "prob_hold": 0.369,
+        "prob_sell": 0.257,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -33699,15 +33953,21 @@
           "atr_pct": 2.39,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.479,
-        "score": -0.055,
-        "prob_buy": 0.233,
-        "prob_hold": 0.479,
-        "prob_sell": 0.288,
+        "confidence": 0.509,
+        "score": 0.007,
+        "prob_buy": 0.249,
+        "prob_hold": 0.509,
+        "prob_sell": 0.242,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
@@ -33719,7 +33979,13 @@
           "atr_pct": 2.39,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -33745,8 +34011,8 @@
         "stoch_k": 17.73,
         "stoch_d": 25.64,
         "volume_ratio": 0.31,
-        "obv": 1535096080.0,
-        "obv_sma_20": 1539863700.05,
+        "obv": 1538313093.0,
+        "obv_sma_20": 1543080713.05,
         "roc_10": -5.84,
         "atr": 0.38
       },
@@ -35214,11 +35480,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.374,
-        "score": 0.076,
-        "prob_buy": 0.374,
-        "prob_hold": 0.327,
-        "prob_sell": 0.298,
+        "confidence": 0.393,
+        "score": 0.108,
+        "prob_buy": 0.393,
+        "prob_hold": 0.321,
+        "prob_sell": 0.286,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -35231,14 +35497,20 @@
           "atr_pct": 3.36,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.59,
-        "score": 0.554,
-        "prob_buy": 0.59,
-        "prob_hold": 0.374,
+        "confidence": 0.618,
+        "score": 0.581,
+        "prob_buy": 0.618,
+        "prob_hold": 0.346,
         "prob_sell": 0.036,
         "reasons": [
           "MACD سلبي (زخم هابط)",
@@ -35252,7 +35524,13 @@
           "atr_pct": 3.36,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     },
     {
@@ -35278,8 +35556,8 @@
         "stoch_k": 60.83,
         "stoch_d": 66.99,
         "volume_ratio": 1.3,
-        "obv": 327924587.0,
-        "obv_sma_20": 316152058.0,
+        "obv": 323928506.0,
+        "obv_sma_20": 312155977.0,
         "roc_10": 4.33,
         "atr": 0.54
       },
@@ -36747,11 +37025,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.34,
-        "score": 0.001,
-        "prob_buy": 0.331,
-        "prob_hold": 0.34,
-        "prob_sell": 0.329,
+        "confidence": 0.344,
+        "score": -0.01,
+        "prob_buy": 0.323,
+        "prob_hold": 0.344,
+        "prob_sell": 0.333,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -36763,15 +37041,21 @@
           "atr_pct": 3.37,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.5,
-        "score": 0.396,
-        "prob_buy": 0.5,
-        "prob_hold": 0.396,
-        "prob_sell": 0.104,
+        "confidence": 0.501,
+        "score": 0.387,
+        "prob_buy": 0.501,
+        "prob_hold": 0.386,
+        "prob_sell": 0.113,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -36783,1618 +37067,106 @@
           "atr_pct": 3.37,
           "level": "medium"
         },
-        "source": "ml"
+        "source": "ml",
+        "news": {
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
+        }
       }
     }
   ],
-  "gold": {
-    "asset": "gold",
-    "name": "الذهب",
-    "currency": "EGP",
-    "unit": "جرام",
-    "date": "2026-06-30",
-    "ounce_usd": 4000.9,
-    "usd_egp": 49.54,
-    "grams": {
-      "24k": 6372.29,
-      "22k": 5841.27,
-      "21k": 5575.76,
-      "18k": 4779.22
-    },
-    "price_21k": 5575.76,
-    "change_pct": -0.53,
-    "short_term": {
-      "signal": "hold",
-      "confidence": 0.493,
-      "score": 0.143,
-      "prob_buy": 0.3,
-      "prob_hold": 0.5,
-      "prob_sell": 0.2,
-      "reasons": [
-        "مؤشر RSI عند 28 (تشبّع بيعي — فرصة شراء محتملة)",
-        "MACD سلبي (زخم هابط)",
-        "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
-        "ستوكاستيك في منطقة تشبّع بيعي",
-        "حجم تداول مرتفع (11.8× المتوسط)"
-      ],
-      "risk": {
-        "entry": 5575.76,
-        "stop_loss": null,
-        "take_profit": null,
-        "atr_pct": 2.8,
-        "level": "medium"
-      },
-      "source": "rule"
-    },
-    "long_term": {
-      "signal": "hold",
-      "confidence": 0.493,
-      "score": 0.143,
-      "prob_buy": 0.3,
-      "prob_hold": 0.5,
-      "prob_sell": 0.2,
-      "reasons": [
-        "مؤشر RSI عند 28 (تشبّع بيعي — فرصة شراء محتملة)",
-        "MACD سلبي (زخم هابط)",
-        "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
-        "ستوكاستيك في منطقة تشبّع بيعي",
-        "حجم تداول مرتفع (11.8× المتوسط)"
-      ],
-      "risk": {
-        "entry": 5575.76,
-        "stop_loss": null,
-        "take_profit": null,
-        "atr_pct": 2.8,
-        "level": "medium"
-      },
-      "source": "rule"
-    },
-    "indicators": {
-      "rsi": 27.72,
-      "macd": -276.91,
-      "sma_50": 6519.11,
-      "sma_200": 6192.62,
-      "atr": 156.0
-    },
-    "history": [
-      {
-        "date": "2025-01-16",
-        "close": 3892.99
-      },
-      {
-        "date": "2025-01-17",
-        "close": 3888.93
-      },
-      {
-        "date": "2025-01-21",
-        "close": 3897.68
-      },
-      {
-        "date": "2025-01-22",
-        "close": 3913.53
-      },
-      {
-        "date": "2025-01-23",
-        "close": 3909.16
-      },
-      {
-        "date": "2025-01-24",
-        "close": 3927.52
-      },
-      {
-        "date": "2025-01-27",
-        "close": 3881.9
-      },
-      {
-        "date": "2025-01-28",
-        "close": 3908.81
-      },
-      {
-        "date": "2025-01-29",
-        "close": 3909.66
-      },
-      {
-        "date": "2025-01-30",
-        "close": 3985.94
-      },
-      {
-        "date": "2025-01-31",
-        "close": 3971.51
-      },
-      {
-        "date": "2025-02-03",
-        "close": 4047.71
-      },
-      {
-        "date": "2025-02-04",
-        "close": 4040.66
-      },
-      {
-        "date": "2025-02-05",
-        "close": 4059.16
-      },
-      {
-        "date": "2025-02-06",
-        "close": 4041.06
-      },
-      {
-        "date": "2025-02-07",
-        "close": 4054.28
-      },
-      {
-        "date": "2025-02-10",
-        "close": 4127.96
-      },
-      {
-        "date": "2025-02-11",
-        "close": 4117.12
-      },
-      {
-        "date": "2025-02-12",
-        "close": 4125.0
-      },
-      {
-        "date": "2025-02-13",
-        "close": 4163.51
-      },
-      {
-        "date": "2025-02-14",
-        "close": 4103.99
-      },
-      {
-        "date": "2025-02-18",
-        "close": 4171.07
-      },
-      {
-        "date": "2025-02-19",
-        "close": 4156.38
-      },
-      {
-        "date": "2025-02-20",
-        "close": 4185.49
-      },
-      {
-        "date": "2025-02-21",
-        "close": 4177.78
-      },
-      {
-        "date": "2025-02-24",
-        "close": 4186.56
-      },
-      {
-        "date": "2025-02-25",
-        "close": 4132.34
-      },
-      {
-        "date": "2025-02-26",
-        "close": 4147.83
-      },
-      {
-        "date": "2025-02-27",
-        "close": 4100.95
-      },
-      {
-        "date": "2025-02-28",
-        "close": 4040.84
-      },
-      {
-        "date": "2025-03-03",
-        "close": 4101.22
-      },
-      {
-        "date": "2025-03-04",
-        "close": 4142.34
-      },
-      {
-        "date": "2025-03-05",
-        "close": 4149.47
-      },
-      {
-        "date": "2025-03-06",
-        "close": 4155.15
-      },
-      {
-        "date": "2025-03-07",
-        "close": 4138.95
-      },
-      {
-        "date": "2025-03-10",
-        "close": 4111.72
-      },
-      {
-        "date": "2025-03-11",
-        "close": 4143.94
-      },
-      {
-        "date": "2025-03-12",
-        "close": 4181.7
-      },
-      {
-        "date": "2025-03-13",
-        "close": 4250.44
-      },
-      {
-        "date": "2025-03-14",
-        "close": 4264.0
-      },
-      {
-        "date": "2025-03-17",
-        "close": 4273.45
-      },
-      {
-        "date": "2025-03-18",
-        "close": 4310.13
-      },
-      {
-        "date": "2025-03-19",
-        "close": 4310.49
-      },
-      {
-        "date": "2025-03-20",
-        "close": 4327.36
-      },
-      {
-        "date": "2025-03-21",
-        "close": 4290.74
-      },
-      {
-        "date": "2025-03-24",
-        "close": 4275.9
-      },
-      {
-        "date": "2025-03-25",
-        "close": 4302.17
-      },
-      {
-        "date": "2025-03-26",
-        "close": 4295.76
-      },
-      {
-        "date": "2025-03-27",
-        "close": 4349.04
-      },
-      {
-        "date": "2025-03-28",
-        "close": 4388.23
-      },
-      {
-        "date": "2025-03-31",
-        "close": 4442.96
-      },
-      {
-        "date": "2025-04-01",
-        "close": 4434.9
-      },
-      {
-        "date": "2025-04-02",
-        "close": 4465.43
-      },
-      {
-        "date": "2025-04-03",
-        "close": 4403.5
-      },
-      {
-        "date": "2025-04-04",
-        "close": 4284.78
-      },
-      {
-        "date": "2025-04-07",
-        "close": 4214.46
-      },
-      {
-        "date": "2025-04-08",
-        "close": 4289.47
-      },
-      {
-        "date": "2025-04-09",
-        "close": 4405.98
-      },
-      {
-        "date": "2025-04-10",
-        "close": 4582.93
-      },
-      {
-        "date": "2025-04-11",
-        "close": 4649.29
-      },
-      {
-        "date": "2025-04-14",
-        "close": 4628.21
-      },
-      {
-        "date": "2025-04-15",
-        "close": 4615.51
-      },
-      {
-        "date": "2025-04-16",
-        "close": 4767.5
-      },
-      {
-        "date": "2025-04-17",
-        "close": 4753.34
-      },
-      {
-        "date": "2025-04-21",
-        "close": 4893.41
-      },
-      {
-        "date": "2025-04-22",
-        "close": 4827.92
-      },
-      {
-        "date": "2025-04-23",
-        "close": 4702.24
-      },
-      {
-        "date": "2025-04-24",
-        "close": 4774.44
-      },
-      {
-        "date": "2025-04-25",
-        "close": 4703.21
-      },
-      {
-        "date": "2025-04-28",
-        "close": 4781.37
-      },
-      {
-        "date": "2025-04-29",
-        "close": 4743.67
-      },
-      {
-        "date": "2025-04-30",
-        "close": 4720.56
-      },
-      {
-        "date": "2025-05-01",
-        "close": 4588.67
-      },
-      {
-        "date": "2025-05-02",
-        "close": 4631.77
-      },
-      {
-        "date": "2025-05-05",
-        "close": 4716.34
-      },
-      {
-        "date": "2025-05-06",
-        "close": 4859.96
-      },
-      {
-        "date": "2025-05-07",
-        "close": 4815.91
-      },
-      {
-        "date": "2025-05-08",
-        "close": 4693.35
-      },
-      {
-        "date": "2025-05-09",
-        "close": 4747.46
-      },
-      {
-        "date": "2025-05-12",
-        "close": 4589.82
-      },
-      {
-        "date": "2025-05-13",
-        "close": 4600.48
-      },
-      {
-        "date": "2025-05-14",
-        "close": 4513.69
-      },
-      {
-        "date": "2025-05-15",
-        "close": 4563.01
-      },
-      {
-        "date": "2025-05-16",
-        "close": 4486.26
-      },
-      {
-        "date": "2025-05-19",
-        "close": 4539.74
-      },
-      {
-        "date": "2025-05-20",
-        "close": 4616.4
-      },
-      {
-        "date": "2025-05-21",
-        "close": 4642.69
-      },
-      {
-        "date": "2025-05-22",
-        "close": 4622.31
-      },
-      {
-        "date": "2025-05-23",
-        "close": 4718.11
-      },
-      {
-        "date": "2025-05-27",
-        "close": 4620.3
-      },
-      {
-        "date": "2025-05-28",
-        "close": 4611.33
-      },
-      {
-        "date": "2025-05-29",
-        "close": 4643.1
-      },
-      {
-        "date": "2025-05-30",
-        "close": 4601.62
-      },
-      {
-        "date": "2025-06-02",
-        "close": 4694.1
-      },
-      {
-        "date": "2025-06-03",
-        "close": 4679.78
-      },
-      {
-        "date": "2025-06-04",
-        "close": 4710.59
-      },
-      {
-        "date": "2025-06-05",
-        "close": 4678.7
-      },
-      {
-        "date": "2025-06-06",
-        "close": 4638.26
-      },
-      {
-        "date": "2025-06-09",
-        "close": 4629.78
-      },
-      {
-        "date": "2025-06-10",
-        "close": 4634.73
-      },
-      {
-        "date": "2025-06-11",
-        "close": 4624.93
-      },
-      {
-        "date": "2025-06-12",
-        "close": 4705.98
-      },
-      {
-        "date": "2025-06-13",
-        "close": 4801.04
-      },
-      {
-        "date": "2025-06-16",
-        "close": 4747.38
-      },
-      {
-        "date": "2025-06-17",
-        "close": 4786.08
-      },
-      {
-        "date": "2025-06-18",
-        "close": 4779.67
-      },
-      {
-        "date": "2025-06-20",
-        "close": 4798.15
-      },
-      {
-        "date": "2025-06-23",
-        "close": 4820.71
-      },
-      {
-        "date": "2025-06-24",
-        "close": 4726.12
-      },
-      {
-        "date": "2025-06-25",
-        "close": 4682.03
-      },
-      {
-        "date": "2025-06-26",
-        "close": 4675.98
-      },
-      {
-        "date": "2025-06-27",
-        "close": 4593.18
-      },
-      {
-        "date": "2025-06-30",
-        "close": 4600.4
-      },
-      {
-        "date": "2025-07-01",
-        "close": 4652.91
-      },
-      {
-        "date": "2025-07-02",
-        "close": 4653.64
-      },
-      {
-        "date": "2025-07-03",
-        "close": 4622.44
-      },
-      {
-        "date": "2025-07-04",
-        "close": 4624.77
-      },
-      {
-        "date": "2025-07-07",
-        "close": 4613.55
-      },
-      {
-        "date": "2025-07-08",
-        "close": 4618.32
-      },
-      {
-        "date": "2025-07-09",
-        "close": 4624.73
-      },
-      {
-        "date": "2025-07-10",
-        "close": 4626.64
-      },
-      {
-        "date": "2025-07-11",
-        "close": 4671.2
-      },
-      {
-        "date": "2025-07-14",
-        "close": 4668.95
-      },
-      {
-        "date": "2025-07-15",
-        "close": 4630.53
-      },
-      {
-        "date": "2025-07-16",
-        "close": 4656.98
-      },
-      {
-        "date": "2025-07-17",
-        "close": 4640.67
-      },
-      {
-        "date": "2025-07-18",
-        "close": 4658.15
-      },
-      {
-        "date": "2025-07-21",
-        "close": 4727.16
-      },
-      {
-        "date": "2025-07-22",
-        "close": 4762.1
-      },
-      {
-        "date": "2025-07-23",
-        "close": 4682.84
-      },
-      {
-        "date": "2025-07-24",
-        "close": 4652.48
-      },
-      {
-        "date": "2025-07-25",
-        "close": 4598.84
-      },
-      {
-        "date": "2025-07-28",
-        "close": 4566.29
-      },
-      {
-        "date": "2025-07-29",
-        "close": 4557.6
-      },
-      {
-        "date": "2025-07-30",
-        "close": 4507.57
-      },
-      {
-        "date": "2025-07-31",
-        "close": 4512.46
-      },
-      {
-        "date": "2025-08-01",
-        "close": 4571.13
-      },
-      {
-        "date": "2025-08-04",
-        "close": 4588.36
-      },
-      {
-        "date": "2025-08-05",
-        "close": 4606.86
-      },
-      {
-        "date": "2025-08-06",
-        "close": 4602.01
-      },
-      {
-        "date": "2025-08-07",
-        "close": 4630.93
-      },
-      {
-        "date": "2025-08-08",
-        "close": 4692.9
-      },
-      {
-        "date": "2025-08-11",
-        "close": 4543.06
-      },
-      {
-        "date": "2025-08-12",
-        "close": 4564.93
-      },
-      {
-        "date": "2025-08-13",
-        "close": 4575.68
-      },
-      {
-        "date": "2025-08-14",
-        "close": 4530.77
-      },
-      {
-        "date": "2025-08-15",
-        "close": 4530.23
-      },
-      {
-        "date": "2025-08-18",
-        "close": 4519.75
-      },
-      {
-        "date": "2025-08-19",
-        "close": 4506.17
-      },
-      {
-        "date": "2025-08-20",
-        "close": 4554.17
-      },
-      {
-        "date": "2025-08-21",
-        "close": 4557.37
-      },
-      {
-        "date": "2025-08-22",
-        "close": 4600.22
-      },
-      {
-        "date": "2025-08-25",
-        "close": 4593.61
-      },
-      {
-        "date": "2025-08-26",
-        "close": 4620.24
-      },
-      {
-        "date": "2025-08-27",
-        "close": 4652.09
-      },
-      {
-        "date": "2025-08-28",
-        "close": 4693.0
-      },
-      {
-        "date": "2025-08-29",
-        "close": 4735.48
-      },
-      {
-        "date": "2025-09-02",
-        "close": 4843.1
-      },
-      {
-        "date": "2025-09-03",
-        "close": 4901.29
-      },
-      {
-        "date": "2025-09-04",
-        "close": 4867.03
-      },
-      {
-        "date": "2025-09-05",
-        "close": 4932.09
-      },
-      {
-        "date": "2025-09-08",
-        "close": 4968.73
-      },
-      {
-        "date": "2025-09-09",
-        "close": 4937.91
-      },
-      {
-        "date": "2025-09-10",
-        "close": 4913.7
-      },
-      {
-        "date": "2025-09-11",
-        "close": 4918.14
-      },
-      {
-        "date": "2025-09-12",
-        "close": 4947.96
-      },
-      {
-        "date": "2025-09-15",
-        "close": 4975.85
-      },
-      {
-        "date": "2025-09-16",
-        "close": 4996.34
-      },
-      {
-        "date": "2025-09-17",
-        "close": 4977.33
-      },
-      {
-        "date": "2025-09-18",
-        "close": 4931.31
-      },
-      {
-        "date": "2025-09-19",
-        "close": 4973.76
-      },
-      {
-        "date": "2025-09-22",
-        "close": 5011.13
-      },
-      {
-        "date": "2025-09-23",
-        "close": 5119.11
-      },
-      {
-        "date": "2025-09-24",
-        "close": 5051.61
-      },
-      {
-        "date": "2025-09-25",
-        "close": 5059.57
-      },
-      {
-        "date": "2025-09-26",
-        "close": 5108.53
-      },
-      {
-        "date": "2025-09-29",
-        "close": 5193.16
-      },
-      {
-        "date": "2025-09-30",
-        "close": 5188.12
-      },
-      {
-        "date": "2025-10-01",
-        "close": 5203.3
-      },
-      {
-        "date": "2025-10-02",
-        "close": 5166.07
-      },
-      {
-        "date": "2025-10-03",
-        "close": 5210.18
-      },
-      {
-        "date": "2025-10-06",
-        "close": 5288.46
-      },
-      {
-        "date": "2025-10-07",
-        "close": 5321.44
-      },
-      {
-        "date": "2025-10-08",
-        "close": 5407.65
-      },
-      {
-        "date": "2025-10-09",
-        "close": 5276.71
-      },
-      {
-        "date": "2025-10-10",
-        "close": 5315.43
-      },
-      {
-        "date": "2025-10-13",
-        "close": 5481.22
-      },
-      {
-        "date": "2025-10-14",
-        "close": 5550.66
-      },
-      {
-        "date": "2025-10-15",
-        "close": 5602.61
-      },
-      {
-        "date": "2025-10-16",
-        "close": 5727.79
-      },
-      {
-        "date": "2025-10-17",
-        "close": 5606.57
-      },
-      {
-        "date": "2025-10-20",
-        "close": 5795.31
-      },
-      {
-        "date": "2025-10-21",
-        "close": 5458.67
-      },
-      {
-        "date": "2025-10-22",
-        "close": 5405.35
-      },
-      {
-        "date": "2025-10-23",
-        "close": 5517.84
-      },
-      {
-        "date": "2025-10-24",
-        "close": 5510.88
-      },
-      {
-        "date": "2025-10-27",
-        "close": 5344.3
-      },
-      {
-        "date": "2025-10-28",
-        "close": 5290.88
-      },
-      {
-        "date": "2025-10-29",
-        "close": 5305.18
-      },
-      {
-        "date": "2025-10-30",
-        "close": 5320.31
-      },
-      {
-        "date": "2025-10-31",
-        "close": 5287.48
-      },
-      {
-        "date": "2025-11-03",
-        "close": 5320.0
-      },
-      {
-        "date": "2025-11-04",
-        "close": 5239.8
-      },
-      {
-        "date": "2025-11-05",
-        "close": 5294.17
-      },
-      {
-        "date": "2025-11-06",
-        "close": 5304.02
-      },
-      {
-        "date": "2025-11-07",
-        "close": 5318.31
-      },
-      {
-        "date": "2025-11-10",
-        "close": 5441.79
-      },
-      {
-        "date": "2025-11-11",
-        "close": 5457.63
-      },
-      {
-        "date": "2025-11-12",
-        "close": 5577.63
-      },
-      {
-        "date": "2025-11-13",
-        "close": 5554.99
-      },
-      {
-        "date": "2025-11-14",
-        "close": 5423.24
-      },
-      {
-        "date": "2025-11-17",
-        "close": 5380.38
-      },
-      {
-        "date": "2025-11-18",
-        "close": 5373.27
-      },
-      {
-        "date": "2025-11-19",
-        "close": 5406.71
-      },
-      {
-        "date": "2025-11-20",
-        "close": 5404.87
-      },
-      {
-        "date": "2025-11-21",
-        "close": 5433.58
-      },
-      {
-        "date": "2025-11-24",
-        "close": 5461.79
-      },
-      {
-        "date": "2025-11-25",
-        "close": 5555.18
-      },
-      {
-        "date": "2025-11-26",
-        "close": 5598.84
-      },
-      {
-        "date": "2025-11-28",
-        "close": 5648.0
-      },
-      {
-        "date": "2025-12-01",
-        "close": 5654.84
-      },
-      {
-        "date": "2025-12-02",
-        "close": 5593.37
-      },
-      {
-        "date": "2025-12-03",
-        "close": 5610.28
-      },
-      {
-        "date": "2025-12-04",
-        "close": 5630.86
-      },
-      {
-        "date": "2025-12-05",
-        "close": 5628.87
-      },
-      {
-        "date": "2025-12-08",
-        "close": 5593.86
-      },
-      {
-        "date": "2025-12-09",
-        "close": 5614.09
-      },
-      {
-        "date": "2025-12-10",
-        "close": 5609.72
-      },
-      {
-        "date": "2025-12-11",
-        "close": 5730.35
-      },
-      {
-        "date": "2025-12-12",
-        "close": 5747.33
-      },
-      {
-        "date": "2025-12-15",
-        "close": 5733.76
-      },
-      {
-        "date": "2025-12-16",
-        "close": 5739.65
-      },
-      {
-        "date": "2025-12-17",
-        "close": 5792.22
-      },
-      {
-        "date": "2025-12-18",
-        "close": 5807.45
-      },
-      {
-        "date": "2025-12-19",
-        "close": 5825.37
-      },
-      {
-        "date": "2025-12-22",
-        "close": 5963.81
-      },
-      {
-        "date": "2025-12-23",
-        "close": 5980.36
-      },
-      {
-        "date": "2025-12-24",
-        "close": 5980.42
-      },
-      {
-        "date": "2025-12-26",
-        "close": 6049.45
-      },
-      {
-        "date": "2025-12-29",
-        "close": 5785.38
-      },
-      {
-        "date": "2025-12-30",
-        "close": 5856.69
-      },
-      {
-        "date": "2025-12-31",
-        "close": 5803.78
-      },
-      {
-        "date": "2026-01-02",
-        "close": 5779.21
-      },
-      {
-        "date": "2026-01-05",
-        "close": 5974.39
-      },
-      {
-        "date": "2026-01-06",
-        "close": 5962.18
-      },
-      {
-        "date": "2026-01-07",
-        "close": 5909.73
-      },
-      {
-        "date": "2026-01-08",
-        "close": 5910.88
-      },
-      {
-        "date": "2026-01-09",
-        "close": 5968.58
-      },
-      {
-        "date": "2026-01-12",
-        "close": 6143.02
-      },
-      {
-        "date": "2026-01-13",
-        "close": 6082.78
-      },
-      {
-        "date": "2026-01-14",
-        "close": 6126.14
-      },
-      {
-        "date": "2026-01-15",
-        "close": 6138.62
-      },
-      {
-        "date": "2026-01-16",
-        "close": 6094.75
-      },
-      {
-        "date": "2026-01-20",
-        "close": 6345.52
-      },
-      {
-        "date": "2026-01-21",
-        "close": 6449.0
-      },
-      {
-        "date": "2026-01-22",
-        "close": 6539.76
-      },
-      {
-        "date": "2026-01-23",
-        "close": 6582.42
-      },
-      {
-        "date": "2026-01-26",
-        "close": 6711.87
-      },
-      {
-        "date": "2026-01-27",
-        "close": 6720.95
-      },
-      {
-        "date": "2026-01-28",
-        "close": 7005.58
-      },
-      {
-        "date": "2026-01-29",
-        "close": 7001.65
-      },
-      {
-        "date": "2026-01-30",
-        "close": 6207.28
-      },
-      {
-        "date": "2026-02-02",
-        "close": 6132.45
-      },
-      {
-        "date": "2026-02-03",
-        "close": 6491.07
-      },
-      {
-        "date": "2026-02-04",
-        "close": 6502.8
-      },
-      {
-        "date": "2026-02-05",
-        "close": 6410.08
-      },
-      {
-        "date": "2026-02-06",
-        "close": 6523.11
-      },
-      {
-        "date": "2026-02-09",
-        "close": 6636.69
-      },
-      {
-        "date": "2026-02-10",
-        "close": 6591.48
-      },
-      {
-        "date": "2026-02-11",
-        "close": 6671.19
-      },
-      {
-        "date": "2026-02-12",
-        "close": 6473.44
-      },
-      {
-        "date": "2026-02-13",
-        "close": 6615.02
-      },
-      {
-        "date": "2026-02-17",
-        "close": 6409.53
-      },
-      {
-        "date": "2026-02-18",
-        "close": 6575.33
-      },
-      {
-        "date": "2026-02-19",
-        "close": 6562.47
-      },
-      {
-        "date": "2026-02-20",
-        "close": 6756.75
-      },
-      {
-        "date": "2026-02-23",
-        "close": 6935.73
-      },
-      {
-        "date": "2026-02-24",
-        "close": 6923.18
-      },
-      {
-        "date": "2026-02-25",
-        "close": 6996.59
-      },
-      {
-        "date": "2026-02-26",
-        "close": 6983.0
-      },
-      {
-        "date": "2026-02-27",
-        "close": 7052.11
-      },
-      {
-        "date": "2026-03-02",
-        "close": 7106.47
-      },
-      {
-        "date": "2026-03-03",
-        "close": 7067.63
-      },
-      {
-        "date": "2026-03-04",
-        "close": 7180.37
-      },
-      {
-        "date": "2026-03-05",
-        "close": 7147.25
-      },
-      {
-        "date": "2026-03-06",
-        "close": 7249.2
-      },
-      {
-        "date": "2026-03-09",
-        "close": 7266.35
-      },
-      {
-        "date": "2026-03-10",
-        "close": 7761.44
-      },
-      {
-        "date": "2026-03-11",
-        "close": 7552.76
-      },
-      {
-        "date": "2026-03-12",
-        "close": 7460.99
-      },
-      {
-        "date": "2026-03-13",
-        "close": 7434.8
-      },
-      {
-        "date": "2026-03-16",
-        "close": 7354.73
-      },
-      {
-        "date": "2026-03-17",
-        "close": 7370.41
-      },
-      {
-        "date": "2026-03-18",
-        "close": 7183.78
-      },
-      {
-        "date": "2026-03-19",
-        "close": 6769.88
-      },
-      {
-        "date": "2026-03-20",
-        "close": 6713.68
-      },
-      {
-        "date": "2026-03-23",
-        "close": 6427.88
-      },
-      {
-        "date": "2026-03-24",
-        "close": 6474.45
-      },
-      {
-        "date": "2026-03-25",
-        "close": 6726.22
-      },
-      {
-        "date": "2026-03-26",
-        "close": 6463.47
-      },
-      {
-        "date": "2026-03-27",
-        "close": 6655.81
-      },
-      {
-        "date": "2026-03-30",
-        "close": 6730.78
-      },
-      {
-        "date": "2026-03-31",
-        "close": 7114.52
-      },
-      {
-        "date": "2026-04-01",
-        "close": 7333.56
-      },
-      {
-        "date": "2026-04-02",
-        "close": 6999.61
-      },
-      {
-        "date": "2026-04-06",
-        "close": 7122.54
-      },
-      {
-        "date": "2026-04-07",
-        "close": 7102.57
-      },
-      {
-        "date": "2026-04-08",
-        "close": 7302.42
-      },
-      {
-        "date": "2026-04-09",
-        "close": 7176.23
-      },
-      {
-        "date": "2026-04-10",
-        "close": 7108.42
-      },
-      {
-        "date": "2026-04-13",
-        "close": 7115.42
-      },
-      {
-        "date": "2026-04-14",
-        "close": 7208.36
-      },
-      {
-        "date": "2026-04-15",
-        "close": 7074.35
-      },
-      {
-        "date": "2026-04-16",
-        "close": 6991.3
-      },
-      {
-        "date": "2026-04-17",
-        "close": 7070.42
-      },
-      {
-        "date": "2026-04-20",
-        "close": 7033.81
-      },
-      {
-        "date": "2026-04-21",
-        "close": 6869.18
-      },
-      {
-        "date": "2026-04-22",
-        "close": 6885.06
-      },
-      {
-        "date": "2026-04-23",
-        "close": 6880.55
-      },
-      {
-        "date": "2026-04-24",
-        "close": 6986.63
-      },
-      {
-        "date": "2026-04-27",
-        "close": 6920.24
-      },
-      {
-        "date": "2026-04-28",
-        "close": 6783.81
-      },
-      {
-        "date": "2026-04-29",
-        "close": 6750.72
-      },
-      {
-        "date": "2026-04-30",
-        "close": 6878.98
-      },
-      {
-        "date": "2026-05-01",
-        "close": 6982.94
-      },
-      {
-        "date": "2026-05-04",
-        "close": 6816.06
-      },
-      {
-        "date": "2026-05-05",
-        "close": 6856.96
-      },
-      {
-        "date": "2026-05-06",
-        "close": 7057.49
-      },
-      {
-        "date": "2026-05-07",
-        "close": 6964.66
-      },
-      {
-        "date": "2026-05-08",
-        "close": 6996.92
-      },
-      {
-        "date": "2026-05-11",
-        "close": 7014.65
-      },
-      {
-        "date": "2026-05-12",
-        "close": 6935.48
-      },
-      {
-        "date": "2026-05-13",
-        "close": 6987.2
-      },
-      {
-        "date": "2026-05-14",
-        "close": 6961.68
-      },
-      {
-        "date": "2026-05-15",
-        "close": 6773.89
-      },
-      {
-        "date": "2026-05-18",
-        "close": 6770.44
-      },
-      {
-        "date": "2026-05-19",
-        "close": 6757.08
-      },
-      {
-        "date": "2026-05-20",
-        "close": 6765.92
-      },
-      {
-        "date": "2026-05-21",
-        "close": 6819.55
-      },
-      {
-        "date": "2026-05-22",
-        "close": 6727.08
-      },
-      {
-        "date": "2026-05-26",
-        "close": 6608.08
-      },
-      {
-        "date": "2026-05-27",
-        "close": 6530.45
-      },
-      {
-        "date": "2026-05-28",
-        "close": 6605.13
-      },
-      {
-        "date": "2026-05-29",
-        "close": 6695.06
-      },
-      {
-        "date": "2026-06-01",
-        "close": 6591.67
-      },
-      {
-        "date": "2026-06-02",
-        "close": 6566.06
-      },
-      {
-        "date": "2026-06-03",
-        "close": 6467.45
-      },
-      {
-        "date": "2026-06-04",
-        "close": 6537.35
-      },
-      {
-        "date": "2026-06-05",
-        "close": 6318.17
-      },
-      {
-        "date": "2026-06-08",
-        "close": 6353.66
-      },
-      {
-        "date": "2026-06-09",
-        "close": 6235.19
-      },
-      {
-        "date": "2026-06-10",
-        "close": 5973.9
-      },
-      {
-        "date": "2026-06-11",
-        "close": 5958.75
-      },
-      {
-        "date": "2026-06-12",
-        "close": 6160.97
-      },
-      {
-        "date": "2026-06-15",
-        "close": 6256.54
-      },
-      {
-        "date": "2026-06-16",
-        "close": 6130.72
-      },
-      {
-        "date": "2026-06-17",
-        "close": 6142.4
-      },
-      {
-        "date": "2026-06-18",
-        "close": 5929.12
-      },
-      {
-        "date": "2026-06-22",
-        "close": 5882.39
-      },
-      {
-        "date": "2026-06-23",
-        "close": 5775.46
-      },
-      {
-        "date": "2026-06-24",
-        "close": 5578.06
-      },
-      {
-        "date": "2026-06-25",
-        "close": 5621.76
-      },
-      {
-        "date": "2026-06-26",
-        "close": 5678.88
-      },
-      {
-        "date": "2026-06-29",
-        "close": 5605.58
-      },
-      {
-        "date": "2026-06-30",
-        "close": 5575.76
-      }
-    ]
-  },
+  "gold": null,
   "evaluation": {
     "short_5d": {
-      "accuracy": 0.346,
-      "balanced_accuracy": 0.352,
-      "macro_f1": 0.345,
-      "buy_precision": 0.373,
-      "sell_precision": 0.239,
+      "accuracy": 0.345,
+      "balanced_accuracy": 0.354,
+      "macro_f1": 0.343,
+      "buy_precision": 0.36,
+      "sell_precision": 0.242,
       "confusion": [
         [
-          923,
-          579,
-          847
+          1003,
+          604,
+          855
         ],
         [
-          1573,
-          1285,
-          1182
+          1679,
+          1399,
+          1363
         ],
         [
-          1370,
-          903,
-          1205
+          1462,
+          970,
+          1245
         ]
       ],
-      "cum_return": 0.8451,
-      "buy_hold_return": 5.6697,
-      "excess_vs_bh": -4.8247,
-      "sharpe": 0.769,
-      "max_drawdown": -0.3669,
-      "win_rate": 0.52,
-      "n_trades": 792,
+      "cum_return": 0.8924,
+      "buy_hold_return": 5.839,
+      "excess_vs_bh": -4.9465,
+      "sharpe": 0.765,
+      "max_drawdown": -0.3393,
+      "win_rate": 0.524,
+      "n_trades": 844,
       "n_stocks": 12,
-      "n_folds": 256,
-      "n_bars": 9867
+      "n_folds": 275,
+      "n_bars": 10580
     },
     "long_60d": {
-      "accuracy": 0.394,
-      "balanced_accuracy": 0.392,
-      "macro_f1": 0.363,
-      "buy_precision": 0.589,
-      "sell_precision": 0.15,
+      "accuracy": 0.396,
+      "balanced_accuracy": 0.394,
+      "macro_f1": 0.362,
+      "buy_precision": 0.593,
+      "sell_precision": 0.142,
       "confusion": [
         [
-          358,
-          351,
-          237
+          362,
+          359,
+          235
         ],
         [
-          1048,
-          1391,
-          895
+          1171,
+          1610,
+          928
         ],
         [
-          975,
-          1670,
-          1622
+          1025,
+          1875,
+          1695
         ]
       ],
-      "cum_return": 1.0287,
-      "buy_hold_return": 2.5982,
-      "excess_vs_bh": -1.5695,
-      "sharpe": 0.717,
-      "max_drawdown": -0.3496,
-      "win_rate": 0.652,
-      "n_trades": 92,
+      "cum_return": 1.0392,
+      "buy_hold_return": 2.7888,
+      "excess_vs_bh": -1.7496,
+      "sharpe": 0.854,
+      "max_drawdown": -0.3567,
+      "win_rate": 0.681,
+      "n_trades": 94,
       "n_stocks": 12,
-      "n_folds": 222,
-      "n_bars": 8547
+      "n_folds": 240,
+      "n_bars": 9260
     },
     "test_span": {
-      "start": "2023-01-17",
+      "start": "2023-01-18",
       "end": "2026-04-01"
     },
     "cost_per_trade": 0.004,
     "method": "walk-forward OOS, embargo>=horizon, scaler refit per fold",
     "survivorship": "current_listings_only"
   },
-  "macro_news": null
+  "macro_news": {
+    "egypt": {
+      "score": 0.0,
+      "n_articles": 0,
+      "raw_tone": 0.0,
+      "label": "محايدة"
+    },
+    "gold": {
+      "score": 0.0,
+      "n_articles": 0,
+      "raw_tone": 0.0,
+      "label": "محايدة"
+    }
+  }
 }
