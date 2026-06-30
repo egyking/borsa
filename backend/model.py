@@ -56,6 +56,17 @@ def prepare_training_data(df: pd.DataFrame, horizon: str) -> tuple:
     return data[FEATURE_COLUMNS], labels
 
 
+def prepare_training_data_aligned(df: pd.DataFrame) -> tuple:
+    """Both horizons on ONE aligned feature frame. Drops the MAX horizon once
+    so neither label set peeks past the end (fixes short/long misalignment)."""
+    data = calculate_indicators(df)
+    y_short = generate_labels(data, HORIZONS["short"]["days"], HORIZONS["short"]["threshold"])
+    y_long = generate_labels(data, HORIZONS["long"]["days"], HORIZONS["long"]["threshold"])
+    drop = max(h["days"] for h in HORIZONS.values())
+    data = data.iloc[:-drop]
+    return data[FEATURE_COLUMNS], y_short.iloc[:-drop], y_long.iloc[:-drop]
+
+
 def train_models(X: pd.DataFrame, y_short: pd.Series, y_long: pd.Series) -> tuple:
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
@@ -127,6 +138,7 @@ def _ml_predict(data: pd.DataFrame, model, scaler, threshold_pct: float) -> dict
         "prob_sell": round(prob_sell, 3),
         "reasons": rule_based_signals(data),
         "risk": compute_risk(data, signal, threshold_pct),
+        "source": "ml",
     }
 
 
@@ -137,7 +149,8 @@ def predict_one(df: pd.DataFrame, model, scaler, horizon: str) -> dict:
     if data.empty:
         return {"signal": "hold", "confidence": 0.0, "score": 0.0,
                 "prob_buy": 0.0, "prob_hold": 1.0, "prob_sell": 0.0,
-                "reasons": ["لا توجد بيانات كافية لحساب المؤشرات"], "risk": {}}
+                "reasons": ["لا توجد بيانات كافية لحساب المؤشرات"], "risk": {},
+                "source": "none"}
     if model is None or scaler is None:
         return rule_based_recommendation(data, horizon, h["threshold"])
     try:

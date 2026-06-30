@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { RefreshCw, TrendingUp, TrendingDown, BarChart3, AlertCircle, Clock } from "lucide-react";
 import StockCard from "../components/StockCard";
 import GoldCard from "../components/GoldCard";
+import ModelPerformance from "../components/ModelPerformance";
 import * as api from "../services/api";
 
 export default function Dashboard() {
   const navigate = useNavigate();
   const [stocks, setStocks] = useState([]);
   const [gold, setGold] = useState(null);
+  const [evaluation, setEvaluation] = useState(null);
   const [meta, setMeta] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -20,6 +22,7 @@ export default function Dashboard() {
       const snap = await api.loadSnapshot(force);
       setStocks(snap.stocks || []);
       setGold(snap.gold || null);
+      setEvaluation(snap.evaluation || null);
       setMeta({ generatedAt: snap.generated_at, currency: snap.currency });
     } catch {
       setError("تعذّر تحميل البيانات. لم يتم توليد ملف snapshot.json بعد.");
@@ -85,6 +88,8 @@ export default function Dashboard() {
           </div>
         </div>
       )}
+
+      {!loading && <ModelPerformance evaluation={evaluation} />}
 
       {loading && !error ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

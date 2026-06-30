@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd
 from data_fetcher import fetch_all_history
 from config import EGX_SYMBOLS
-from model import (prepare_training_data, train_models,
+from model import (prepare_training_data_aligned, train_models,
                    MODEL_SHORT_PATH, MODEL_LONG_PATH, SCALER_PATH)
 
 
@@ -24,14 +24,11 @@ def main():
                   f"({0 if df is None else len(df)} rows)")
             continue
         try:
-            Xs, ys = prepare_training_data(df, "short")
-            Xl, yl = prepare_training_data(df, "long")
-            # Align on the shorter horizon's index so X/y stay consistent.
-            n = min(len(Xs), len(Xl))
-            X_parts.append(Xs.iloc[:n])
-            ys_parts.append(ys.iloc[:n])
-            yl_parts.append(yl.iloc[:n])
-            print(f"  {symbol}: {n} training samples")
+            X, ys, yl = prepare_training_data_aligned(df)
+            X_parts.append(X)
+            ys_parts.append(ys)
+            yl_parts.append(yl)
+            print(f"  {symbol}: {len(X)} training samples")
         except Exception as e:
             print(f"  Error processing {symbol}: {e}")
 

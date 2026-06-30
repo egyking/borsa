@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import (EGX_SYMBOLS, stock_name, CURRENCY,
+from config import (EGX_SYMBOLS, stock_name, stock_sector, CURRENCY,
                     SNAPSHOT_PATH, PUBLIC_SNAPSHOT_PATH)
 from data_fetcher import fetch_cached
 from indicators import calculate_indicators, FEATURE_COLUMNS
@@ -42,6 +42,7 @@ def build_stock(symbol: str, model_short, model_long, scaler) -> dict:
     return {
         "symbol": symbol,
         "name": stock_name(symbol),
+        "sector": stock_sector(symbol),
         "close": round(float(latest["close"]), 2),
         "change_pct": round(change_pct, 2),
         "date": str(latest.name.date()),
@@ -51,15 +52,17 @@ def build_stock(symbol: str, model_short, model_long, scaler) -> dict:
     }
 
 
-def generate() -> dict:
+def generate(run_eval: bool = True) -> dict:
     model_short, model_long, scaler = load_models()
     if model_short is None:
         print("WARNING: no ML model found — using rule-based (TA) recommendations.")
 
     stocks = []
+    fetched = {}
     for sym in EGX_SYMBOLS:
         try:
             stocks.append(build_stock(sym, model_short, model_long, scaler))
+            fetched[sym] = fetch_cached(sym)  # cached, no extra network
             print(f"  ok {sym}")
         except Exception as e:
             print(f"  FAILED {sym}: {e}")
@@ -73,11 +76,22 @@ def generate() -> dict:
     except Exception as e:
         print(f"  FAILED gold: {e}")
 
+    evaluation = None
+    if run_eval and model_short is not None and fetched:
+        try:
+            from backtest import evaluate
+            print("  running walk-forward backtest...")
+            evaluation = evaluate(fetched)
+            print("  ok evaluation")
+        except Exception as e:
+            print(f"  FAILED evaluation: {e}")
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "currency": CURRENCY,
         "stocks": stocks,
         "gold": gold,
+        "evaluation": evaluation,
     }
 
 

@@ -24,3 +24,6 @@ data/*.pkl
 !data/scaler.pkl
 data/*.json
 !data/snapshot.json
+
+.vercel
+.env*

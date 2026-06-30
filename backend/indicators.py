@@ -164,7 +164,7 @@ def rule_based_recommendation(data: pd.DataFrame, horizon: str = "short",
     if data.empty:
         return {"signal": "hold", "confidence": 0.0, "score": 0.0,
                 "prob_buy": 0.0, "prob_hold": 1.0, "prob_sell": 0.0,
-                "reasons": ["لا توجد بيانات كافية"], "risk": {}}
+                "reasons": ["لا توجد بيانات كافية"], "risk": {}, "source": "rule"}
 
     r = data.iloc[-1]
     close = float(r["close"])
@@ -221,4 +221,5 @@ def rule_based_recommendation(data: pd.DataFrame, horizon: str = "short",
         "prob_sell": prob_sell,
         "reasons": rule_based_signals(data),
         "risk": compute_risk(data, signal, threshold_pct),
+        "source": "rule",
     }

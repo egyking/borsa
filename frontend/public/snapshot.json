@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-06-29T22:46:48.815692+00:00",
+  "generated_at": "2026-06-29T23:21:44.379445+00:00",
   "currency": "EGP",
   "stocks": [
     {
       "symbol": "COMI.CA",
       "name": "البنك التجاري الدولي CIB",
+      "sector": "بنوك",
       "close": 129.82,
       "change_pct": -2.02,
       "date": "2026-06-28",
@@ -1509,7 +1510,8 @@
           "take_profit": 126.57,
           "atr_pct": 1.51,
           "level": "low"
-        }
+        },
+        "source": "ml"
       },
       "long_term": {
         "signal": "buy",
@@ -1529,9 +1531,87 @@
           "take_profit": 142.8,
           "atr_pct": 1.51,
           "level": "low"
-        }
+        },
+        "source": "ml"
       }
     }
   ],
-  "gold": null
+  "gold": null,
+  "evaluation": {
+    "short_5d": {
+      "accuracy": 0.361,
+      "balanced_accuracy": 0.381,
+      "macro_f1": 0.364,
+      "buy_precision": 0.514,
+      "sell_precision": 0.232,
+      "confusion": [
+        [
+          19,
+          11,
+          7
+        ],
+        [
+          36,
+          20,
+          10
+        ],
+        [
+          27,
+          10,
+          18
+        ]
+      ],
+      "cum_return": 0.1772,
+      "buy_hold_return": 0.3597,
+      "excess_vs_bh": -0.1826,
+      "sharpe": 1.371,
+      "max_drawdown": -0.095,
+      "win_rate": 0.571,
+      "n_trades": 7,
+      "n_stocks": 1,
+      "n_folds": 4,
+      "n_bars": 158
+    },
+    "long_60d": {
+      "accuracy": 0.688,
+      "balanced_accuracy": 0.69,
+      "macro_f1": 0.458,
+      "buy_precision": 0.727,
+      "sell_precision": 0.0,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          6
+        ],
+        [
+          0,
+          9,
+          16
+        ]
+      ],
+      "cum_return": -0.0928,
+      "buy_hold_return": -0.0409,
+      "excess_vs_bh": -0.0519,
+      "sharpe": -1.384,
+      "max_drawdown": -0.1221,
+      "win_rate": 0.0,
+      "n_trades": 1,
+      "n_stocks": 1,
+      "n_folds": 2,
+      "n_bars": 48
+    },
+    "test_span": {
+      "start": "2026-01-18",
+      "end": "2026-03-29"
+    },
+    "cost_per_trade": 0.004,
+    "method": "walk-forward OOS, embargo>=horizon, scaler refit per fold",
+    "survivorship": "current_listings_only"
+  }
 }

@@ -45,8 +45,17 @@ def fetch_historical(symbol: str, period: str = "2y", retries: int = 4) -> pd.Da
     raise last_err
 
 
-def fetch_cached(symbol: str, period: str = "2y", max_age_hours: float = 12) -> pd.DataFrame:
-    """Fetch with an on-disk CSV cache to survive rate limits across runs."""
+# Always cache the long window so any caller (snapshot, training, backtest)
+# has enough history; the per-symbol cache key ignores the requested period.
+MAX_PERIOD = "5y"
+
+
+def fetch_cached(symbol: str, period: str = MAX_PERIOD, max_age_hours: float = 12) -> pd.DataFrame:
+    """Fetch with an on-disk CSV cache to survive rate limits across runs.
+
+    Always fetches/stores ~5y so backtesting has enough data; `period` is kept
+    for API compatibility but the full cached frame is returned.
+    """
     os.makedirs(CACHE_DIR, exist_ok=True)
     path = os.path.join(CACHE_DIR, f"{symbol.replace('.', '_')}.csv")
     if os.path.exists(path):
@@ -57,7 +66,7 @@ def fetch_cached(symbol: str, period: str = "2y", max_age_hours: float = 12) -> 
             except Exception:
                 pass
     try:
-        df = fetch_historical(symbol, period)
+        df = fetch_historical(symbol, MAX_PERIOD)
         df.to_csv(path)
         return df
     except Exception:

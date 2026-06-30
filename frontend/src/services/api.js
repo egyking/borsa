@@ -60,6 +60,11 @@ export async function getMeta() {
   return { generatedAt: snap.generated_at, currency: snap.currency || "EGP" };
 }
 
+export async function getEvaluation() {
+  const snap = await loadSnapshot();
+  return snap.evaluation || null;
+}
+
 // ---- Currency helpers (EGX trades in Egyptian Pounds) --------------------
 export function fmtEGP(value, digits = 2) {
   if (value == null || Number.isNaN(value)) return "—";
