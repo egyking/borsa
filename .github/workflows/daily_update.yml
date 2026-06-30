@@ -23,12 +23,35 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Cache price data (avoids Yahoo Finance rate limits on re-runs)
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: price-cache-${{ github.run_id }}
+          restore-keys: |
+            price-cache-
+
       - name: Install dependencies
         run: pip install -r backend/requirements.txt
 
       - name: Write Firebase service account (optional)
         if: ${{ env.FIREBASE_SERVICE_ACCOUNT != '' }}
         run: printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > firebase-service-account.json
+
+      - name: Pre-fetch gold & FX data (must succeed before stocks to avoid rate-limit starvation)
+        run: |
+          cd backend
+          python - <<'EOF'
+          from data_fetcher import fetch_cached
+          import time
+          for sym in ["GC=F", "EGP=X"]:
+              try:
+                  df = fetch_cached(sym, max_age_hours=0)
+                  print(f"  ok {sym}: {len(df)} rows")
+              except Exception as e:
+                  print(f"  WARN {sym}: {e}")
+              time.sleep(8)
+          EOF
 
       - name: Train models
         run: python backend/train_model.py

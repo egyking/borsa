@@ -82,6 +82,18 @@ def generate(run_eval: bool = True, run_news: bool = True) -> dict:
         except Exception as e:
             print(f"  FAILED macro news: {e}")
 
+    # Fetch gold FIRST so rate-limit exhaustion from 24 stock tickers doesn't
+    # leave it empty.  Gold needs GC=F + EGP=X; both are pre-fetched here so
+    # the later get_gold_snapshot() call reads from the on-disk cache.
+    gold = None
+    try:
+        from gold import get_gold_snapshot
+        gold_macro = macro_news["gold"] if macro_news else None
+        gold = get_gold_snapshot(gold_macro)
+        print("  ok gold")
+    except Exception as e:
+        print(f"  FAILED gold: {e}")
+
     stocks = []
     fetched = {}
     for sym in EGX_SYMBOLS:
@@ -93,15 +105,6 @@ def generate(run_eval: bool = True, run_news: bool = True) -> dict:
         except Exception as e:
             print(f"  FAILED {sym}: {e}")
         time.sleep(3)
-
-    gold = None
-    try:
-        from gold import get_gold_snapshot
-        gold_macro = macro_news["gold"] if macro_news else None
-        gold = get_gold_snapshot(gold_macro)
-        print("  ok gold")
-    except Exception as e:
-        print(f"  FAILED gold: {e}")
 
     evaluation = None
     if run_eval and model_short is not None and fetched:
