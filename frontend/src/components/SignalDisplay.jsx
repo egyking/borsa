@@ -7,6 +7,8 @@ export default function SignalDisplay({ title, data, subtitle }) {
   const c = SIGNAL_COLORS[s] || SIGNAL_COLORS.hold;
   const risk = data.risk || {};
   const reasons = data.reasons || [];
+  const news = data.news;
+  const NEWS_COLOR = { "إيجابية": "text-emerald-400", "سلبية": "text-red-400", "محايدة": "text-gray-400" };
 
   return (
     <div className={`${c.bg} rounded-xl p-4 border ${c.border}`}>
@@ -28,6 +30,17 @@ export default function SignalDisplay({ title, data, subtitle }) {
         <span className="text-yellow-400">انتظار {((data.prob_hold || 0) * 100).toFixed(0)}%</span>
         <span className="text-red-400">بيع {((data.prob_sell || 0) * 100).toFixed(0)}%</span>
       </div>
+
+      {news && news.n_articles > 0 && (
+        <p className="text-[11px] mb-2 flex items-center gap-1">
+          <span>📰</span>
+          <span className="text-gray-400">المعنويات الإخبارية:</span>
+          <span className={`font-semibold ${NEWS_COLOR[news.label] || "text-gray-300"}`}>{news.label}</span>
+          <span className="text-gray-600">
+            ({news.source === "company" ? "أخبار الشركة" : "أخبار عامة"} · {news.n_articles} مقال)
+          </span>
+        </p>
+      )}
 
       {(risk.stop_loss || risk.take_profit) && (
         <div className="grid grid-cols-3 gap-2 mb-3 text-center">

@@ -12,17 +12,31 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import (EGX_SYMBOLS, stock_name, stock_sector, CURRENCY,
+from config import (EGX_SYMBOLS, stock_name, stock_sector, stock_search_name, CURRENCY,
                     SNAPSHOT_PATH, PUBLIC_SNAPSHOT_PATH)
 from data_fetcher import fetch_cached
 from indicators import calculate_indicators, FEATURE_COLUMNS
 from model import load_models, predict_both_timeframes
 
+# Long-horizon calls are 60-day fundamentals -- less reactive to today's
+# headlines than the 5-day speculation horizon, so news moves it less.
+NEWS_WEIGHT_SHORT = 1.0
+NEWS_WEIGHT_LONG = 0.4
 
-def build_stock(symbol: str, model_short, model_long, scaler) -> dict:
+
+def build_stock(symbol: str, model_short, model_long, scaler, macro_egypt=None) -> dict:
     df = fetch_cached(symbol, period="2y", max_age_hours=10)
     enriched = calculate_indicators(df)
     rec = predict_both_timeframes(df, model_short, model_long, scaler)
+
+    if macro_egypt is not None:
+        try:
+            from news_sentiment import get_company_sentiment, apply_news_adjustment
+            sentiment = get_company_sentiment(stock_search_name(symbol), macro_egypt)
+            rec["short_term"] = apply_news_adjustment(rec["short_term"], sentiment, NEWS_WEIGHT_SHORT)
+            rec["long_term"] = apply_news_adjustment(rec["long_term"], sentiment, NEWS_WEIGHT_LONG)
+        except Exception as e:
+            print(f"    news adjustment skipped for {symbol}: {e}")
 
     latest = df.iloc[-1]
     prev = df.iloc[-2] if len(df) > 1 else latest
@@ -52,16 +66,28 @@ def build_stock(symbol: str, model_short, model_long, scaler) -> dict:
     }
 
 
-def generate(run_eval: bool = True) -> dict:
+def generate(run_eval: bool = True, run_news: bool = True) -> dict:
     model_short, model_long, scaler = load_models()
     if model_short is None:
         print("WARNING: no ML model found — using rule-based (TA) recommendations.")
+
+    macro_news = None
+    if run_news:
+        try:
+            from news_sentiment import get_macro_sentiment
+            print("  fetching macro news sentiment (GDELT)...")
+            macro_news = get_macro_sentiment()
+            print(f"  ok macro news: egypt={macro_news['egypt']['score']} "
+                  f"gold={macro_news['gold']['score']}")
+        except Exception as e:
+            print(f"  FAILED macro news: {e}")
 
     stocks = []
     fetched = {}
     for sym in EGX_SYMBOLS:
         try:
-            stocks.append(build_stock(sym, model_short, model_long, scaler))
+            macro_egypt = macro_news["egypt"] if macro_news else None
+            stocks.append(build_stock(sym, model_short, model_long, scaler, macro_egypt))
             fetched[sym] = fetch_cached(sym)  # cached, no extra network
             print(f"  ok {sym}")
         except Exception as e:
@@ -71,7 +97,8 @@ def generate(run_eval: bool = True) -> dict:
     gold = None
     try:
         from gold import get_gold_snapshot
-        gold = get_gold_snapshot()
+        gold_macro = macro_news["gold"] if macro_news else None
+        gold = get_gold_snapshot(gold_macro)
         print("  ok gold")
     except Exception as e:
         print(f"  FAILED gold: {e}")
@@ -92,6 +119,7 @@ def generate(run_eval: bool = True) -> dict:
         "stocks": stocks,
         "gold": gold,
         "evaluation": evaluation,
+        "macro_news": macro_news,
     }
 
 

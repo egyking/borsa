@@ -37,7 +37,7 @@ def _gold_gram_series() -> pd.DataFrame:
     return out, gold, fx
 
 
-def get_gold_snapshot() -> dict:
+def get_gold_snapshot(macro_sentiment: dict = None) -> dict:
     series, gold, fx = _gold_gram_series()
     enriched = calculate_indicators(series)
 
@@ -51,6 +51,16 @@ def get_gold_snapshot() -> dict:
 
     short = rule_based_recommendation(enriched, "short", SHORT_TH)
     long = rule_based_recommendation(enriched, "long", LONG_TH)
+
+    # Gold is famously news/geopolitics sensitive -- weight it accordingly.
+    if macro_sentiment is not None:
+        try:
+            from news_sentiment import apply_news_adjustment
+            sentiment = {**macro_sentiment, "source": "macro"}
+            short = apply_news_adjustment(short, sentiment, weight=1.0)
+            long = apply_news_adjustment(long, sentiment, weight=0.6)
+        except Exception as e:
+            print(f"    gold news adjustment skipped: {e}")
 
     history = [
         {"date": str(idx.date()), "close": round(float(v), 2)}

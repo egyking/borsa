@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { RefreshCw, TrendingUp, TrendingDown, BarChart3, AlertCircle, Clock } from "lucide-react";
+import { RefreshCw, TrendingUp, TrendingDown, BarChart3, AlertCircle, Clock, Newspaper } from "lucide-react";
 import StockCard from "../components/StockCard";
 import GoldCard from "../components/GoldCard";
 import ModelPerformance from "../components/ModelPerformance";
@@ -12,6 +12,7 @@ export default function Dashboard() {
   const [stocks, setStocks] = useState([]);
   const [gold, setGold] = useState(null);
   const [evaluation, setEvaluation] = useState(null);
+  const [macroNews, setMacroNews] = useState(null);
   const [meta, setMeta] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -24,6 +25,7 @@ export default function Dashboard() {
       setStocks(snap.stocks || []);
       setGold(snap.gold || null);
       setEvaluation(snap.evaluation || null);
+      setMacroNews(snap.macro_news || null);
       setMeta({ generatedAt: snap.generated_at, currency: snap.currency });
     } catch {
       setError("تعذّر تحميل البيانات. لم يتم توليد ملف snapshot.json بعد.");
@@ -90,6 +92,8 @@ export default function Dashboard() {
         </div>
       )}
 
+      {!loading && !error && <MacroNewsBar macroNews={macroNews} />}
+
       {!loading && !error && <TopOpportunities stocks={stocks} gold={gold} navigate={navigate} />}
 
       {!loading && <ModelPerformance evaluation={evaluation} />}
@@ -125,6 +129,33 @@ export default function Dashboard() {
       <p className="text-gray-600 text-[11px] text-center mt-8">
         هذه توصيات آلية لأغراض تعليمية فقط وليست نصيحة استثمارية. القرار ومسؤوليته عليك.
       </p>
+    </div>
+  );
+}
+
+const NEWS_COLOR = { "إيجابية": "text-emerald-400", "سلبية": "text-red-400", "محايدة": "text-gray-400" };
+
+function MacroNewsBar({ macroNews }) {
+  const egypt = macroNews?.egypt;
+  const gold = macroNews?.gold;
+  if (!egypt?.n_articles && !gold?.n_articles) return null;
+  return (
+    <div className="flex flex-wrap items-center gap-4 bg-gray-800/30 border border-gray-700/40 rounded-xl px-4 py-2.5 mb-6 text-xs">
+      <span className="flex items-center gap-1.5 text-gray-400">
+        <Newspaper size={14} /> معنويات الأخبار العالمية:
+      </span>
+      {egypt?.n_articles > 0 && (
+        <span>
+          اقتصاد مصر:{" "}
+          <span className={`font-semibold ${NEWS_COLOR[egypt.label] || "text-gray-300"}`}>{egypt.label}</span>
+        </span>
+      )}
+      {gold?.n_articles > 0 && (
+        <span>
+          أسواق الذهب والفائدة:{" "}
+          <span className={`font-semibold ${NEWS_COLOR[gold.label] || "text-gray-300"}`}>{gold.label}</span>
+        </span>
+      )}
     </div>
   );
 }
