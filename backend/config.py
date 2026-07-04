@@ -59,6 +59,18 @@ EGX_STOCKS_INFO = {
     # Healthcare
     "ISPH.CA": ("ابن سينا فارما", "رعاية صحية", "Ibnsina Pharma Egypt"),
     "CLHO.CA": ("مستشفى كليوباترا", "رعاية صحية", "Cleopatra Hospitals Group Egypt"),
+    # Food / consumer staples
+    "POUL.CA": ("القاهرة للدواجن", "سلع استهلاكية", "Cairo Poultry Egypt food"),
+    # Tourism / hospitality
+    "AMER.CA": ("أمريك جروب للضيافة والسياحة", "سياحة", "Amer Group Egypt hospitality"),
+    # Real estate (additional)
+    "MNHD.CA": ("مدينة نصر للإسكان والتعمير", "عقارات", "Medinet Nasr Housing Egypt"),
+    # Insurance
+    "ARCO.CA": ("إعادة التأمين العربية", "تأمين", "Arab Reinsurance Company Egypt"),
+    # Energy / utilities
+    "GTHE.CA": ("غاز مصر", "طاقة", "Egypt Gas Company"),
+    # Financial services (investment banking)
+    "BTFH.CA": ("بيلتون المالية القابضة", "خدمات مالية", "Beltone Financial Holding Egypt"),
 }
 
 EGX_STOCKS = {sym: info[0] for sym, info in EGX_STOCKS_INFO.items()}

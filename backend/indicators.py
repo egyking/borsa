@@ -60,13 +60,40 @@ def calculate_indicators(df: pd.DataFrame) -> pd.DataFrame:
     # Price rate of change
     data["roc_10"] = close.pct_change(10) * 100
 
-    # ATR (Average True Range)
+    # ATR (Average True Range) — also used by ADX
     tr = pd.concat([
         high - low,
         (high - close.shift()).abs(),
         (low - close.shift()).abs(),
     ], axis=1).max(axis=1)
     data["atr"] = tr.rolling(14).mean()
+
+    # ADX (Average Directional Index) — trend strength
+    _up  = high.diff()
+    _dn  = -low.diff()
+    _plus_dm  = _up.where((_up > _dn)  & (_up > 0), 0.0)
+    _minus_dm = _dn.where((_dn > _up) & (_dn > 0), 0.0)
+    _atr_ema  = tr.ewm(alpha=1 / 14, adjust=False).mean()
+    _plus_di  = 100 * _plus_dm.ewm(alpha=1 / 14, adjust=False).mean() / _atr_ema.replace(0, np.nan)
+    _minus_di = 100 * _minus_dm.ewm(alpha=1 / 14, adjust=False).mean() / _atr_ema.replace(0, np.nan)
+    _dx = 100 * (_plus_di - _minus_di).abs() / (_plus_di + _minus_di).replace(0, np.nan)
+    data["adx"] = _dx.ewm(alpha=1 / 14, adjust=False).mean()
+
+    # Williams %R — momentum oscillator
+    _h14 = high.rolling(14).max()
+    _l14 = low.rolling(14).min()
+    data["williams_r"] = -100 * (_h14 - close) / (_h14 - _l14).replace(0, np.nan)
+
+    # Money Flow Index — volume-weighted momentum
+    _tp  = (high + low + close) / 3
+    _mf  = _tp * volume
+    _pos = _mf.where(_tp.diff() > 0, 0.0).rolling(14).sum()
+    _neg = _mf.where(_tp.diff() <= 0, 0.0).rolling(14).sum()
+    data["mfi"] = 100 - (100 / (1 + _pos / _neg.replace(0, np.nan)))
+
+    # Chaikin Money Flow — buying / selling pressure
+    _clv = ((close - low) - (high - close)) / (high - low).replace(0, np.nan)
+    data["cmf"] = (_clv * volume).rolling(20).sum() / volume.rolling(20).sum().replace(0, np.nan)
 
     data.dropna(inplace=True)
     return data
@@ -80,6 +107,7 @@ FEATURE_COLUMNS = [
     "stoch_k", "stoch_d",
     "volume_ratio", "obv", "obv_sma_20",
     "roc_10", "atr",
+    "adx", "williams_r", "mfi", "cmf",
 ]
 
 
@@ -99,9 +127,15 @@ def rule_based_signals(data: pd.DataFrame) -> list[str]:
 
     rsi = float(r.get("rsi", 50))
     if rsi < 30:
-        reasons.append(f"مؤشر RSI عند {rsi:.0f} (تشبّع بيعي — فرصة شراء محتملة)")
+        reasons.append(f"RSI عند {rsi:.0f} (تشبّع بيعي — فرصة شراء محتملة)")
     elif rsi > 70:
-        reasons.append(f"مؤشر RSI عند {rsi:.0f} (تشبّع شرائي — حذر من التصحيح)")
+        reasons.append(f"RSI عند {rsi:.0f} (تشبّع شرائي — حذر من التصحيح)")
+
+    mfi = float(r.get("mfi", 50))
+    if mfi < 20:
+        reasons.append(f"MFI عند {mfi:.0f} (تدفق بيعي قوي — ضغط شراء محتمل)")
+    elif mfi > 80:
+        reasons.append(f"MFI عند {mfi:.0f} (تدفق شرائي مشبع — احتمال تصحيح)")
 
     if r.get("macd_hist", 0) > 0:
         reasons.append("MACD إيجابي (زخم صاعد)")
@@ -120,17 +154,29 @@ def rule_based_signals(data: pd.DataFrame) -> list[str]:
     else:
         reasons.append("السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)")
 
-    stoch = float(r.get("stoch_k", 50))
-    if stoch < 20:
-        reasons.append("ستوكاستيك في منطقة تشبّع بيعي")
-    elif stoch > 80:
-        reasons.append("ستوكاستيك في منطقة تشبّع شرائي")
+    adx = float(r.get("adx", 20))
+    if adx > 30:
+        reasons.append(f"ADX عند {adx:.0f} (اتجاه قوي ومحدد)")
+    elif adx < 20:
+        reasons.append(f"ADX عند {adx:.0f} (السوق يتأرجح — لا اتجاه واضح)")
+
+    wr = float(r.get("williams_r", -50))
+    if wr < -80:
+        reasons.append("Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)")
+    elif wr > -20:
+        reasons.append("Williams %R في منطقة تشبّع شرائي (تراجع محتمل)")
+
+    cmf = float(r.get("cmf", 0))
+    if abs(cmf) > 0.15:
+        reasons.append(
+            f"CMF عند {cmf:+.2f} ({'ضغط شرائي قوي' if cmf > 0 else 'ضغط بيعي قوي'})"
+        )
 
     vr = float(r.get("volume_ratio", 1))
     if vr > 1.5:
         reasons.append(f"حجم تداول مرتفع ({vr:.1f}× المتوسط)")
 
-    return reasons[:5]
+    return reasons[:6]
 
 
 def compute_risk(data: pd.DataFrame, signal: str, threshold_pct: float) -> dict:
@@ -197,7 +243,29 @@ def rule_based_recommendation(data: pd.DataFrame, horizon: str = "short",
 
     score += 0.5 if float(r.get("roc_10", 0)) > 0 else -0.5
 
-    max_score = 7.0
+    # MFI (volume-weighted momentum)
+    mfi = float(r.get("mfi", 50))
+    if mfi < 20:
+        score += 1.0
+    elif mfi < 35:
+        score += 0.4
+    elif mfi > 80:
+        score -= 1.0
+    elif mfi > 65:
+        score -= 0.4
+
+    # CMF (buying / selling pressure from volume)
+    cmf = float(r.get("cmf", 0))
+    score += 0.8 * cmf  # ranges roughly −1 to +1
+
+    # Williams %R
+    wr = float(r.get("williams_r", -50))
+    if wr < -80:
+        score += 0.5
+    elif wr > -20:
+        score -= 0.5
+
+    max_score = 9.5
     norm = max(-1.0, min(1.0, score / max_score))
     th = 0.18
     if norm >= th:

@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   BookOpen, Plus, Trash2, TrendingUp, TrendingDown,
-  ArrowRight, X, ChevronDown,
+  ArrowRight, X, ChevronDown, Pencil,
 } from "lucide-react";
-import { getTrades, addTrade, deleteTrade } from "../services/journal";
+import { getTrades, addTrade, updateTrade, deleteTrade } from "../services/journal";
 import { loadSnapshot, fmtEGP } from "../services/api";
 
 const HORIZON_LABEL = { short: "مضاربة", long: "استثمار" };
@@ -35,21 +35,24 @@ function currentPrice(trade, snap) {
   return s ? s.close : null;
 }
 
-// ── Add-trade modal ─────────────────────────────────────────────────────────
+// ── Add / Edit modal ─────────────────────────────────────────────────────────
 
-function AddModal({ snap, onClose, onSaved }) {
+function TradeModal({ snap, onClose, onSaved, existing }) {
+  const isEdit = !!existing;
   const stocks  = snap?.stocks || [];
   const hasGold = !!snap?.gold;
 
-  const [symbol,    setSymbol]    = useState(stocks[0]?.symbol || "");
-  const [isGold,    setIsGold]    = useState(false);
-  const [karat,     setKarat]     = useState("21k");
-  const [action,    setAction]    = useState("buy");
-  const [horizon,   setHorizon]   = useState("short");
-  const [amount,    setAmount]    = useState("");
-  const [price,     setPrice]     = useState("");
-  const [date,      setDate]      = useState(new Date().toISOString().slice(0, 10));
-  const [notes,     setNotes]     = useState("");
+  const initIsGold = isEdit ? existing.symbol === "gold" : false;
+
+  const [symbol,  setSymbol]  = useState(isEdit && !initIsGold ? existing.symbol : (stocks[0]?.symbol || ""));
+  const [isGold,  setIsGold]  = useState(initIsGold);
+  const [karat,   setKarat]   = useState(isEdit && existing.karat ? existing.karat : "21k");
+  const [action,  setAction]  = useState(isEdit ? existing.action  : "buy");
+  const [horizon, setHorizon] = useState(isEdit ? existing.horizon : "short");
+  const [amount,  setAmount]  = useState(isEdit ? String(existing.amount) : "");
+  const [price,   setPrice]   = useState(isEdit ? String(existing.price)  : "");
+  const [date,    setDate]    = useState(isEdit ? existing.date : new Date().toISOString().slice(0, 10));
+  const [notes,   setNotes]   = useState(isEdit ? (existing.notes || "") : "");
 
   // derive asset info
   const asset = isGold
@@ -62,10 +65,11 @@ function AddModal({ snap, onClose, onSaved }) {
 
   const rec = asset ? (horizon === "short" ? asset.short_term : asset.long_term) : null;
 
-  // pre-fill price when asset changes
+  // Pre-fill price when asset/karat changes (add mode only — preserve original price in edit mode)
   useEffect(() => {
+    if (isEdit) return;
     setPrice(assetPrice ? String(Math.round(assetPrice * 100) / 100) : "");
-  }, [symbol, isGold, karat, horizon]);
+  }, [symbol, isGold, karat]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const units = amount && price ? (parseFloat(amount) / parseFloat(price)) : 0;
 
@@ -80,7 +84,7 @@ function AddModal({ snap, onClose, onSaved }) {
     const a = parseFloat(amount);
     if (!a || !p) return;
 
-    addTrade({
+    const tradeData = {
       symbol:         isGold ? "gold" : symbol,
       name:           isGold ? "الذهب" : (asset?.name || symbol),
       action,
@@ -89,12 +93,18 @@ function AddModal({ snap, onClose, onSaved }) {
       amount:         a,
       price:          p,
       units:          parseFloat((a / p).toFixed(4)),
-      rec_signal:     rec?.signal || null,
-      rec_confidence: rec?.confidence || null,
+      rec_signal:     rec?.signal      || null,
+      rec_confidence: rec?.confidence  || null,
       rec_entry:      rec?.risk?.entry || null,
       date,
       notes,
-    });
+    };
+
+    if (isEdit) {
+      updateTrade(existing.id, tradeData);
+    } else {
+      addTrade(tradeData);
+    }
     onSaved();
     onClose();
   }
@@ -103,7 +113,9 @@ function AddModal({ snap, onClose, onSaved }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
       <div className="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-gray-800">
-          <h3 className="font-bold text-lg">تسجيل صفقة جديدة</h3>
+          <h3 className="font-bold text-lg">
+            {isEdit ? "تعديل الصفقة" : "تسجيل صفقة جديدة"}
+          </h3>
           <button onClick={onClose} className="text-gray-500 hover:text-white">
             <X size={20} />
           </button>
@@ -279,7 +291,7 @@ function AddModal({ snap, onClose, onSaved }) {
             type="submit"
             className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 rounded-xl transition"
           >
-            حفظ الصفقة
+            {isEdit ? "حفظ التعديلات" : "حفظ الصفقة"}
           </button>
         </form>
       </div>
@@ -289,7 +301,7 @@ function AddModal({ snap, onClose, onSaved }) {
 
 // ── Trade card ───────────────────────────────────────────────────────────────
 
-function TradeCard({ trade, snap, onDelete }) {
+function TradeCard({ trade, snap, onDelete, onEdit }) {
   const curPrice = currentPrice(trade, snap);
   const plAbs = curPrice ? (curPrice - trade.price) * trade.units : null;
   const plPct = curPrice ? ((curPrice - trade.price) / trade.price) * 100 : null;
@@ -328,8 +340,16 @@ function TradeCard({ trade, snap, onDelete }) {
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-500">{trade.date}</span>
           <button
+            onClick={() => onEdit(trade)}
+            className="text-gray-600 hover:text-blue-400 transition"
+            title="تعديل"
+          >
+            <Pencil size={14} />
+          </button>
+          <button
             onClick={() => onDelete(trade.id)}
             className="text-gray-600 hover:text-red-400 transition"
+            title="حذف"
           >
             <Trash2 size={15} />
           </button>
@@ -412,10 +432,11 @@ function TradeCard({ trade, snap, onDelete }) {
 // ── Main page ────────────────────────────────────────────────────────────────
 
 export default function Journal() {
-  const navigate  = useNavigate();
-  const [trades,  setTrades]  = useState([]);
-  const [snap,    setSnap]    = useState(null);
-  const [modal,   setModal]   = useState(false);
+  const navigate   = useNavigate();
+  const [trades,   setTrades]   = useState([]);
+  const [snap,     setSnap]     = useState(null);
+  const [addModal, setAddModal] = useState(false);
+  const [editTrade, setEditTrade] = useState(null);
 
   useEffect(() => {
     setTrades(getTrades());
@@ -425,19 +446,31 @@ export default function Journal() {
   function reload() { setTrades(getTrades()); }
 
   function handleDelete(id) {
+    if (!window.confirm("هل أنت متأكد من حذف هذه الصفقة؟")) return;
     deleteTrade(id);
     reload();
   }
+
+  function handleEdit(trade) { setEditTrade(trade); }
+  function handleEditClose() { setEditTrade(null); }
 
   const totalBuy  = trades.filter(t => t.action === "buy").reduce((s, t) => s + t.amount, 0);
   const totalSell = trades.filter(t => t.action === "sell").reduce((s, t) => s + t.amount, 0);
 
   return (
     <div>
-      {modal && (
-        <AddModal
+      {addModal && (
+        <TradeModal
           snap={snap}
-          onClose={() => setModal(false)}
+          onClose={() => setAddModal(false)}
+          onSaved={reload}
+        />
+      )}
+      {editTrade && (
+        <TradeModal
+          snap={snap}
+          existing={editTrade}
+          onClose={handleEditClose}
           onSaved={reload}
         />
       )}
@@ -458,7 +491,7 @@ export default function Journal() {
           </div>
         </div>
         <button
-          onClick={() => setModal(true)}
+          onClick={() => setAddModal(true)}
           className="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-2 rounded-xl text-sm font-medium transition"
         >
           <Plus size={16} /> صفقة جديدة
@@ -495,6 +528,7 @@ export default function Journal() {
               trade={t}
               snap={snap}
               onDelete={handleDelete}
+              onEdit={handleEdit}
             />
           ))}
         </div>

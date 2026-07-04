@@ -26,3 +26,10 @@ export function deleteTrade(id) {
     JSON.stringify(getTrades().filter((t) => t.id !== id))
   );
 }
+
+export function updateTrade(id, updates) {
+  const trades = getTrades().map((t) =>
+    t.id === id ? { ...t, ...updates, id, createdAt: t.createdAt } : t
+  );
+  localStorage.setItem(KEY, JSON.stringify(trades));
+}
