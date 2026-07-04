@@ -1,4 +1,4 @@
-import { TrendingUp } from "lucide-react";
+import { TrendingUp, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Layout({ children }) {
@@ -11,7 +11,13 @@ export default function Layout({ children }) {
             <h1 className="text-lg font-bold">بورصة</h1>
             <span className="text-gray-500 text-xs hidden sm:inline">مستشار أسهم وذهب السوق المصري</span>
           </Link>
-          <span className="text-gray-500 text-xs">تحديث يومي آلي</span>
+          <Link
+            to="/journal"
+            className="flex items-center gap-1.5 text-gray-400 hover:text-emerald-400 transition text-sm"
+          >
+            <BookOpen size={16} />
+            <span className="hidden sm:inline">دفتر صفقاتي</span>
+          </Link>
         </div>
       </header>
       <main className="max-w-6xl mx-auto px-4 py-6">{children}</main>
