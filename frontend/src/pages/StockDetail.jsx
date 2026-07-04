@@ -4,6 +4,7 @@ import { ArrowRight, AlertCircle } from "lucide-react";
 import PriceChart from "../components/PriceChart";
 import IndicatorTable from "../components/IndicatorTable";
 import SignalDisplay from "../components/SignalDisplay";
+import LogTradeButton from "../components/LogTradeButton";
 import * as api from "../services/api";
 import { fmtEGP } from "../services/api";
 
@@ -70,6 +71,10 @@ export default function StockDetail() {
             </p>
           )}
         </div>
+      </div>
+
+      <div className="mb-4">
+        <LogTradeButton stock={stock} />
       </div>
 
       <div className="grid sm:grid-cols-2 gap-3 mb-6">

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight, AlertCircle, Coins } from "lucide-react";
 import PriceChart from "../components/PriceChart";
 import SignalDisplay from "../components/SignalDisplay";
+import LogTradeButton from "../components/LogTradeButton";
 import * as api from "../services/api";
 import { fmtEGP } from "../services/api";
 
@@ -75,6 +76,10 @@ export default function GoldDetail() {
             <p className="text-lg font-bold text-yellow-300">{fmtEGP(grams[k], 0)}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mb-4">
+        <LogTradeButton gold={gold} />
       </div>
 
       <div className="grid sm:grid-cols-2 gap-3 mb-6">
