@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import (EGX_SYMBOLS, stock_name, stock_sector, stock_search_name, CURRENCY,
                     SNAPSHOT_PATH, PUBLIC_SNAPSHOT_PATH)
+from market_data import MARKET_RATES
 from data_fetcher import fetch_cached
 from indicators import calculate_indicators, FEATURE_COLUMNS
 from model import load_models, predict_both_timeframes
@@ -123,6 +124,7 @@ def generate(run_eval: bool = True, run_news: bool = True) -> dict:
         "gold": gold,
         "evaluation": evaluation,
         "macro_news": macro_news,
+        "market_rates": MARKET_RATES,
     }
 
 

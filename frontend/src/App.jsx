@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import StockDetail from "./pages/StockDetail";
 import GoldDetail from "./pages/GoldDetail";
 import Journal from "./pages/Journal";
+import Funds from "./pages/Funds";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/stock/:symbol" element={<StockDetail />} />
         <Route path="/gold" element={<GoldDetail />} />
         <Route path="/journal" element={<Journal />} />
+        <Route path="/funds" element={<Funds />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Layout>
