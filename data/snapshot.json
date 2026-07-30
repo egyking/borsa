@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T16:28:01.525812+00:00",
+  "generated_at": "2026-07-30T16:47:43.469428+00:00",
   "currency": "EGP",
   "stocks": [
     {
@@ -1498,11 +1498,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.377,
-        "score": -0.05,
-        "prob_buy": 0.327,
-        "prob_hold": 0.296,
-        "prob_sell": 0.377,
+        "confidence": 0.395,
+        "score": -0.06,
+        "prob_buy": 0.335,
+        "prob_hold": 0.269,
+        "prob_sell": 0.395,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -1525,12 +1525,12 @@
         }
       },
       "long_term": {
-        "signal": "buy",
-        "confidence": 0.474,
-        "score": 0.043,
-        "prob_buy": 0.474,
-        "prob_hold": 0.096,
-        "prob_sell": 0.431,
+        "signal": "sell",
+        "confidence": 0.48,
+        "score": -0.085,
+        "prob_buy": 0.395,
+        "prob_hold": 0.124,
+        "prob_sell": 0.48,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -1539,8 +1539,8 @@
         ],
         "risk": {
           "entry": 141.25,
-          "stop_loss": 137.44,
-          "take_profit": 155.38,
+          "stop_loss": 145.06,
+          "take_profit": 127.12,
           "atr_pct": 1.8,
           "level": "low"
         },
@@ -3049,11 +3049,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.538,
-        "score": -0.324,
-        "prob_buy": 0.214,
-        "prob_hold": 0.247,
-        "prob_sell": 0.538,
+        "confidence": 0.508,
+        "score": -0.271,
+        "prob_buy": 0.237,
+        "prob_hold": 0.255,
+        "prob_sell": 0.508,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -3076,11 +3076,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.405,
-        "score": 0.196,
-        "prob_buy": 0.405,
-        "prob_hold": 0.385,
-        "prob_sell": 0.209,
+        "confidence": 0.514,
+        "score": 0.375,
+        "prob_buy": 0.514,
+        "prob_hold": 0.348,
+        "prob_sell": 0.138,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -4598,11 +4598,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.441,
-        "score": -0.067,
-        "prob_buy": 0.246,
-        "prob_hold": 0.441,
-        "prob_sell": 0.313,
+        "confidence": 0.425,
+        "score": -0.137,
+        "prob_buy": 0.219,
+        "prob_hold": 0.425,
+        "prob_sell": 0.356,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
@@ -4626,11 +4626,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.45,
-        "score": -0.159,
-        "prob_buy": 0.195,
-        "prob_hold": 0.45,
-        "prob_sell": 0.354,
+        "confidence": 0.498,
+        "score": -0.128,
+        "prob_buy": 0.187,
+        "prob_hold": 0.498,
+        "prob_sell": 0.315,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
@@ -6150,10 +6150,10 @@
       "short_term": {
         "signal": "hold",
         "confidence": 0.507,
-        "score": -0.044,
-        "prob_buy": 0.225,
+        "score": -0.09,
+        "prob_buy": 0.202,
         "prob_hold": 0.507,
-        "prob_sell": 0.268,
+        "prob_sell": 0.292,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
@@ -6177,10 +6177,10 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.436,
-        "score": -0.181,
-        "prob_buy": 0.192,
-        "prob_hold": 0.436,
+        "confidence": 0.469,
+        "score": -0.213,
+        "prob_buy": 0.159,
+        "prob_hold": 0.469,
         "prob_sell": 0.372,
         "reasons": [
           "MACD سلبي (زخم هابط)",
@@ -7700,11 +7700,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.412,
-        "score": -0.048,
-        "prob_buy": 0.27,
-        "prob_hold": 0.412,
-        "prob_sell": 0.318,
+        "confidence": 0.449,
+        "score": 0.009,
+        "prob_buy": 0.28,
+        "prob_hold": 0.449,
+        "prob_sell": 0.271,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -7726,11 +7726,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.748,
-        "score": 0.69,
-        "prob_buy": 0.748,
-        "prob_hold": 0.193,
-        "prob_sell": 0.059,
+        "confidence": 0.772,
+        "score": 0.696,
+        "prob_buy": 0.772,
+        "prob_hold": 0.152,
+        "prob_sell": 0.076,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -9247,11 +9247,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.529,
-        "score": 0.025,
-        "prob_buy": 0.248,
-        "prob_hold": 0.529,
-        "prob_sell": 0.223,
+        "confidence": 0.479,
+        "score": 0.047,
+        "prob_buy": 0.284,
+        "prob_hold": 0.479,
+        "prob_sell": 0.237,
         "reasons": [
           "RSI عند 71 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
@@ -9276,11 +9276,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.559,
-        "score": 0.226,
-        "prob_buy": 0.334,
-        "prob_hold": 0.559,
-        "prob_sell": 0.108,
+        "confidence": 0.566,
+        "score": 0.295,
+        "prob_buy": 0.365,
+        "prob_hold": 0.566,
+        "prob_sell": 0.07,
         "reasons": [
           "RSI عند 71 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
@@ -10799,12 +10799,12 @@
         }
       ],
       "short_term": {
-        "signal": "hold",
-        "confidence": 0.415,
-        "score": 0.179,
-        "prob_buy": 0.382,
-        "prob_hold": 0.415,
-        "prob_sell": 0.203,
+        "signal": "buy",
+        "confidence": 0.397,
+        "score": 0.159,
+        "prob_buy": 0.397,
+        "prob_hold": 0.366,
+        "prob_sell": 0.238,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -10812,8 +10812,8 @@
         ],
         "risk": {
           "entry": 18.99,
-          "stop_loss": null,
-          "take_profit": null,
+          "stop_loss": 18.42,
+          "take_profit": 19.46,
           "atr_pct": 2.0,
           "level": "low"
         },
@@ -10827,11 +10827,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.576,
+        "confidence": 0.584,
         "score": 0.433,
-        "prob_buy": 0.576,
-        "prob_hold": 0.282,
-        "prob_sell": 0.142,
+        "prob_buy": 0.584,
+        "prob_hold": 0.266,
+        "prob_sell": 0.151,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -12349,11 +12349,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.386,
-        "score": -0.116,
-        "prob_buy": 0.27,
-        "prob_hold": 0.344,
-        "prob_sell": 0.386,
+        "confidence": 0.388,
+        "score": -0.121,
+        "prob_buy": 0.267,
+        "prob_hold": 0.345,
+        "prob_sell": 0.388,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -12377,11 +12377,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.451,
-        "score": 0.279,
-        "prob_buy": 0.451,
-        "prob_hold": 0.376,
-        "prob_sell": 0.172,
+        "confidence": 0.459,
+        "score": 0.311,
+        "prob_buy": 0.459,
+        "prob_hold": 0.392,
+        "prob_sell": 0.149,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -13899,12 +13899,12 @@
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.399,
-        "score": -0.027,
-        "prob_buy": 0.372,
-        "prob_hold": 0.23,
-        "prob_sell": 0.399,
+        "signal": "buy",
+        "confidence": 0.383,
+        "score": 0.002,
+        "prob_buy": 0.383,
+        "prob_hold": 0.236,
+        "prob_sell": 0.381,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -13913,8 +13913,8 @@
         ],
         "risk": {
           "entry": 143.75,
-          "stop_loss": 148.93,
-          "take_profit": 140.16,
+          "stop_loss": 138.57,
+          "take_profit": 147.34,
           "atr_pct": 2.4,
           "level": "medium"
         },
@@ -13928,11 +13928,11 @@
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.527,
-        "score": -0.151,
-        "prob_buy": 0.376,
-        "prob_hold": 0.097,
-        "prob_sell": 0.527,
+        "confidence": 0.48,
+        "score": -0.07,
+        "prob_buy": 0.41,
+        "prob_hold": 0.11,
+        "prob_sell": 0.48,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -15451,11 +15451,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.386,
-        "score": 0.111,
-        "prob_buy": 0.386,
-        "prob_hold": 0.338,
-        "prob_sell": 0.275,
+        "confidence": 0.402,
+        "score": 0.138,
+        "prob_buy": 0.402,
+        "prob_hold": 0.333,
+        "prob_sell": 0.265,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -15480,11 +15480,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.811,
-        "score": 0.776,
-        "prob_buy": 0.811,
-        "prob_hold": 0.154,
-        "prob_sell": 0.035,
+        "confidence": 0.779,
+        "score": 0.742,
+        "prob_buy": 0.779,
+        "prob_hold": 0.184,
+        "prob_sell": 0.037,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -17004,11 +17004,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.41,
-        "score": -0.146,
-        "prob_buy": 0.222,
-        "prob_hold": 0.41,
-        "prob_sell": 0.368,
+        "confidence": 0.411,
+        "score": -0.123,
+        "prob_buy": 0.233,
+        "prob_hold": 0.411,
+        "prob_sell": 0.356,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -17034,11 +17034,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.38,
-        "score": -0.027,
-        "prob_buy": 0.296,
-        "prob_hold": 0.38,
-        "prob_sell": 0.323,
+        "confidence": 0.393,
+        "score": 0.036,
+        "prob_buy": 0.322,
+        "prob_hold": 0.393,
+        "prob_sell": 0.285,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -18559,11 +18559,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.365,
-        "score": -0.034,
-        "prob_buy": 0.331,
-        "prob_hold": 0.304,
-        "prob_sell": 0.365,
+        "confidence": 0.366,
+        "score": -0.044,
+        "prob_buy": 0.322,
+        "prob_hold": 0.312,
+        "prob_sell": 0.366,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -18586,11 +18586,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.532,
-        "score": 0.187,
-        "prob_buy": 0.328,
-        "prob_hold": 0.532,
-        "prob_sell": 0.14,
+        "confidence": 0.547,
+        "score": 0.225,
+        "prob_buy": 0.339,
+        "prob_hold": 0.547,
+        "prob_sell": 0.114,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -20108,11 +20108,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.431,
-        "score": -0.14,
-        "prob_buy": 0.291,
-        "prob_hold": 0.278,
-        "prob_sell": 0.431,
+        "confidence": 0.445,
+        "score": -0.177,
+        "prob_buy": 0.268,
+        "prob_hold": 0.287,
+        "prob_sell": 0.445,
         "reasons": [
           "RSI عند 86 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 83 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -20138,11 +20138,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.588,
-        "score": 0.044,
-        "prob_buy": 0.228,
-        "prob_hold": 0.588,
-        "prob_sell": 0.184,
+        "confidence": 0.537,
+        "score": 0.065,
+        "prob_buy": 0.264,
+        "prob_hold": 0.537,
+        "prob_sell": 0.199,
         "reasons": [
           "RSI عند 86 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 83 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -21663,11 +21663,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.399,
-        "score": 0.059,
-        "prob_buy": 0.33,
-        "prob_hold": 0.399,
-        "prob_sell": 0.271,
+        "confidence": 0.382,
+        "score": 0.144,
+        "prob_buy": 0.381,
+        "prob_hold": 0.382,
+        "prob_sell": 0.237,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -21690,11 +21690,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.707,
-        "score": 0.684,
-        "prob_buy": 0.707,
-        "prob_hold": 0.271,
-        "prob_sell": 0.023,
+        "confidence": 0.721,
+        "score": 0.704,
+        "prob_buy": 0.721,
+        "prob_hold": 0.262,
+        "prob_sell": 0.017,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -23212,11 +23212,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.388,
-        "score": 0.112,
-        "prob_buy": 0.362,
-        "prob_hold": 0.388,
-        "prob_sell": 0.25,
+        "confidence": 0.373,
+        "score": 0.015,
+        "prob_buy": 0.321,
+        "prob_hold": 0.373,
+        "prob_sell": 0.306,
         "reasons": [
           "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 83 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -23234,19 +23234,19 @@
         },
         "source": "ml",
         "news": {
-          "score": 0.24,
-          "label": "إيجابية",
-          "source": "company",
-          "n_articles": 5
+          "score": 0.0,
+          "label": "محايدة",
+          "source": "macro",
+          "n_articles": 0
         }
       },
       "long_term": {
-        "signal": "hold",
-        "confidence": 0.556,
-        "score": 0.419,
-        "prob_buy": 0.432,
-        "prob_hold": 0.556,
-        "prob_sell": 0.012,
+        "signal": "buy",
+        "confidence": 0.523,
+        "score": 0.514,
+        "prob_buy": 0.523,
+        "prob_hold": 0.467,
+        "prob_sell": 0.009,
         "reasons": [
           "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 83 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -23257,17 +23257,17 @@
         ],
         "risk": {
           "entry": 105.25,
-          "stop_loss": null,
-          "take_profit": null,
+          "stop_loss": 100.89,
+          "take_profit": 115.78,
           "atr_pct": 2.76,
           "level": "medium"
         },
         "source": "ml",
         "news": {
-          "score": 0.096,
+          "score": 0.0,
           "label": "محايدة",
-          "source": "company",
-          "n_articles": 5
+          "source": "macro",
+          "n_articles": 0
         }
       }
     },
@@ -24767,11 +24767,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.354,
-        "score": -0.006,
-        "prob_buy": 0.348,
-        "prob_hold": 0.298,
-        "prob_sell": 0.354,
+        "confidence": 0.401,
+        "score": -0.068,
+        "prob_buy": 0.332,
+        "prob_hold": 0.267,
+        "prob_sell": 0.401,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -24793,11 +24793,11 @@
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.435,
-        "score": -0.239,
-        "prob_buy": 0.196,
-        "prob_hold": 0.368,
-        "prob_sell": 0.435,
+        "confidence": 0.459,
+        "score": -0.256,
+        "prob_buy": 0.203,
+        "prob_hold": 0.338,
+        "prob_sell": 0.459,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
@@ -26313,12 +26313,12 @@
         }
       ],
       "short_term": {
-        "signal": "buy",
-        "confidence": 0.371,
-        "score": 0.108,
-        "prob_buy": 0.371,
-        "prob_hold": 0.367,
-        "prob_sell": 0.263,
+        "signal": "sell",
+        "confidence": 0.373,
+        "score": -0.044,
+        "prob_buy": 0.328,
+        "prob_hold": 0.299,
+        "prob_sell": 0.373,
         "reasons": [
           "MFI عند 99 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD سلبي (زخم هابط)",
@@ -26328,8 +26328,8 @@
         ],
         "risk": {
           "entry": 133.9,
-          "stop_loss": 129.96,
-          "take_profit": 137.25,
+          "stop_loss": 137.84,
+          "take_profit": 130.55,
           "atr_pct": 1.96,
           "level": "low"
         },
@@ -26342,12 +26342,12 @@
         }
       },
       "long_term": {
-        "signal": "buy",
-        "confidence": 0.496,
-        "score": 0.059,
-        "prob_buy": 0.496,
-        "prob_hold": 0.066,
-        "prob_sell": 0.438,
+        "signal": "sell",
+        "confidence": 0.445,
+        "score": -0.017,
+        "prob_buy": 0.428,
+        "prob_hold": 0.128,
+        "prob_sell": 0.445,
         "reasons": [
           "MFI عند 99 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD سلبي (زخم هابط)",
@@ -26357,8 +26357,8 @@
         ],
         "risk": {
           "entry": 133.9,
-          "stop_loss": 129.96,
-          "take_profit": 147.29,
+          "stop_loss": 137.84,
+          "take_profit": 120.51,
           "atr_pct": 1.96,
           "level": "low"
         },
@@ -27867,11 +27867,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.401,
-        "score": -0.005,
-        "prob_buy": 0.297,
-        "prob_hold": 0.401,
-        "prob_sell": 0.302,
+        "confidence": 0.408,
+        "score": -0.048,
+        "prob_buy": 0.272,
+        "prob_hold": 0.408,
+        "prob_sell": 0.32,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -27894,11 +27894,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.481,
-        "score": 0.422,
-        "prob_buy": 0.481,
-        "prob_hold": 0.461,
-        "prob_sell": 0.059,
+        "confidence": 0.567,
+        "score": 0.525,
+        "prob_buy": 0.567,
+        "prob_hold": 0.392,
+        "prob_sell": 0.041,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -29416,11 +29416,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.386,
-        "score": -0.074,
+        "confidence": 0.371,
+        "score": -0.089,
         "prob_buy": 0.27,
-        "prob_hold": 0.386,
-        "prob_sell": 0.344,
+        "prob_hold": 0.371,
+        "prob_sell": 0.359,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -29443,11 +29443,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.478,
-        "score": -0.148,
-        "prob_buy": 0.187,
-        "prob_hold": 0.478,
-        "prob_sell": 0.335,
+        "confidence": 0.485,
+        "score": -0.098,
+        "prob_buy": 0.209,
+        "prob_hold": 0.485,
+        "prob_sell": 0.307,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -30965,11 +30965,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.398,
-        "score": 0.172,
-        "prob_buy": 0.398,
-        "prob_hold": 0.376,
-        "prob_sell": 0.226,
+        "confidence": 0.399,
+        "score": 0.164,
+        "prob_buy": 0.399,
+        "prob_hold": 0.367,
+        "prob_sell": 0.234,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
@@ -30992,11 +30992,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.695,
-        "score": 0.556,
-        "prob_buy": 0.695,
-        "prob_hold": 0.166,
-        "prob_sell": 0.139,
+        "confidence": 0.663,
+        "score": 0.514,
+        "prob_buy": 0.663,
+        "prob_hold": 0.189,
+        "prob_sell": 0.148,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
@@ -32514,11 +32514,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.404,
-        "score": -0.081,
-        "prob_buy": 0.257,
-        "prob_hold": 0.404,
-        "prob_sell": 0.339,
+        "confidence": 0.383,
+        "score": -0.106,
+        "prob_buy": 0.255,
+        "prob_hold": 0.383,
+        "prob_sell": 0.362,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -32541,11 +32541,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.597,
-        "score": 0.027,
-        "prob_buy": 0.215,
-        "prob_hold": 0.597,
-        "prob_sell": 0.188,
+        "confidence": 0.581,
+        "score": 0.004,
+        "prob_buy": 0.212,
+        "prob_hold": 0.581,
+        "prob_sell": 0.207,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -34063,11 +34063,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.489,
-        "score": -0.012,
-        "prob_buy": 0.25,
-        "prob_hold": 0.489,
-        "prob_sell": 0.261,
+        "confidence": 0.491,
+        "score": 0.013,
+        "prob_buy": 0.261,
+        "prob_hold": 0.491,
+        "prob_sell": 0.248,
         "reasons": [
           "RSI عند 30 (تشبّع بيعي — فرصة شراء محتملة)",
           "MFI عند 13 (تدفق بيعي قوي — ضغط شراء محتمل)",
@@ -34093,11 +34093,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.506,
-        "score": -0.036,
-        "prob_buy": 0.229,
-        "prob_hold": 0.506,
-        "prob_sell": 0.265,
+        "confidence": 0.532,
+        "score": -0.007,
+        "prob_buy": 0.231,
+        "prob_hold": 0.532,
+        "prob_sell": 0.238,
         "reasons": [
           "RSI عند 30 (تشبّع بيعي — فرصة شراء محتملة)",
           "MFI عند 13 (تدفق بيعي قوي — ضغط شراء محتمل)",
@@ -35618,11 +35618,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.365,
-        "score": 0.096,
-        "prob_buy": 0.365,
-        "prob_hold": 0.365,
-        "prob_sell": 0.27,
+        "confidence": 0.408,
+        "score": 0.172,
+        "prob_buy": 0.408,
+        "prob_hold": 0.357,
+        "prob_sell": 0.236,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -35645,11 +35645,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.638,
-        "score": 0.616,
-        "prob_buy": 0.638,
-        "prob_hold": 0.339,
-        "prob_sell": 0.022,
+        "confidence": 0.674,
+        "score": 0.653,
+        "prob_buy": 0.674,
+        "prob_hold": 0.306,
+        "prob_sell": 0.021,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -37167,11 +37167,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.382,
-        "score": 0.08,
-        "prob_buy": 0.382,
-        "prob_hold": 0.316,
-        "prob_sell": 0.302,
+        "confidence": 0.389,
+        "score": 0.078,
+        "prob_buy": 0.389,
+        "prob_hold": 0.299,
+        "prob_sell": 0.312,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -37195,11 +37195,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.546,
-        "score": 0.444,
-        "prob_buy": 0.546,
-        "prob_hold": 0.351,
-        "prob_sell": 0.103,
+        "confidence": 0.539,
+        "score": 0.401,
+        "prob_buy": 0.539,
+        "prob_hold": 0.323,
+        "prob_sell": 0.138,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -38718,11 +38718,11 @@
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.409,
-        "score": -0.05,
-        "prob_buy": 0.27,
-        "prob_hold": 0.409,
-        "prob_sell": 0.32,
+        "confidence": 0.418,
+        "score": -0.036,
+        "prob_buy": 0.273,
+        "prob_hold": 0.418,
+        "prob_sell": 0.309,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -38745,11 +38745,11 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.378,
-        "score": 0.119,
-        "prob_buy": 0.378,
-        "prob_hold": 0.364,
-        "prob_sell": 0.258,
+        "confidence": 0.372,
+        "score": 0.07,
+        "prob_buy": 0.372,
+        "prob_hold": 0.326,
+        "prob_sell": 0.302,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -38798,7 +38798,7 @@
         "obv_sma_20": 3833546028.15,
         "roc_10": 46.2,
         "atr": 0.29,
-        "adx": 55.45,
+        "adx": 55.39,
         "williams_r": -1.55,
         "mfi": 91.57,
         "cmf": 0.47
@@ -40267,11 +40267,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.542,
-        "score": -0.303,
-        "prob_buy": 0.239,
-        "prob_hold": 0.22,
-        "prob_sell": 0.542,
+        "confidence": 0.572,
+        "score": -0.336,
+        "prob_buy": 0.236,
+        "prob_hold": 0.192,
+        "prob_sell": 0.572,
         "reasons": [
           "RSI عند 90 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 92 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -40296,12 +40296,12 @@
         }
       },
       "long_term": {
-        "signal": "hold",
-        "confidence": 0.503,
-        "score": -0.355,
-        "prob_buy": 0.071,
-        "prob_hold": 0.503,
-        "prob_sell": 0.426,
+        "signal": "sell",
+        "confidence": 0.517,
+        "score": -0.391,
+        "prob_buy": 0.126,
+        "prob_hold": 0.358,
+        "prob_sell": 0.517,
         "reasons": [
           "RSI عند 90 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 92 (تدفق شرائي مشبع — احتمال تصحيح)",
@@ -40312,8 +40312,8 @@
         ],
         "risk": {
           "entry": 4.62,
-          "stop_loss": null,
-          "take_profit": null,
+          "stop_loss": 5.05,
+          "take_profit": 4.16,
           "atr_pct": 6.22,
           "level": "high"
         },
@@ -41822,11 +41822,11 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.543,
-        "score": -0.36,
-        "prob_buy": 0.183,
-        "prob_hold": 0.274,
-        "prob_sell": 0.543,
+        "confidence": 0.512,
+        "score": -0.31,
+        "prob_buy": 0.202,
+        "prob_hold": 0.285,
+        "prob_sell": 0.512,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -41850,11 +41850,11 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.587,
-        "score": -0.094,
-        "prob_buy": 0.16,
-        "prob_hold": 0.587,
-        "prob_sell": 0.254,
+        "confidence": 0.547,
+        "score": -0.135,
+        "prob_buy": 0.159,
+        "prob_hold": 0.547,
+        "prob_sell": 0.294,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
