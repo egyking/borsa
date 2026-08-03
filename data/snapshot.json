@@ -1,44 +1,40 @@
 {
-  "generated_at": "2026-08-02T15:33:57.788462+00:00",
+  "generated_at": "2026-08-03T16:37:25.666529+00:00",
   "currency": "EGP",
   "stocks": [
     {
       "symbol": "COMI.CA",
       "name": "البنك التجاري الدولي CIB",
       "sector": "بنوك",
-      "close": 141.0,
-      "change_pct": 0.5,
-      "date": "2026-07-30",
+      "close": 141.5,
+      "change_pct": 0.35,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 67.31,
-        "macd": 2.07,
-        "macd_signal": 1.51,
-        "macd_hist": 0.56,
-        "sma_20": 136.25,
-        "sma_50": 134.04,
-        "sma_200": 120.43,
-        "ema_12": 138.53,
-        "ema_26": 136.46,
-        "bb_upper": 143.72,
-        "bb_lower": 128.78,
-        "bb_width": 0.11,
-        "stoch_k": 81.33,
-        "stoch_d": 80.79,
-        "volume_ratio": 0.67,
-        "obv": 471854738.0,
-        "obv_sma_20": 455448794.0,
-        "roc_10": 4.59,
-        "atr": 2.47,
-        "adx": 23.84,
-        "williams_r": -18.67,
-        "mfi": 72.28,
-        "cmf": 0.28
+        "rsi": 68.12,
+        "macd": 2.15,
+        "macd_signal": 1.64,
+        "macd_hist": 0.51,
+        "sma_20": 136.96,
+        "sma_50": 134.2,
+        "sma_200": 120.63,
+        "ema_12": 138.99,
+        "ema_26": 136.84,
+        "bb_upper": 143.49,
+        "bb_lower": 130.44,
+        "bb_width": 0.1,
+        "stoch_k": 86.3,
+        "stoch_d": 80.67,
+        "volume_ratio": 0.31,
+        "obv": 475439251.0,
+        "obv_sma_20": 459743247.55,
+        "roc_10": 4.2,
+        "atr": 2.46,
+        "adx": 24.34,
+        "williams_r": -13.7,
+        "mfi": 72.26,
+        "cmf": 0.32
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 70.65
-        },
         {
           "date": "2025-01-29",
           "close": 70.43
@@ -1494,26 +1490,30 @@
         {
           "date": "2026-07-30",
           "close": 141.0
+        },
+        {
+          "date": "2026-08-02",
+          "close": 141.5
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.402,
-        "score": -0.084,
-        "prob_buy": 0.319,
-        "prob_hold": 0.279,
-        "prob_sell": 0.402,
+        "confidence": 0.393,
+        "score": -0.103,
+        "prob_buy": 0.29,
+        "prob_hold": 0.317,
+        "prob_sell": 0.393,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
-          "CMF عند +0.28 (ضغط شرائي قوي)"
+          "CMF عند +0.32 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 141.0,
-          "stop_loss": 144.7,
-          "take_profit": 137.47,
-          "atr_pct": 1.75,
+          "entry": 141.5,
+          "stop_loss": 145.2,
+          "take_profit": 137.96,
+          "atr_pct": 1.74,
           "level": "low"
         },
         "source": "ml",
@@ -1526,22 +1526,22 @@
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.487,
-        "score": -0.07,
-        "prob_buy": 0.417,
-        "prob_hold": 0.095,
-        "prob_sell": 0.487,
+        "confidence": 0.454,
+        "score": -0.047,
+        "prob_buy": 0.407,
+        "prob_hold": 0.139,
+        "prob_sell": 0.454,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
-          "CMF عند +0.28 (ضغط شرائي قوي)"
+          "CMF عند +0.32 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 141.0,
-          "stop_loss": 144.7,
-          "take_profit": 126.9,
-          "atr_pct": 1.75,
+          "entry": 141.5,
+          "stop_loss": 145.2,
+          "take_profit": 127.35,
+          "atr_pct": 1.74,
           "level": "low"
         },
         "source": "ml",
@@ -1557,39 +1557,35 @@
       "symbol": "CCAP.CA",
       "name": "القلعة للاستثمارات المالية",
       "sector": "استثمار",
-      "close": 5.17,
-      "change_pct": -1.9,
-      "date": "2026-07-30",
+      "close": 5.37,
+      "change_pct": 3.87,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 48.04,
+        "rsi": 55.08,
         "macd": 0.06,
         "macd_signal": 0.08,
-        "macd_hist": -0.03,
-        "sma_20": 5.32,
+        "macd_hist": -0.02,
+        "sma_20": 5.33,
         "sma_50": 5.23,
-        "sma_200": 3.98,
-        "ema_12": 5.33,
-        "ema_26": 5.27,
-        "bb_upper": 5.63,
-        "bb_lower": 5.01,
-        "bb_width": 0.12,
-        "stoch_k": 5.45,
-        "stoch_d": 16.56,
-        "volume_ratio": 0.82,
-        "obv": 6721750676.0,
-        "obv_sma_20": 6448919997.7,
-        "roc_10": -4.61,
-        "atr": 0.16,
-        "adx": 18.9,
-        "williams_r": -94.55,
-        "mfi": 56.6,
-        "cmf": -0.32
+        "sma_200": 4.0,
+        "ema_12": 5.34,
+        "ema_26": 5.28,
+        "bb_upper": 5.62,
+        "bb_lower": 5.05,
+        "bb_width": 0.11,
+        "stoch_k": 41.82,
+        "stoch_d": 22.17,
+        "volume_ratio": 0.88,
+        "obv": 6847067832.0,
+        "obv_sma_20": 6514819461.65,
+        "roc_10": -1.1,
+        "atr": 0.17,
+        "adx": 17.82,
+        "williams_r": -58.18,
+        "mfi": 55.1,
+        "cmf": -0.34
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 2.58
-        },
         {
           "date": "2025-01-29",
           "close": 2.61
@@ -3045,27 +3041,30 @@
         {
           "date": "2026-07-30",
           "close": 5.17
+        },
+        {
+          "date": "2026-08-02",
+          "close": 5.37
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.448,
-        "score": -0.214,
-        "prob_buy": 0.234,
-        "prob_hold": 0.319,
-        "prob_sell": 0.448,
+        "confidence": 0.543,
+        "score": -0.32,
+        "prob_buy": 0.223,
+        "prob_hold": 0.234,
+        "prob_sell": 0.543,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 19 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.32 (ضغط بيعي قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.34 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 5.17,
-          "stop_loss": 5.41,
-          "take_profit": 5.04,
-          "atr_pct": 3.12,
+          "entry": 5.37,
+          "stop_loss": 5.62,
+          "take_profit": 5.24,
+          "atr_pct": 3.13,
           "level": "medium"
         },
         "source": "ml",
@@ -3078,23 +3077,22 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.548,
-        "score": 0.445,
-        "prob_buy": 0.548,
-        "prob_hold": 0.349,
-        "prob_sell": 0.103,
+        "confidence": 0.513,
+        "score": 0.383,
+        "prob_buy": 0.513,
+        "prob_hold": 0.356,
+        "prob_sell": 0.131,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 19 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.32 (ضغط بيعي قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.34 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 5.17,
-          "stop_loss": 4.93,
-          "take_profit": 5.69,
-          "atr_pct": 3.12,
+          "entry": 5.37,
+          "stop_loss": 5.12,
+          "take_profit": 5.91,
+          "atr_pct": 3.13,
           "level": "medium"
         },
         "source": "ml",
@@ -3110,39 +3108,35 @@
       "symbol": "EAST.CA",
       "name": "ايسترن كومباني (الشرقية للدخان)",
       "sector": "سلع استهلاكية",
-      "close": 36.4,
-      "change_pct": -0.98,
-      "date": "2026-07-30",
+      "close": 36.43,
+      "change_pct": 0.08,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 44.1,
+        "rsi": 47.52,
         "macd": -0.36,
         "macd_signal": -0.36,
-        "macd_hist": -0.0,
-        "sma_20": 36.88,
-        "sma_50": 37.78,
-        "sma_200": 38.21,
-        "ema_12": 36.76,
-        "ema_26": 37.12,
-        "bb_upper": 37.82,
-        "bb_lower": 35.94,
+        "macd_hist": 0.0,
+        "sma_20": 36.83,
+        "sma_50": 37.74,
+        "sma_200": 38.2,
+        "ema_12": 36.71,
+        "ema_26": 37.07,
+        "bb_upper": 37.76,
+        "bb_lower": 35.9,
         "bb_width": 0.05,
-        "stoch_k": 24.38,
-        "stoch_d": 26.63,
-        "volume_ratio": 0.88,
-        "obv": 90888194.0,
-        "obv_sma_20": 82090847.45,
-        "roc_10": 0.47,
+        "stoch_k": 26.25,
+        "stoch_d": 32.5,
+        "volume_ratio": 0.35,
+        "obv": 92099289.0,
+        "obv_sma_20": 83316686.7,
+        "roc_10": -1.27,
         "atr": 0.61,
-        "adx": 12.32,
-        "williams_r": -75.62,
-        "mfi": 69.9,
-        "cmf": 0.28
+        "adx": 12.14,
+        "williams_r": -73.75,
+        "mfi": 71.94,
+        "cmf": 0.27
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 25.63
-        },
         {
           "date": "2025-01-29",
           "close": 26.0
@@ -4598,26 +4592,30 @@
         {
           "date": "2026-07-30",
           "close": 36.4
+        },
+        {
+          "date": "2026-08-02",
+          "close": 36.43
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.398,
-        "score": -0.163,
-        "prob_buy": 0.235,
-        "prob_hold": 0.367,
-        "prob_sell": 0.398,
+        "signal": "hold",
+        "confidence": 0.407,
+        "score": -0.093,
+        "prob_buy": 0.25,
+        "prob_hold": 0.407,
+        "prob_sell": 0.343,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
+          "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
           "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
-          "CMF عند +0.28 (ضغط شرائي قوي)"
+          "CMF عند +0.27 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 36.4,
-          "stop_loss": 37.31,
-          "take_profit": 35.49,
-          "atr_pct": 1.67,
+          "entry": 36.43,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 1.66,
           "level": "low"
         },
         "source": "ml",
@@ -4630,22 +4628,22 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.484,
-        "score": -0.145,
-        "prob_buy": 0.185,
-        "prob_hold": 0.484,
-        "prob_sell": 0.33,
+        "confidence": 0.524,
+        "score": -0.14,
+        "prob_buy": 0.168,
+        "prob_hold": 0.524,
+        "prob_sell": 0.308,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
+          "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
           "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
-          "CMF عند +0.28 (ضغط شرائي قوي)"
+          "CMF عند +0.27 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 36.4,
+          "entry": 36.43,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 1.67,
+          "atr_pct": 1.66,
           "level": "low"
         },
         "source": "ml",
@@ -4661,39 +4659,35 @@
       "symbol": "HRHO.CA",
       "name": "المجموعة المالية هيرميس",
       "sector": "خدمات مالية",
-      "close": 26.2,
-      "change_pct": -0.95,
-      "date": "2026-07-30",
+      "close": 26.51,
+      "change_pct": 1.18,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 38.46,
+        "rsi": 49.79,
         "macd": -0.09,
-        "macd_signal": -0.05,
-        "macd_hist": -0.04,
-        "sma_20": 26.72,
-        "sma_50": 26.7,
+        "macd_signal": -0.06,
+        "macd_hist": -0.03,
+        "sma_20": 26.7,
+        "sma_50": 26.69,
         "sma_200": 26.94,
-        "ema_12": 26.62,
-        "ema_26": 26.71,
-        "bb_upper": 27.24,
-        "bb_lower": 26.19,
+        "ema_12": 26.6,
+        "ema_26": 26.69,
+        "bb_upper": 27.23,
+        "bb_lower": 26.17,
         "bb_width": 0.04,
-        "stoch_k": 17.61,
-        "stoch_d": 17.77,
-        "volume_ratio": 0.78,
-        "obv": 869921741.0,
-        "obv_sma_20": 872110917.8,
-        "roc_10": -0.57,
-        "atr": 0.39,
-        "adx": 11.05,
-        "williams_r": -82.39,
-        "mfi": 46.13,
-        "cmf": -0.2
+        "stoch_k": 39.44,
+        "stoch_d": 24.97,
+        "volume_ratio": 0.43,
+        "obv": 872516270.0,
+        "obv_sma_20": 873686770.0,
+        "roc_10": -0.86,
+        "atr": 0.4,
+        "adx": 11.6,
+        "williams_r": -60.56,
+        "mfi": 52.04,
+        "cmf": -0.19
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 20.75
-        },
         {
           "date": "2025-01-29",
           "close": 21.19
@@ -6149,24 +6143,27 @@
         {
           "date": "2026-07-30",
           "close": 26.2
+        },
+        {
+          "date": "2026-08-02",
+          "close": 26.51
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.532,
-        "score": -0.043,
-        "prob_buy": 0.212,
-        "prob_hold": 0.532,
-        "prob_sell": 0.255,
+        "confidence": 0.463,
+        "score": -0.134,
+        "prob_buy": 0.201,
+        "prob_hold": 0.463,
+        "prob_sell": 0.336,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.20 (ضغط بيعي قوي)"
+          "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.19 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 26.2,
+          "entry": 26.51,
           "stop_loss": null,
           "take_profit": null,
           "atr_pct": 1.5,
@@ -6182,20 +6179,19 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.449,
-        "score": -0.208,
-        "prob_buy": 0.172,
-        "prob_hold": 0.449,
-        "prob_sell": 0.38,
+        "confidence": 0.424,
+        "score": -0.216,
+        "prob_buy": 0.18,
+        "prob_hold": 0.424,
+        "prob_sell": 0.396,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.20 (ضغط بيعي قوي)"
+          "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.19 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 26.2,
+          "entry": 26.51,
           "stop_loss": null,
           "take_profit": null,
           "atr_pct": 1.5,
@@ -6214,39 +6210,35 @@
       "symbol": "TMGH.CA",
       "name": "مجموعة طلعت مصطفى",
       "sector": "عقارات",
-      "close": 97.3,
-      "change_pct": -0.3,
-      "date": "2026-07-30",
+      "close": 98.6,
+      "change_pct": 1.34,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 50.6,
-        "macd": 0.76,
-        "macd_signal": 1.08,
+        "rsi": 56.04,
+        "macd": 0.68,
+        "macd_signal": 1.0,
         "macd_hist": -0.32,
-        "sma_20": 98.65,
-        "sma_50": 96.98,
-        "sma_200": 83.42,
-        "ema_12": 98.88,
-        "ema_26": 98.12,
-        "bb_upper": 102.6,
-        "bb_lower": 94.7,
-        "bb_width": 0.08,
-        "stoch_k": 24.22,
-        "stoch_d": 29.84,
-        "volume_ratio": 1.08,
-        "obv": 540756790.0,
-        "obv_sma_20": 541856745.2,
-        "roc_10": -3.67,
-        "atr": 2.36,
-        "adx": 20.83,
-        "williams_r": -75.78,
-        "mfi": 62.36,
-        "cmf": -0.04
+        "sma_20": 98.86,
+        "sma_50": 96.97,
+        "sma_200": 83.62,
+        "ema_12": 98.84,
+        "ema_26": 98.16,
+        "bb_upper": 102.27,
+        "bb_lower": 95.44,
+        "bb_width": 0.07,
+        "stoch_k": 39.22,
+        "stoch_d": 26.83,
+        "volume_ratio": 0.43,
+        "obv": 543170519.0,
+        "obv_sma_20": 543386176.95,
+        "roc_10": -2.52,
+        "atr": 2.39,
+        "adx": 19.53,
+        "williams_r": -60.78,
+        "mfi": 64.78,
+        "cmf": -0.01
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 52.63
-        },
         {
           "date": "2025-01-29",
           "close": 53.76
@@ -7702,24 +7694,29 @@
         {
           "date": "2026-07-30",
           "close": 97.3
+        },
+        {
+          "date": "2026-08-02",
+          "close": 98.6
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.45,
-        "score": 0.034,
-        "prob_buy": 0.292,
-        "prob_hold": 0.45,
-        "prob_sell": 0.258,
+        "confidence": 0.469,
+        "score": 0.026,
+        "prob_buy": 0.278,
+        "prob_hold": 0.469,
+        "prob_sell": 0.252,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 20 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 97.3,
+          "entry": 98.6,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.42,
+          "atr_pct": 2.43,
           "level": "medium"
         },
         "source": "ml",
@@ -7732,20 +7729,21 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.735,
-        "score": 0.655,
-        "prob_buy": 0.735,
-        "prob_hold": 0.186,
-        "prob_sell": 0.079,
+        "confidence": 0.766,
+        "score": 0.697,
+        "prob_buy": 0.766,
+        "prob_hold": 0.164,
+        "prob_sell": 0.07,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 20 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 97.3,
-          "stop_loss": 93.76,
-          "take_profit": 107.03,
-          "atr_pct": 2.42,
+          "entry": 98.6,
+          "stop_loss": 95.01,
+          "take_profit": 108.46,
+          "atr_pct": 2.43,
           "level": "medium"
         },
         "source": "ml",
@@ -7761,39 +7759,35 @@
       "symbol": "SWDY.CA",
       "name": "السويدي إليكتريك",
       "sector": "صناعات",
-      "close": 93.0,
-      "change_pct": -2.05,
-      "date": "2026-07-30",
+      "close": 95.48,
+      "change_pct": 2.67,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 65.15,
-        "macd": 2.02,
-        "macd_signal": 1.74,
-        "macd_hist": 0.28,
-        "sma_20": 91.12,
-        "sma_50": 88.66,
-        "sma_200": 80.32,
-        "ema_12": 93.05,
-        "ema_26": 91.03,
-        "bb_upper": 97.15,
-        "bb_lower": 85.1,
+        "rsi": 71.72,
+        "macd": 2.07,
+        "macd_signal": 1.8,
+        "macd_hist": 0.26,
+        "sma_20": 91.52,
+        "sma_50": 88.83,
+        "sma_200": 80.43,
+        "ema_12": 93.42,
+        "ema_26": 91.36,
+        "bb_upper": 97.59,
+        "bb_lower": 85.45,
         "bb_width": 0.13,
-        "stoch_k": 55.4,
-        "stoch_d": 69.84,
-        "volume_ratio": 1.15,
-        "obv": 413313666.0,
-        "obv_sma_20": 412881469.3,
-        "roc_10": 2.76,
-        "atr": 2.1,
-        "adx": 39.78,
-        "williams_r": -44.6,
-        "mfi": 67.78,
-        "cmf": 0.18
+        "stoch_k": 79.98,
+        "stoch_d": 70.04,
+        "volume_ratio": 1.22,
+        "obv": 414814031.0,
+        "obv_sma_20": 414166681.15,
+        "roc_10": 4.45,
+        "atr": 2.21,
+        "adx": 39.35,
+        "williams_r": -20.02,
+        "mfi": 69.25,
+        "cmf": 0.22
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 79.85
-        },
         {
           "date": "2025-01-29",
           "close": 80.78
@@ -9249,26 +9243,31 @@
         {
           "date": "2026-07-30",
           "close": 93.0
+        },
+        {
+          "date": "2026-08-02",
+          "close": 95.48
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.566,
-        "score": 0.007,
+        "confidence": 0.561,
+        "score": 0.003,
         "prob_buy": 0.221,
-        "prob_hold": 0.566,
-        "prob_sell": 0.213,
+        "prob_hold": 0.561,
+        "prob_sell": 0.218,
         "reasons": [
+          "RSI عند 72 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 40 (اتجاه قوي ومحدد)",
-          "CMF عند +0.18 (ضغط شرائي قوي)"
+          "ADX عند 39 (اتجاه قوي ومحدد)",
+          "CMF عند +0.22 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 93.0,
+          "entry": 95.48,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.25,
+          "atr_pct": 2.31,
           "level": "medium"
         },
         "source": "ml",
@@ -9281,22 +9280,23 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.582,
-        "score": 0.254,
-        "prob_buy": 0.336,
-        "prob_hold": 0.582,
-        "prob_sell": 0.082,
+        "confidence": 0.643,
+        "score": 0.213,
+        "prob_buy": 0.285,
+        "prob_hold": 0.643,
+        "prob_sell": 0.072,
         "reasons": [
+          "RSI عند 72 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 40 (اتجاه قوي ومحدد)",
-          "CMF عند +0.18 (ضغط شرائي قوي)"
+          "ADX عند 39 (اتجاه قوي ومحدد)",
+          "CMF عند +0.22 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 93.0,
+          "entry": 95.48,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.25,
+          "atr_pct": 2.31,
           "level": "medium"
         },
         "source": "ml",
@@ -9312,39 +9312,35 @@
       "symbol": "FWRY.CA",
       "name": "فوري للتكنولوجيا",
       "sector": "تكنولوجيا مالية",
-      "close": 18.77,
-      "change_pct": -1.21,
-      "date": "2026-07-30",
+      "close": 19.15,
+      "change_pct": 2.02,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 38.43,
-        "macd": -0.02,
+        "rsi": 46.74,
+        "macd": -0.0,
         "macd_signal": -0.0,
-        "macd_hist": -0.01,
-        "sma_20": 19.05,
-        "sma_50": 19.13,
-        "sma_200": 17.6,
-        "ema_12": 19.0,
-        "ema_26": 19.02,
-        "bb_upper": 19.69,
-        "bb_lower": 18.4,
-        "bb_width": 0.07,
-        "stoch_k": 27.2,
-        "stoch_d": 39.2,
-        "volume_ratio": 0.55,
-        "obv": 2087160568.0,
-        "obv_sma_20": 2090890074.9,
-        "roc_10": 0.75,
-        "atr": 0.36,
-        "adx": 10.41,
-        "williams_r": -72.8,
-        "mfi": 43.74,
-        "cmf": 0.15
+        "macd_hist": 0.0,
+        "sma_20": 19.08,
+        "sma_50": 19.12,
+        "sma_200": 17.63,
+        "ema_12": 19.02,
+        "ema_26": 19.03,
+        "bb_upper": 19.65,
+        "bb_lower": 18.51,
+        "bb_width": 0.06,
+        "stoch_k": 57.6,
+        "stoch_d": 43.47,
+        "volume_ratio": 0.35,
+        "obv": 2092685847.0,
+        "obv_sma_20": 2095238540.6,
+        "roc_10": 0.84,
+        "atr": 0.38,
+        "adx": 9.97,
+        "williams_r": -42.4,
+        "mfi": 43.33,
+        "cmf": 0.17
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 8.38
-        },
         {
           "date": "2025-01-29",
           "close": 8.5
@@ -10800,25 +10796,30 @@
         {
           "date": "2026-07-30",
           "close": 18.77
+        },
+        {
+          "date": "2026-08-02",
+          "close": 19.15
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.398,
-        "score": 0.077,
-        "prob_buy": 0.34,
-        "prob_hold": 0.398,
-        "prob_sell": 0.262,
+        "confidence": 0.403,
+        "score": 0.181,
+        "prob_buy": 0.389,
+        "prob_hold": 0.403,
+        "prob_sell": 0.208,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 10 (السوق يتأرجح — لا اتجاه واضح)"
+          "MACD إيجابي (زخم صاعد)",
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 10 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند +0.17 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 18.77,
+          "entry": 19.15,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 1.93,
+          "atr_pct": 1.98,
           "level": "low"
         },
         "source": "ml",
@@ -10831,21 +10832,22 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.5,
-        "score": 0.3,
-        "prob_buy": 0.5,
-        "prob_hold": 0.301,
-        "prob_sell": 0.199,
+        "confidence": 0.416,
+        "score": 0.191,
+        "prob_buy": 0.416,
+        "prob_hold": 0.358,
+        "prob_sell": 0.225,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 10 (السوق يتأرجح — لا اتجاه واضح)"
+          "MACD إيجابي (زخم صاعد)",
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 10 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند +0.17 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 18.77,
-          "stop_loss": 18.23,
-          "take_profit": 20.65,
-          "atr_pct": 1.93,
+          "entry": 19.15,
+          "stop_loss": 18.58,
+          "take_profit": 21.06,
+          "atr_pct": 1.98,
           "level": "low"
         },
         "source": "ml",
@@ -10861,39 +10863,35 @@
       "symbol": "ADIB.CA",
       "name": "مصرف أبوظبي الإسلامي - مصر",
       "sector": "بنوك",
-      "close": 52.85,
-      "change_pct": 1.42,
-      "date": "2026-07-30",
+      "close": 53.2,
+      "change_pct": 0.66,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 79.01,
-        "macd": 1.41,
-        "macd_signal": 0.79,
+        "rsi": 82.86,
+        "macd": 1.57,
+        "macd_signal": 0.95,
         "macd_hist": 0.62,
-        "sma_20": 48.23,
-        "sma_50": 47.35,
-        "sma_200": 37.83,
-        "ema_12": 49.9,
-        "ema_26": 48.49,
-        "bb_upper": 52.71,
-        "bb_lower": 43.74,
-        "bb_width": 0.19,
-        "stoch_k": 99.56,
-        "stoch_d": 92.58,
-        "volume_ratio": 1.26,
-        "obv": 215976273.0,
-        "obv_sma_20": 202143719.8,
-        "roc_10": 13.66,
-        "atr": 1.35,
-        "adx": 27.79,
-        "williams_r": -0.44,
-        "mfi": 69.47,
-        "cmf": 0.27
+        "sma_20": 48.55,
+        "sma_50": 47.46,
+        "sma_200": 37.98,
+        "ema_12": 50.41,
+        "ema_26": 48.84,
+        "bb_upper": 53.49,
+        "bb_lower": 43.62,
+        "bb_width": 0.2,
+        "stoch_k": 97.29,
+        "stoch_d": 95.21,
+        "volume_ratio": 0.36,
+        "obv": 214677521.0,
+        "obv_sma_20": 201146836.85,
+        "roc_10": 13.43,
+        "atr": 1.33,
+        "adx": 28.46,
+        "williams_r": -2.71,
+        "mfi": 69.09,
+        "cmf": 0.31
       },
       "history": [
-        {
-          "date": "2025-01-29",
-          "close": 37.0
-        },
         {
           "date": "2025-01-30",
           "close": 38.0
@@ -12349,27 +12347,31 @@
         {
           "date": "2026-07-30",
           "close": 52.85
+        },
+        {
+          "date": "2026-08-02",
+          "close": 53.2
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.415,
-        "score": -0.097,
-        "prob_buy": 0.319,
-        "prob_hold": 0.266,
-        "prob_sell": 0.415,
+        "confidence": 0.384,
+        "score": -0.064,
+        "prob_buy": 0.32,
+        "prob_hold": 0.295,
+        "prob_sell": 0.384,
         "reasons": [
-          "RSI عند 79 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 83 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
-          "CMF عند +0.27 (ضغط شرائي قوي)"
+          "CMF عند +0.31 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 52.85,
-          "stop_loss": 54.87,
-          "take_profit": 51.53,
-          "atr_pct": 2.55,
+          "entry": 53.2,
+          "stop_loss": 55.19,
+          "take_profit": 51.87,
+          "atr_pct": 2.49,
           "level": "medium"
         },
         "source": "ml",
@@ -12382,23 +12384,23 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.438,
-        "score": 0.283,
-        "prob_buy": 0.438,
-        "prob_hold": 0.406,
-        "prob_sell": 0.156,
+        "confidence": 0.467,
+        "score": 0.316,
+        "prob_buy": 0.467,
+        "prob_hold": 0.382,
+        "prob_sell": 0.151,
         "reasons": [
-          "RSI عند 79 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 83 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
-          "CMF عند +0.27 (ضغط شرائي قوي)"
+          "CMF عند +0.31 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 52.85,
-          "stop_loss": 50.82,
-          "take_profit": 58.13,
-          "atr_pct": 2.55,
+          "entry": 53.2,
+          "stop_loss": 51.21,
+          "take_profit": 58.52,
+          "atr_pct": 2.49,
           "level": "medium"
         },
         "source": "ml",
@@ -12414,39 +12416,35 @@
       "symbol": "HDBK.CA",
       "name": "بنك التعمير والإسكان",
       "sector": "بنوك",
-      "close": 83.0,
-      "change_pct": 0.72,
-      "date": "2026-07-30",
+      "close": 84.29,
+      "change_pct": 1.55,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 41.06,
-        "macd": 0.92,
-        "macd_signal": 2.14,
-        "macd_hist": -1.22,
-        "sma_20": 145.9,
-        "sma_50": 137.26,
-        "sma_200": 95.09,
-        "ema_12": 143.56,
-        "ema_26": 142.64,
-        "bb_upper": 152.96,
-        "bb_lower": 138.85,
-        "bb_width": 0.1,
-        "stoch_k": 37.5,
-        "stoch_d": 24.89,
-        "volume_ratio": 0.43,
-        "obv": 56076577.0,
-        "obv_sma_20": 56050158.15,
-        "roc_10": -2.36,
-        "atr": 3.45,
-        "adx": 30.69,
-        "williams_r": -62.5,
-        "mfi": 45.01,
-        "cmf": -0.42
+        "rsi": 71.62,
+        "macd": -8.86,
+        "macd_signal": -11.63,
+        "macd_hist": 2.77,
+        "sma_20": 81.06,
+        "sma_50": 115.42,
+        "sma_200": 107.06,
+        "ema_12": 83.33,
+        "ema_26": 92.2,
+        "bb_upper": 85.73,
+        "bb_lower": 76.38,
+        "bb_width": 0.12,
+        "stoch_k": 92.37,
+        "stoch_d": 86.24,
+        "volume_ratio": 0.91,
+        "obv": 63305156.0,
+        "obv_sma_20": 59269900.85,
+        "roc_10": 8.31,
+        "atr": 1.8,
+        "adx": 34.58,
+        "williams_r": -7.63,
+        "mfi": 85.6,
+        "cmf": 0.37
       },
       "history": [
-        {
-          "date": "2025-01-29",
-          "close": 48.25
-        },
         {
           "date": "2025-01-30",
           "close": 48.27
@@ -13902,26 +13900,32 @@
         {
           "date": "2026-07-30",
           "close": 83.0
+        },
+        {
+          "date": "2026-08-02",
+          "close": 84.29
         }
       ],
       "short_term": {
-        "signal": "buy",
-        "confidence": 0.383,
-        "score": 0.002,
-        "prob_buy": 0.383,
-        "prob_hold": 0.236,
-        "prob_sell": 0.381,
+        "signal": "hold",
+        "confidence": 0.38,
+        "score": -0.075,
+        "prob_buy": 0.273,
+        "prob_hold": 0.38,
+        "prob_sell": 0.347,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 31 (اتجاه قوي ومحدد)",
-          "CMF عند -0.42 (ضغط بيعي قوي)"
+          "RSI عند 72 (تشبّع شرائي — حذر من التصحيح)",
+          "MFI عند 86 (تدفق شرائي مشبع — احتمال تصحيح)",
+          "MACD إيجابي (زخم صاعد)",
+          "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
+          "ADX عند 35 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 143.75,
-          "stop_loss": 138.57,
-          "take_profit": 147.34,
-          "atr_pct": 2.4,
+          "entry": 84.29,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 2.13,
           "level": "medium"
         },
         "source": "ml",
@@ -13933,23 +13937,25 @@
         }
       },
       "long_term": {
-        "signal": "sell",
-        "confidence": 0.48,
-        "score": -0.07,
-        "prob_buy": 0.41,
-        "prob_hold": 0.11,
-        "prob_sell": 0.48,
+        "signal": "buy",
+        "confidence": 0.614,
+        "score": 0.436,
+        "prob_buy": 0.614,
+        "prob_hold": 0.208,
+        "prob_sell": 0.178,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 31 (اتجاه قوي ومحدد)",
-          "CMF عند -0.42 (ضغط بيعي قوي)"
+          "RSI عند 72 (تشبّع شرائي — حذر من التصحيح)",
+          "MFI عند 86 (تدفق شرائي مشبع — احتمال تصحيح)",
+          "MACD إيجابي (زخم صاعد)",
+          "السعر تحت متوسط 200 يوم (اتجاه طويل ضعيف)",
+          "ADX عند 35 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 143.75,
-          "stop_loss": 148.93,
-          "take_profit": 129.38,
-          "atr_pct": 2.4,
+          "entry": 84.29,
+          "stop_loss": 81.6,
+          "take_profit": 92.72,
+          "atr_pct": 2.13,
           "level": "medium"
         },
         "source": "ml",
@@ -13965,39 +13971,35 @@
       "symbol": "PHDC.CA",
       "name": "بالم هيلز للتعمير",
       "sector": "عقارات",
-      "close": 14.5,
-      "change_pct": -0.75,
-      "date": "2026-07-30",
+      "close": 14.48,
+      "change_pct": -0.14,
+      "date": "2026-08-02",
       "indicators": {
         "rsi": 41.03,
-        "macd": -0.05,
-        "macd_signal": 0.01,
+        "macd": -0.07,
+        "macd_signal": -0.01,
         "macd_hist": -0.06,
         "sma_20": 14.79,
-        "sma_50": 14.97,
-        "sma_200": 10.5,
-        "ema_12": 14.74,
-        "ema_26": 14.79,
-        "bb_upper": 15.16,
-        "bb_lower": 14.43,
+        "sma_50": 14.98,
+        "sma_200": 10.53,
+        "ema_12": 14.7,
+        "ema_26": 14.77,
+        "bb_upper": 15.17,
+        "bb_lower": 14.41,
         "bb_width": 0.05,
-        "stoch_k": 16.98,
-        "stoch_d": 12.94,
-        "volume_ratio": 0.74,
-        "obv": 3679823036.0,
-        "obv_sma_20": 3736286815.15,
-        "roc_10": -4.61,
-        "atr": 0.36,
-        "adx": 13.63,
-        "williams_r": -83.02,
-        "mfi": 49.3,
-        "cmf": -0.19
+        "stoch_k": 15.09,
+        "stoch_d": 14.52,
+        "volume_ratio": 0.4,
+        "obv": 3676420280.0,
+        "obv_sma_20": 3736434518.8,
+        "roc_10": -2.88,
+        "atr": 0.34,
+        "adx": 13.04,
+        "williams_r": -84.91,
+        "mfi": 45.76,
+        "cmf": -0.18
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 6.6
-        },
         {
           "date": "2025-01-29",
           "close": 6.64
@@ -15453,27 +15455,31 @@
         {
           "date": "2026-07-30",
           "close": 14.5
+        },
+        {
+          "date": "2026-08-02",
+          "close": 14.48
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.396,
-        "score": 0.148,
-        "prob_buy": 0.396,
-        "prob_hold": 0.356,
-        "prob_sell": 0.248,
+        "confidence": 0.378,
+        "score": 0.101,
+        "prob_buy": 0.378,
+        "prob_hold": 0.344,
+        "prob_sell": 0.277,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 14 (السوق يتأرجح — لا اتجاه واضح)",
+          "ADX عند 13 (السوق يتأرجح — لا اتجاه واضح)",
           "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.19 (ضغط بيعي قوي)"
+          "CMF عند -0.18 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 14.5,
+          "entry": 14.48,
           "stop_loss": 13.97,
-          "take_profit": 14.86,
-          "atr_pct": 2.46,
+          "take_profit": 14.84,
+          "atr_pct": 2.37,
           "level": "medium"
         },
         "source": "ml",
@@ -15486,23 +15492,23 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.755,
-        "score": 0.728,
-        "prob_buy": 0.755,
-        "prob_hold": 0.219,
-        "prob_sell": 0.026,
+        "confidence": 0.759,
+        "score": 0.748,
+        "prob_buy": 0.759,
+        "prob_hold": 0.23,
+        "prob_sell": 0.011,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 14 (السوق يتأرجح — لا اتجاه واضح)",
+          "ADX عند 13 (السوق يتأرجح — لا اتجاه واضح)",
           "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.19 (ضغط بيعي قوي)"
+          "CMF عند -0.18 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 14.5,
+          "entry": 14.48,
           "stop_loss": 13.97,
-          "take_profit": 15.95,
-          "atr_pct": 2.46,
+          "take_profit": 15.93,
+          "atr_pct": 2.37,
           "level": "medium"
         },
         "source": "ml",
@@ -15518,39 +15524,35 @@
       "symbol": "OCDI.CA",
       "name": "سوديك - مدينة السادس من أكتوبر",
       "sector": "عقارات",
-      "close": 28.03,
-      "change_pct": -0.32,
-      "date": "2026-07-30",
+      "close": 29.39,
+      "change_pct": 4.85,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 60.81,
-        "macd": 1.15,
-        "macd_signal": 1.25,
-        "macd_hist": -0.11,
-        "sma_20": 27.24,
-        "sma_50": 23.98,
-        "sma_200": 20.22,
-        "ema_12": 27.55,
-        "ema_26": 26.41,
-        "bb_upper": 28.92,
-        "bb_lower": 25.57,
+        "rsi": 66.8,
+        "macd": 1.21,
+        "macd_signal": 1.24,
+        "macd_hist": -0.04,
+        "sma_20": 27.45,
+        "sma_50": 24.13,
+        "sma_200": 20.29,
+        "ema_12": 27.83,
+        "ema_26": 26.63,
+        "bb_upper": 29.13,
+        "bb_lower": 25.76,
         "bb_width": 0.12,
-        "stoch_k": 61.0,
-        "stoch_d": 69.67,
-        "volume_ratio": 0.82,
-        "obv": 184972842.0,
-        "obv_sma_20": 186365507.25,
-        "roc_10": 2.11,
-        "atr": 0.92,
-        "adx": 39.81,
-        "williams_r": -39.0,
-        "mfi": 63.4,
-        "cmf": 0.1
+        "stoch_k": 100.0,
+        "stoch_d": 75.0,
+        "volume_ratio": 2.19,
+        "obv": 193914028.0,
+        "obv_sma_20": 187925242.2,
+        "roc_10": 3.12,
+        "atr": 0.97,
+        "adx": 40.2,
+        "williams_r": -0.0,
+        "mfi": 68.24,
+        "cmf": 0.17
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 63.0
-        },
         {
           "date": "2025-01-29",
           "close": 63.17
@@ -17006,25 +17008,32 @@
         {
           "date": "2026-07-30",
           "close": 28.03
+        },
+        {
+          "date": "2026-08-02",
+          "close": 29.39
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.357,
-        "score": -0.045,
-        "prob_buy": 0.299,
-        "prob_hold": 0.357,
-        "prob_sell": 0.344,
+        "confidence": 0.386,
+        "score": -0.039,
+        "prob_buy": 0.287,
+        "prob_hold": 0.386,
+        "prob_sell": 0.327,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 40 (اتجاه قوي ومحدد)"
+          "ADX عند 40 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "CMF عند +0.17 (ضغط شرائي قوي)",
+          "حجم تداول مرتفع (2.2× المتوسط)"
         ],
         "risk": {
-          "entry": 28.03,
+          "entry": 29.39,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 3.28,
+          "atr_pct": 3.32,
           "level": "medium"
         },
         "source": "ml",
@@ -17037,21 +17046,24 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.379,
-        "score": 0.049,
-        "prob_buy": 0.335,
-        "prob_hold": 0.379,
-        "prob_sell": 0.286,
+        "confidence": 0.39,
+        "score": 0.014,
+        "prob_buy": 0.312,
+        "prob_hold": 0.39,
+        "prob_sell": 0.298,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 40 (اتجاه قوي ومحدد)"
+          "ADX عند 40 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "CMF عند +0.17 (ضغط شرائي قوي)",
+          "حجم تداول مرتفع (2.2× المتوسط)"
         ],
         "risk": {
-          "entry": 28.03,
+          "entry": 29.39,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 3.28,
+          "atr_pct": 3.32,
           "level": "medium"
         },
         "source": "ml",
@@ -17067,39 +17079,35 @@
       "symbol": "MASR.CA",
       "name": "مدينة مصر للإسكان والتعمير",
       "sector": "عقارات",
-      "close": 7.98,
-      "change_pct": -0.25,
-      "date": "2026-07-30",
+      "close": 8.07,
+      "change_pct": 1.13,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 59.26,
-        "macd": 0.22,
-        "macd_signal": 0.28,
+        "rsi": 54.92,
+        "macd": 0.2,
+        "macd_signal": 0.26,
         "macd_hist": -0.06,
-        "sma_20": 8.03,
-        "sma_50": 7.42,
-        "sma_200": 5.56,
-        "ema_12": 8.08,
-        "ema_26": 7.86,
-        "bb_upper": 8.63,
-        "bb_lower": 7.42,
-        "bb_width": 0.15,
-        "stoch_k": 34.57,
-        "stoch_d": 45.9,
-        "volume_ratio": 0.97,
-        "obv": 1927059781.0,
-        "obv_sma_20": 1930074716.3,
-        "roc_10": -4.32,
+        "sma_20": 8.06,
+        "sma_50": 7.45,
+        "sma_200": 5.58,
+        "ema_12": 8.07,
+        "ema_26": 7.87,
+        "bb_upper": 8.59,
+        "bb_lower": 7.53,
+        "bb_width": 0.13,
+        "stoch_k": 38.89,
+        "stoch_d": 39.34,
+        "volume_ratio": 0.68,
+        "obv": 1942991848.0,
+        "obv_sma_20": 1941992584.25,
+        "roc_10": -3.47,
         "atr": 0.2,
-        "adx": 25.75,
-        "williams_r": -65.43,
-        "mfi": 42.31,
-        "cmf": 0.31
+        "adx": 24.38,
+        "williams_r": -61.11,
+        "mfi": 40.01,
+        "cmf": 0.3
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 3.59
-        },
         {
           "date": "2025-01-29",
           "close": 3.66
@@ -18555,25 +18563,29 @@
         {
           "date": "2026-07-30",
           "close": 7.98
+        },
+        {
+          "date": "2026-08-02",
+          "close": 8.07
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.359,
-        "score": 0.018,
-        "prob_buy": 0.359,
-        "prob_hold": 0.3,
-        "prob_sell": 0.341,
+        "confidence": 0.374,
+        "score": 0.046,
+        "prob_buy": 0.374,
+        "prob_hold": 0.299,
+        "prob_sell": 0.328,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "CMF عند +0.31 (ضغط شرائي قوي)"
+          "CMF عند +0.30 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 7.98,
-          "stop_loss": 7.68,
-          "take_profit": 8.18,
-          "atr_pct": 2.52,
+          "entry": 8.07,
+          "stop_loss": 7.78,
+          "take_profit": 8.27,
+          "atr_pct": 2.43,
           "level": "medium"
         },
         "source": "ml",
@@ -18586,21 +18598,21 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.527,
-        "score": 0.314,
-        "prob_buy": 0.393,
-        "prob_hold": 0.527,
-        "prob_sell": 0.08,
+        "confidence": 0.585,
+        "score": 0.252,
+        "prob_buy": 0.333,
+        "prob_hold": 0.585,
+        "prob_sell": 0.082,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "CMF عند +0.31 (ضغط شرائي قوي)"
+          "CMF عند +0.30 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 7.98,
+          "entry": 8.07,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.52,
+          "atr_pct": 2.43,
           "level": "medium"
         },
         "source": "ml",
@@ -18616,39 +18628,35 @@
       "symbol": "HELI.CA",
       "name": "مصر الجديدة للإسكان (هليوبوليس)",
       "sector": "عقارات",
-      "close": 8.2,
-      "change_pct": -2.5,
-      "date": "2026-07-30",
+      "close": 8.42,
+      "change_pct": 2.68,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 73.26,
-        "macd": 0.46,
-        "macd_signal": 0.42,
+        "rsi": 74.49,
+        "macd": 0.45,
+        "macd_signal": 0.43,
         "macd_hist": 0.03,
-        "sma_20": 7.62,
-        "sma_50": 6.93,
-        "sma_200": 4.81,
-        "ema_12": 8.01,
-        "ema_26": 7.56,
-        "bb_upper": 8.94,
-        "bb_lower": 6.3,
-        "bb_width": 0.35,
-        "stoch_k": 70.59,
-        "stoch_d": 82.59,
-        "volume_ratio": 1.02,
-        "obv": 2011679117.0,
-        "obv_sma_20": 1933454991.95,
-        "roc_10": 5.94,
+        "sma_20": 7.72,
+        "sma_50": 6.97,
+        "sma_200": 4.83,
+        "ema_12": 8.08,
+        "ema_26": 7.62,
+        "bb_upper": 8.96,
+        "bb_lower": 6.48,
+        "bb_width": 0.32,
+        "stoch_k": 86.36,
+        "stoch_d": 83.85,
+        "volume_ratio": 0.76,
+        "obv": 2034757512.0,
+        "obv_sma_20": 1949561150.85,
+        "roc_10": 8.23,
         "atr": 0.3,
-        "adx": 54.06,
-        "williams_r": -29.41,
-        "mfi": 69.34,
-        "cmf": 0.12
+        "adx": 53.32,
+        "williams_r": -13.64,
+        "mfi": 69.17,
+        "cmf": 0.14
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 8.98
-        },
         {
           "date": "2025-01-29",
           "close": 9.58
@@ -20104,26 +20112,31 @@
         {
           "date": "2026-07-30",
           "close": 8.2
+        },
+        {
+          "date": "2026-08-02",
+          "close": 8.42
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.426,
-        "score": -0.146,
-        "prob_buy": 0.279,
-        "prob_hold": 0.295,
-        "prob_sell": 0.426,
+        "confidence": 0.45,
+        "score": -0.15,
+        "prob_buy": 0.3,
+        "prob_hold": 0.25,
+        "prob_sell": 0.45,
         "reasons": [
-          "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 74 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 54 (اتجاه قوي ومحدد)"
+          "ADX عند 53 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 8.2,
-          "stop_loss": 8.65,
-          "take_profit": 7.99,
-          "atr_pct": 3.68,
+          "entry": 8.42,
+          "stop_loss": 8.87,
+          "take_profit": 8.21,
+          "atr_pct": 3.54,
           "level": "medium"
         },
         "source": "ml",
@@ -20136,22 +20149,23 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.55,
-        "score": 0.022,
-        "prob_buy": 0.236,
-        "prob_hold": 0.55,
-        "prob_sell": 0.214,
+        "confidence": 0.622,
+        "score": -0.009,
+        "prob_buy": 0.185,
+        "prob_hold": 0.622,
+        "prob_sell": 0.194,
         "reasons": [
-          "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 74 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 54 (اتجاه قوي ومحدد)"
+          "ADX عند 53 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 8.2,
+          "entry": 8.42,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 3.68,
+          "atr_pct": 3.54,
           "level": "medium"
         },
         "source": "ml",
@@ -20167,39 +20181,35 @@
       "symbol": "EMFD.CA",
       "name": "إعمار مصر للتنمية",
       "sector": "عقارات",
-      "close": 11.25,
-      "change_pct": -1.57,
-      "date": "2026-07-30",
+      "close": 11.4,
+      "change_pct": 1.33,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 26.62,
-        "macd": -0.05,
-        "macd_signal": 0.02,
-        "macd_hist": -0.07,
-        "sma_20": 11.7,
-        "sma_50": 11.59,
-        "sma_200": 10.07,
-        "ema_12": 11.59,
-        "ema_26": 11.64,
-        "bb_upper": 12.08,
-        "bb_lower": 11.32,
-        "bb_width": 0.06,
-        "stoch_k": 18.48,
-        "stoch_d": 15.05,
-        "volume_ratio": 0.86,
-        "obv": 1653344832.0,
-        "obv_sma_20": 1675289532.0,
-        "roc_10": -5.22,
-        "atr": 0.24,
-        "adx": 11.0,
-        "williams_r": -81.52,
-        "mfi": 27.99,
-        "cmf": -0.18
+        "rsi": 37.41,
+        "macd": -0.06,
+        "macd_signal": 0.0,
+        "macd_hist": -0.06,
+        "sma_20": 11.69,
+        "sma_50": 11.61,
+        "sma_200": 10.08,
+        "ema_12": 11.56,
+        "ema_26": 11.62,
+        "bb_upper": 12.09,
+        "bb_lower": 11.3,
+        "bb_width": 0.07,
+        "stoch_k": 34.78,
+        "stoch_d": 19.42,
+        "volume_ratio": 0.72,
+        "obv": 1662259402.0,
+        "obv_sma_20": 1679289826.55,
+        "roc_10": -3.31,
+        "atr": 0.23,
+        "adx": 11.89,
+        "williams_r": -65.22,
+        "mfi": 36.13,
+        "cmf": -0.15
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 6.9
-        },
         {
           "date": "2025-01-29",
           "close": 7.01
@@ -21655,29 +21665,31 @@
         {
           "date": "2026-07-30",
           "close": 11.25
+        },
+        {
+          "date": "2026-08-02",
+          "close": 11.4
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.398,
-        "score": 0.158,
-        "prob_buy": 0.398,
-        "prob_hold": 0.362,
-        "prob_sell": 0.24,
+        "confidence": 0.387,
+        "score": 0.145,
+        "prob_buy": 0.387,
+        "prob_hold": 0.37,
+        "prob_sell": 0.243,
         "reasons": [
-          "RSI عند 27 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.18 (ضغط بيعي قوي)"
+          "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.15 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 11.25,
-          "stop_loss": 10.89,
-          "take_profit": 11.53,
-          "atr_pct": 2.12,
-          "level": "medium"
+          "entry": 11.4,
+          "stop_loss": 11.06,
+          "take_profit": 11.68,
+          "atr_pct": 1.99,
+          "level": "low"
         },
         "source": "ml",
         "news": {
@@ -21689,25 +21701,23 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.724,
-        "score": 0.688,
-        "prob_buy": 0.724,
-        "prob_hold": 0.24,
-        "prob_sell": 0.036,
+        "confidence": 0.677,
+        "score": 0.653,
+        "prob_buy": 0.677,
+        "prob_hold": 0.3,
+        "prob_sell": 0.024,
         "reasons": [
-          "RSI عند 27 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.18 (ضغط بيعي قوي)"
+          "ADX عند 12 (السوق يتأرجح — لا اتجاه واضح)",
+          "CMF عند -0.15 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 11.25,
-          "stop_loss": 10.89,
-          "take_profit": 12.38,
-          "atr_pct": 2.12,
-          "level": "medium"
+          "entry": 11.4,
+          "stop_loss": 11.06,
+          "take_profit": 12.54,
+          "atr_pct": 1.99,
+          "level": "low"
         },
         "source": "ml",
         "news": {
@@ -21722,39 +21732,35 @@
       "symbol": "ETEL.CA",
       "name": "المصرية للاتصالات (تليكوم مصر)",
       "sector": "اتصالات",
-      "close": 103.6,
-      "change_pct": -3.0,
-      "date": "2026-07-30",
+      "close": 113.11,
+      "change_pct": 9.18,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 67.21,
-        "macd": 2.73,
-        "macd_signal": 2.15,
-        "macd_hist": 0.58,
-        "sma_20": 99.6,
-        "sma_50": 96.5,
-        "sma_200": 79.83,
-        "ema_12": 102.21,
-        "ema_26": 99.48,
-        "bb_upper": 107.44,
-        "bb_lower": 91.77,
-        "bb_width": 0.16,
-        "stoch_k": 63.33,
-        "stoch_d": 79.29,
-        "volume_ratio": 1.73,
-        "obv": 218777557.0,
-        "obv_sma_20": 216660426.8,
-        "roc_10": 5.5,
-        "atr": 2.94,
-        "adx": 37.47,
-        "williams_r": -36.67,
-        "mfi": 77.44,
-        "cmf": -0.12
+        "rsi": 78.42,
+        "macd": 3.4,
+        "macd_signal": 2.4,
+        "macd_hist": 1.0,
+        "sma_20": 100.63,
+        "sma_50": 96.85,
+        "sma_200": 80.16,
+        "ema_12": 103.88,
+        "ema_26": 100.49,
+        "bb_upper": 109.85,
+        "bb_lower": 91.4,
+        "bb_width": 0.18,
+        "stoch_k": 95.06,
+        "stoch_d": 82.93,
+        "volume_ratio": 1.56,
+        "obv": 219532651.0,
+        "obv_sma_20": 216359081.25,
+        "roc_10": 15.07,
+        "atr": 3.51,
+        "adx": 39.25,
+        "williams_r": -4.94,
+        "mfi": 79.42,
+        "cmf": -0.05
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 31.84
-        },
         {
           "date": "2025-01-29",
           "close": 31.76
@@ -23210,26 +23216,32 @@
         {
           "date": "2026-07-30",
           "close": 103.6
+        },
+        {
+          "date": "2026-08-02",
+          "close": 113.11
         }
       ],
       "short_term": {
-        "signal": "hold",
-        "confidence": 0.364,
-        "score": -0.026,
-        "prob_buy": 0.305,
-        "prob_hold": 0.364,
-        "prob_sell": 0.331,
+        "signal": "sell",
+        "confidence": 0.355,
+        "score": -0.022,
+        "prob_buy": 0.333,
+        "prob_hold": 0.312,
+        "prob_sell": 0.355,
         "reasons": [
+          "RSI عند 78 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 37 (اتجاه قوي ومحدد)",
-          "حجم تداول مرتفع (1.7× المتوسط)"
+          "ADX عند 39 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "حجم تداول مرتفع (1.6× المتوسط)"
         ],
         "risk": {
-          "entry": 103.6,
-          "stop_loss": null,
-          "take_profit": null,
-          "atr_pct": 2.84,
+          "entry": 113.11,
+          "stop_loss": 118.38,
+          "take_profit": 110.28,
+          "atr_pct": 3.11,
           "level": "medium"
         },
         "source": "ml",
@@ -23241,23 +23253,25 @@
         }
       },
       "long_term": {
-        "signal": "buy",
-        "confidence": 0.559,
-        "score": 0.541,
-        "prob_buy": 0.559,
-        "prob_hold": 0.423,
-        "prob_sell": 0.018,
+        "signal": "hold",
+        "confidence": 0.562,
+        "score": 0.404,
+        "prob_buy": 0.421,
+        "prob_hold": 0.562,
+        "prob_sell": 0.017,
         "reasons": [
+          "RSI عند 78 (تشبّع شرائي — حذر من التصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 37 (اتجاه قوي ومحدد)",
-          "حجم تداول مرتفع (1.7× المتوسط)"
+          "ADX عند 39 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "حجم تداول مرتفع (1.6× المتوسط)"
         ],
         "risk": {
-          "entry": 103.6,
-          "stop_loss": 99.19,
-          "take_profit": 113.96,
-          "atr_pct": 2.84,
+          "entry": 113.11,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 3.11,
           "level": "medium"
         },
         "source": "ml",
@@ -23273,39 +23287,35 @@
       "symbol": "EFIH.CA",
       "name": "إي فاينانس للاستثمارات الرقمية",
       "sector": "تكنولوجيا مالية",
-      "close": 22.65,
-      "change_pct": -1.48,
-      "date": "2026-07-30",
+      "close": 22.75,
+      "change_pct": 0.44,
+      "date": "2026-08-02",
       "indicators": {
         "rsi": 55.13,
-        "macd": 0.38,
+        "macd": 0.36,
         "macd_signal": 0.37,
-        "macd_hist": 0.01,
-        "sma_20": 22.46,
-        "sma_50": 21.79,
-        "sma_200": 19.32,
-        "ema_12": 22.63,
-        "ema_26": 22.25,
-        "bb_upper": 23.84,
-        "bb_lower": 21.09,
-        "bb_width": 0.12,
-        "stoch_k": 36.62,
-        "stoch_d": 40.38,
-        "volume_ratio": 0.82,
-        "obv": 363352687.0,
-        "obv_sma_20": 356587592.7,
-        "roc_10": 2.95,
+        "macd_hist": -0.0,
+        "sma_20": 22.56,
+        "sma_50": 21.82,
+        "sma_200": 19.37,
+        "ema_12": 22.65,
+        "ema_26": 22.28,
+        "bb_upper": 23.68,
+        "bb_lower": 21.45,
+        "bb_width": 0.1,
+        "stoch_k": 41.31,
+        "stoch_d": 43.51,
+        "volume_ratio": 0.99,
+        "obv": 366253873.0,
+        "obv_sma_20": 357527977.0,
+        "roc_10": 2.34,
         "atr": 0.61,
-        "adx": 23.34,
-        "williams_r": -63.38,
-        "mfi": 69.9,
-        "cmf": 0.12
+        "adx": 22.56,
+        "williams_r": -58.69,
+        "mfi": 70.33,
+        "cmf": 0.11
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 17.18
-        },
         {
           "date": "2025-01-29",
           "close": 17.34
@@ -24761,24 +24771,28 @@
         {
           "date": "2026-07-30",
           "close": 22.65
+        },
+        {
+          "date": "2026-08-02",
+          "close": 22.75
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.457,
-        "score": -0.193,
-        "prob_buy": 0.264,
-        "prob_hold": 0.28,
-        "prob_sell": 0.457,
+        "confidence": 0.418,
+        "score": -0.148,
+        "prob_buy": 0.27,
+        "prob_hold": 0.312,
+        "prob_sell": 0.418,
         "reasons": [
-          "MACD إيجابي (زخم صاعد)",
+          "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
         ],
         "risk": {
-          "entry": 22.65,
-          "stop_loss": 23.57,
-          "take_profit": 22.08,
-          "atr_pct": 2.7,
+          "entry": 22.75,
+          "stop_loss": 23.67,
+          "take_profit": 22.18,
+          "atr_pct": 2.69,
           "level": "medium"
         },
         "source": "ml",
@@ -24791,20 +24805,20 @@
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.462,
-        "score": -0.272,
-        "prob_buy": 0.19,
-        "prob_hold": 0.348,
-        "prob_sell": 0.462,
+        "confidence": 0.518,
+        "score": -0.342,
+        "prob_buy": 0.176,
+        "prob_hold": 0.306,
+        "prob_sell": 0.518,
         "reasons": [
-          "MACD إيجابي (زخم صاعد)",
+          "MACD سلبي (زخم هابط)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
         ],
         "risk": {
-          "entry": 22.65,
-          "stop_loss": 23.57,
-          "take_profit": 20.38,
-          "atr_pct": 2.7,
+          "entry": 22.75,
+          "stop_loss": 23.67,
+          "take_profit": 20.48,
+          "atr_pct": 2.69,
           "level": "medium"
         },
         "source": "ml",
@@ -24839,8 +24853,8 @@
         "stoch_k": 49.17,
         "stoch_d": 49.17,
         "volume_ratio": 0.0,
-        "obv": 167729921.0,
-        "obv_sma_20": 166542636.6,
+        "obv": 164922133.0,
+        "obv_sma_20": 163734848.6,
         "roc_10": -1.99,
         "atr": 2.62,
         "adx": 50.34,
@@ -26311,12 +26325,12 @@
         }
       ],
       "short_term": {
-        "signal": "sell",
-        "confidence": 0.374,
-        "score": -0.048,
-        "prob_buy": 0.326,
-        "prob_hold": 0.301,
-        "prob_sell": 0.374,
+        "signal": "buy",
+        "confidence": 0.364,
+        "score": 0.054,
+        "prob_buy": 0.364,
+        "prob_hold": 0.327,
+        "prob_sell": 0.309,
         "reasons": [
           "MFI عند 99 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD سلبي (زخم هابط)",
@@ -26326,8 +26340,8 @@
         ],
         "risk": {
           "entry": 133.9,
-          "stop_loss": 137.84,
-          "take_profit": 130.55,
+          "stop_loss": 129.96,
+          "take_profit": 137.25,
           "atr_pct": 1.96,
           "level": "low"
         },
@@ -26341,11 +26355,11 @@
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.445,
-        "score": -0.02,
-        "prob_buy": 0.424,
-        "prob_hold": 0.131,
-        "prob_sell": 0.445,
+        "confidence": 0.474,
+        "score": -0.035,
+        "prob_buy": 0.44,
+        "prob_hold": 0.086,
+        "prob_sell": 0.474,
         "reasons": [
           "MFI عند 99 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD سلبي (زخم هابط)",
@@ -26373,39 +26387,35 @@
       "symbol": "ABUK.CA",
       "name": "أبو قير للأسمدة",
       "sector": "صناعات",
-      "close": 73.0,
-      "change_pct": 2.36,
-      "date": "2026-07-30",
+      "close": 74.48,
+      "change_pct": 2.03,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 59.64,
-        "macd": -0.45,
-        "macd_signal": -0.84,
-        "macd_hist": 0.39,
-        "sma_20": 71.35,
-        "sma_50": 75.14,
-        "sma_200": 65.87,
-        "ema_12": 71.9,
-        "ema_26": 72.35,
-        "bb_upper": 74.86,
-        "bb_lower": 67.83,
-        "bb_width": 0.1,
-        "stoch_k": 60.64,
-        "stoch_d": 44.63,
-        "volume_ratio": 1.01,
-        "obv": 137722514.0,
-        "obv_sma_20": 136096814.6,
-        "roc_10": 1.39,
-        "atr": 1.93,
-        "adx": 17.64,
-        "williams_r": -39.36,
-        "mfi": 64.94,
-        "cmf": -0.02
+        "rsi": 64.82,
+        "macd": -0.21,
+        "macd_signal": -0.72,
+        "macd_hist": 0.5,
+        "sma_20": 71.67,
+        "sma_50": 74.85,
+        "sma_200": 66.01,
+        "ema_12": 72.3,
+        "ema_26": 72.51,
+        "bb_upper": 75.07,
+        "bb_lower": 68.27,
+        "bb_width": 0.09,
+        "stoch_k": 83.13,
+        "stoch_d": 59.63,
+        "volume_ratio": 0.68,
+        "obv": 139511810.0,
+        "obv_sma_20": 136846252.85,
+        "roc_10": 1.06,
+        "atr": 1.95,
+        "adx": 17.74,
+        "williams_r": -16.87,
+        "mfi": 69.62,
+        "cmf": 0.02
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 46.16
-        },
         {
           "date": "2025-01-29",
           "close": 47.12
@@ -27861,25 +27871,30 @@
         {
           "date": "2026-07-30",
           "close": 73.0
+        },
+        {
+          "date": "2026-08-02",
+          "close": 74.48
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.452,
-        "score": 0.029,
-        "prob_buy": 0.288,
-        "prob_hold": 0.452,
-        "prob_sell": 0.26,
+        "confidence": 0.426,
+        "score": -0.058,
+        "prob_buy": 0.258,
+        "prob_hold": 0.426,
+        "prob_sell": 0.316,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)"
+          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 73.0,
+          "entry": 74.48,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.64,
+          "atr_pct": 2.62,
           "level": "medium"
         },
         "source": "ml",
@@ -27891,22 +27906,23 @@
         }
       },
       "long_term": {
-        "signal": "buy",
-        "confidence": 0.489,
-        "score": 0.457,
-        "prob_buy": 0.489,
-        "prob_hold": 0.478,
-        "prob_sell": 0.032,
+        "signal": "hold",
+        "confidence": 0.505,
+        "score": 0.339,
+        "prob_buy": 0.417,
+        "prob_hold": 0.505,
+        "prob_sell": 0.078,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)"
+          "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 73.0,
-          "stop_loss": 70.11,
-          "take_profit": 80.3,
-          "atr_pct": 2.64,
+          "entry": 74.48,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 2.62,
           "level": "medium"
         },
         "source": "ml",
@@ -27922,39 +27938,35 @@
       "symbol": "MFPC.CA",
       "name": "موبكو لإنتاج الأسمدة",
       "sector": "صناعات",
-      "close": 36.62,
-      "change_pct": 0.0,
-      "date": "2026-07-30",
+      "close": 37.75,
+      "change_pct": 3.09,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 47.34,
-        "macd": -0.42,
-        "macd_signal": -0.47,
-        "macd_hist": 0.05,
-        "sma_20": 37.05,
-        "sma_50": 38.93,
-        "sma_200": 34.14,
-        "ema_12": 36.98,
-        "ema_26": 37.4,
-        "bb_upper": 38.72,
-        "bb_lower": 35.39,
+        "rsi": 54.59,
+        "macd": -0.33,
+        "macd_signal": -0.44,
+        "macd_hist": 0.12,
+        "sma_20": 37.14,
+        "sma_50": 38.79,
+        "sma_200": 34.19,
+        "ema_12": 37.1,
+        "ema_26": 37.42,
+        "bb_upper": 38.75,
+        "bb_lower": 35.52,
         "bb_width": 0.09,
-        "stoch_k": 36.44,
-        "stoch_d": 23.97,
-        "volume_ratio": 1.13,
-        "obv": 106041127.0,
-        "obv_sma_20": 111739325.9,
-        "roc_10": -3.63,
-        "atr": 0.81,
-        "adx": 18.34,
-        "williams_r": -63.56,
-        "mfi": 35.19,
-        "cmf": -0.0
+        "stoch_k": 69.39,
+        "stoch_d": 39.54,
+        "volume_ratio": 1.02,
+        "obv": 108597608.0,
+        "obv_sma_20": 111489936.2,
+        "roc_10": -0.13,
+        "atr": 0.83,
+        "adx": 17.72,
+        "williams_r": -30.61,
+        "mfi": 37.61,
+        "cmf": 0.04
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 34.61
-        },
         {
           "date": "2025-01-29",
           "close": 35.21
@@ -29410,25 +29422,29 @@
         {
           "date": "2026-07-30",
           "close": 36.62
+        },
+        {
+          "date": "2026-08-02",
+          "close": 37.75
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.404,
-        "score": -0.034,
-        "prob_buy": 0.281,
-        "prob_hold": 0.404,
-        "prob_sell": 0.315,
+        "confidence": 0.41,
+        "score": 0.012,
+        "prob_buy": 0.301,
+        "prob_hold": 0.41,
+        "prob_sell": 0.289,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
           "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 36.62,
+          "entry": 37.75,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.2,
+          "atr_pct": 2.21,
           "level": "medium"
         },
         "source": "ml",
@@ -29441,21 +29457,21 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.482,
-        "score": -0.085,
-        "prob_buy": 0.217,
-        "prob_hold": 0.482,
-        "prob_sell": 0.301,
+        "confidence": 0.52,
+        "score": -0.112,
+        "prob_buy": 0.184,
+        "prob_hold": 0.52,
+        "prob_sell": 0.296,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
           "ADX عند 18 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 36.62,
+          "entry": 37.75,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.2,
+          "atr_pct": 2.21,
           "level": "medium"
         },
         "source": "ml",
@@ -29471,39 +29487,35 @@
       "symbol": "SKPC.CA",
       "name": "سيدي كرير للبتروكيماويات",
       "sector": "صناعات",
-      "close": 15.71,
-      "change_pct": -1.5,
-      "date": "2026-07-30",
+      "close": 15.89,
+      "change_pct": 1.15,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 43.31,
+        "rsi": 44.39,
         "macd": -0.14,
         "macd_signal": -0.15,
         "macd_hist": 0.01,
         "sma_20": 16.05,
-        "sma_50": 16.44,
-        "sma_200": 17.45,
-        "ema_12": 15.97,
-        "ema_26": 16.11,
+        "sma_50": 16.4,
+        "sma_200": 17.43,
+        "ema_12": 15.96,
+        "ema_26": 16.09,
         "bb_upper": 16.73,
         "bb_lower": 15.36,
         "bb_width": 0.09,
-        "stoch_k": 46.19,
-        "stoch_d": 54.99,
-        "volume_ratio": 2.0,
-        "obv": 387450072.0,
-        "obv_sma_20": 395998675.05,
-        "roc_10": 5.51,
-        "atr": 0.45,
-        "adx": 26.28,
-        "williams_r": -53.81,
-        "mfi": 35.64,
-        "cmf": -0.41
+        "stoch_k": 55.33,
+        "stoch_d": 53.3,
+        "volume_ratio": 0.83,
+        "obv": 390427363.0,
+        "obv_sma_20": 396614035.75,
+        "roc_10": -1.73,
+        "atr": 0.46,
+        "adx": 27.37,
+        "williams_r": -44.67,
+        "mfi": 40.64,
+        "cmf": -0.37
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 19.06
-        },
         {
           "date": "2025-01-29",
           "close": 19.23
@@ -30959,26 +30971,29 @@
         {
           "date": "2026-07-30",
           "close": 15.71
+        },
+        {
+          "date": "2026-08-02",
+          "close": 15.89
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.407,
-        "score": 0.179,
-        "prob_buy": 0.407,
-        "prob_hold": 0.364,
-        "prob_sell": 0.229,
+        "confidence": 0.437,
+        "score": 0.218,
+        "prob_buy": 0.437,
+        "prob_hold": 0.345,
+        "prob_sell": 0.218,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "CMF عند -0.41 (ضغط بيعي قوي)",
-          "حجم تداول مرتفع (2.0× المتوسط)"
+          "CMF عند -0.37 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 15.71,
-          "stop_loss": 15.03,
-          "take_profit": 16.1,
-          "atr_pct": 2.89,
+          "entry": 15.89,
+          "stop_loss": 15.2,
+          "take_profit": 16.29,
+          "atr_pct": 2.9,
           "level": "medium"
         },
         "source": "ml",
@@ -30991,22 +31006,21 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.694,
-        "score": 0.561,
-        "prob_buy": 0.694,
-        "prob_hold": 0.173,
-        "prob_sell": 0.133,
+        "confidence": 0.61,
+        "score": 0.47,
+        "prob_buy": 0.61,
+        "prob_hold": 0.25,
+        "prob_sell": 0.14,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "CMF عند -0.41 (ضغط بيعي قوي)",
-          "حجم تداول مرتفع (2.0× المتوسط)"
+          "CMF عند -0.37 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 15.71,
-          "stop_loss": 15.03,
-          "take_profit": 17.28,
-          "atr_pct": 2.89,
+          "entry": 15.89,
+          "stop_loss": 15.2,
+          "take_profit": 17.48,
+          "atr_pct": 2.9,
           "level": "medium"
         },
         "source": "ml",
@@ -31022,39 +31036,35 @@
       "symbol": "ORWE.CA",
       "name": "النساجون الشرقيون للسجاد",
       "sector": "سلع استهلاكية",
-      "close": 22.6,
-      "change_pct": -1.31,
-      "date": "2026-07-30",
+      "close": 22.98,
+      "change_pct": 1.68,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 45.37,
-        "macd": 0.02,
-        "macd_signal": 0.05,
-        "macd_hist": -0.03,
-        "sma_20": 22.88,
-        "sma_50": 22.92,
-        "sma_200": 21.85,
-        "ema_12": 22.91,
-        "ema_26": 22.88,
-        "bb_upper": 23.39,
-        "bb_lower": 22.36,
-        "bb_width": 0.05,
-        "stoch_k": 17.14,
-        "stoch_d": 39.37,
-        "volume_ratio": 0.97,
-        "obv": 223764048.0,
-        "obv_sma_20": 224180150.05,
-        "roc_10": -1.31,
-        "atr": 0.29,
-        "adx": 11.18,
-        "williams_r": -82.86,
-        "mfi": 44.42,
-        "cmf": -0.17
+        "rsi": 55.95,
+        "macd": 0.03,
+        "macd_signal": 0.04,
+        "macd_hist": -0.02,
+        "sma_20": 22.91,
+        "sma_50": 22.94,
+        "sma_200": 21.86,
+        "ema_12": 22.92,
+        "ema_26": 22.89,
+        "bb_upper": 23.36,
+        "bb_lower": 22.46,
+        "bb_width": 0.04,
+        "stoch_k": 53.33,
+        "stoch_d": 38.73,
+        "volume_ratio": 0.9,
+        "obv": 225080250.0,
+        "obv_sma_20": 224627261.25,
+        "roc_10": -1.37,
+        "atr": 0.31,
+        "adx": 11.13,
+        "williams_r": -46.67,
+        "mfi": 49.97,
+        "cmf": -0.12
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 22.55
-        },
         {
           "date": "2025-01-29",
           "close": 22.66
@@ -32510,27 +32520,29 @@
         {
           "date": "2026-07-30",
           "close": 22.6
+        },
+        {
+          "date": "2026-08-02",
+          "close": 22.98
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.412,
-        "score": -0.098,
-        "prob_buy": 0.245,
-        "prob_hold": 0.412,
-        "prob_sell": 0.343,
+        "confidence": 0.406,
+        "score": -0.099,
+        "prob_buy": 0.247,
+        "prob_hold": 0.406,
+        "prob_sell": 0.346,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.17 (ضغط بيعي قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 22.6,
+          "entry": 22.98,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 1.28,
+          "atr_pct": 1.33,
           "level": "low"
         },
         "source": "ml",
@@ -32543,23 +32555,21 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.589,
-        "score": -0.014,
-        "prob_buy": 0.198,
-        "prob_hold": 0.589,
-        "prob_sell": 0.212,
+        "confidence": 0.556,
+        "score": -0.056,
+        "prob_buy": 0.194,
+        "prob_hold": 0.556,
+        "prob_sell": 0.25,
         "reasons": [
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.17 (ضغط بيعي قوي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)"
         ],
         "risk": {
-          "entry": 22.6,
+          "entry": 22.98,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 1.28,
+          "atr_pct": 1.33,
           "level": "low"
         },
         "source": "ml",
@@ -32575,39 +32585,35 @@
       "symbol": "EFID.CA",
       "name": "إيديتا للصناعات الغذائية",
       "sector": "سلع استهلاكية",
-      "close": 27.24,
-      "change_pct": 0.52,
-      "date": "2026-07-30",
+      "close": 27.37,
+      "change_pct": 0.48,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 34.41,
+        "rsi": 37.14,
         "macd": -0.2,
-        "macd_signal": -0.12,
-        "macd_hist": -0.08,
+        "macd_signal": -0.13,
+        "macd_hist": -0.06,
         "sma_20": 27.89,
-        "sma_50": 28.08,
-        "sma_200": 26.44,
-        "ema_12": 27.56,
-        "ema_26": 27.75,
+        "sma_50": 28.07,
+        "sma_200": 26.47,
+        "ema_12": 27.53,
+        "ema_26": 27.73,
         "bb_upper": 28.9,
         "bb_lower": 26.88,
         "bb_width": 0.07,
-        "stoch_k": 32.26,
-        "stoch_d": 29.31,
-        "volume_ratio": 0.9,
-        "obv": 159497370.0,
-        "obv_sma_20": 167525753.6,
-        "roc_10": -1.94,
-        "atr": 0.55,
-        "adx": 22.42,
-        "williams_r": -67.74,
-        "mfi": 33.83,
-        "cmf": 0.19
+        "stoch_k": 39.25,
+        "stoch_d": 32.08,
+        "volume_ratio": 0.64,
+        "obv": 159359220.0,
+        "obv_sma_20": 166158362.05,
+        "roc_10": -2.53,
+        "atr": 0.57,
+        "adx": 23.19,
+        "williams_r": -60.75,
+        "mfi": 37.72,
+        "cmf": 0.2
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 26.48
-        },
         {
           "date": "2025-01-29",
           "close": 26.5
@@ -34063,25 +34069,29 @@
         {
           "date": "2026-07-30",
           "close": 27.24
+        },
+        {
+          "date": "2026-08-02",
+          "close": 27.37
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.474,
-        "score": 0.019,
-        "prob_buy": 0.273,
-        "prob_hold": 0.474,
-        "prob_sell": 0.253,
+        "confidence": 0.46,
+        "score": 0.016,
+        "prob_buy": 0.278,
+        "prob_hold": 0.46,
+        "prob_sell": 0.262,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "CMF عند +0.19 (ضغط شرائي قوي)"
+          "CMF عند +0.20 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 27.24,
+          "entry": 27.37,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.02,
+          "atr_pct": 2.08,
           "level": "medium"
         },
         "source": "ml",
@@ -34094,21 +34104,21 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.541,
-        "score": -0.028,
-        "prob_buy": 0.215,
-        "prob_hold": 0.541,
-        "prob_sell": 0.243,
+        "confidence": 0.497,
+        "score": 0.003,
+        "prob_buy": 0.253,
+        "prob_hold": 0.497,
+        "prob_sell": 0.25,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "CMF عند +0.19 (ضغط شرائي قوي)"
+          "CMF عند +0.20 (ضغط شرائي قوي)"
         ],
         "risk": {
-          "entry": 27.24,
+          "entry": 27.37,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.02,
+          "atr_pct": 2.08,
           "level": "medium"
         },
         "source": "ml",
@@ -34124,39 +34134,35 @@
       "symbol": "ISPH.CA",
       "name": "ابن سينا فارما",
       "sector": "رعاية صحية",
-      "close": 11.37,
-      "change_pct": -1.13,
-      "date": "2026-07-30",
+      "close": 11.76,
+      "change_pct": 3.43,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 38.78,
-        "macd": -0.07,
-        "macd_signal": -0.07,
-        "macd_hist": -0.0,
-        "sma_20": 11.54,
+        "rsi": 60.16,
+        "macd": -0.05,
+        "macd_signal": -0.06,
+        "macd_hist": 0.02,
+        "sma_20": 11.55,
         "sma_50": 11.76,
         "sma_200": 11.21,
-        "ema_12": 11.54,
-        "ema_26": 11.61,
-        "bb_upper": 11.75,
-        "bb_lower": 11.32,
+        "ema_12": 11.57,
+        "ema_26": 11.62,
+        "bb_upper": 11.78,
+        "bb_lower": 11.31,
         "bb_width": 0.04,
-        "stoch_k": 25.37,
-        "stoch_d": 39.8,
-        "volume_ratio": 0.76,
-        "obv": 1542344109.0,
-        "obv_sma_20": 1549650883.3,
-        "roc_10": -0.09,
-        "atr": 0.21,
-        "adx": 16.79,
-        "williams_r": -74.63,
-        "mfi": 41.1,
-        "cmf": -0.19
+        "stoch_k": 83.58,
+        "stoch_d": 51.24,
+        "volume_ratio": 1.47,
+        "obv": 1551488673.0,
+        "obv_sma_20": 1552134182.05,
+        "roc_10": 2.26,
+        "atr": 0.22,
+        "adx": 15.71,
+        "williams_r": -16.42,
+        "mfi": 48.62,
+        "cmf": -0.11
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 6.84
-        },
         {
           "date": "2025-01-29",
           "close": 6.84
@@ -35612,26 +35618,30 @@
         {
           "date": "2026-07-30",
           "close": 11.37
+        },
+        {
+          "date": "2026-08-02",
+          "close": 11.76
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.364,
-        "score": 0.079,
-        "prob_buy": 0.364,
-        "prob_hold": 0.351,
-        "prob_sell": 0.285,
+        "confidence": 0.434,
+        "score": 0.211,
+        "prob_buy": 0.434,
+        "prob_hold": 0.342,
+        "prob_sell": 0.223,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 17 (السوق يتأرجح — لا اتجاه واضح)",
-          "CMF عند -0.19 (ضغط بيعي قوي)"
+          "MACD إيجابي (زخم صاعد)",
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 16 (السوق يتأرجح — لا اتجاه واضح)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 11.37,
-          "stop_loss": 11.06,
-          "take_profit": 11.65,
-          "atr_pct": 1.82,
+          "entry": 11.76,
+          "stop_loss": 11.42,
+          "take_profit": 12.05,
+          "atr_pct": 1.91,
           "level": "low"
         },
         "source": "ml",
@@ -35644,22 +35654,22 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.708,
-        "score": 0.675,
-        "prob_buy": 0.708,
-        "prob_hold": 0.26,
-        "prob_sell": 0.033,
+        "confidence": 0.62,
+        "score": 0.592,
+        "prob_buy": 0.62,
+        "prob_hold": 0.351,
+        "prob_sell": 0.028,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
-          "ADX عند 17 (السوق يتأرجح — لا اتجاه واضح)",
-          "CMF عند -0.19 (ضغط بيعي قوي)"
+          "MACD إيجابي (زخم صاعد)",
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
+          "ADX عند 16 (السوق يتأرجح — لا اتجاه واضح)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 11.37,
-          "stop_loss": 11.06,
-          "take_profit": 12.51,
-          "atr_pct": 1.82,
+          "entry": 11.76,
+          "stop_loss": 11.42,
+          "take_profit": 12.94,
+          "atr_pct": 1.91,
           "level": "low"
         },
         "source": "ml",
@@ -35675,39 +35685,35 @@
       "symbol": "CLHO.CA",
       "name": "مستشفى كليوباترا",
       "sector": "رعاية صحية",
-      "close": 16.6,
-      "change_pct": -1.48,
-      "date": "2026-07-30",
+      "close": 18.1,
+      "change_pct": 9.04,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 54.66,
-        "macd": 0.23,
-        "macd_signal": 0.26,
-        "macd_hist": -0.03,
-        "sma_20": 16.55,
-        "sma_50": 16.04,
-        "sma_200": 13.5,
-        "ema_12": 16.67,
-        "ema_26": 16.44,
-        "bb_upper": 17.07,
-        "bb_lower": 16.04,
-        "bb_width": 0.06,
-        "stoch_k": 32.29,
-        "stoch_d": 39.24,
-        "volume_ratio": 0.51,
-        "obv": 318813765.0,
-        "obv_sma_20": 308203786.65,
-        "roc_10": 1.41,
-        "atr": 0.52,
-        "adx": 44.42,
-        "williams_r": -67.71,
-        "mfi": 64.72,
-        "cmf": -0.44
+        "rsi": 72.89,
+        "macd": 0.33,
+        "macd_signal": 0.27,
+        "macd_hist": 0.05,
+        "sma_20": 16.64,
+        "sma_50": 16.08,
+        "sma_200": 13.53,
+        "ema_12": 16.89,
+        "ema_26": 16.56,
+        "bb_upper": 17.49,
+        "bb_lower": 15.79,
+        "bb_width": 0.1,
+        "stoch_k": 95.93,
+        "stoch_d": 57.84,
+        "volume_ratio": 2.39,
+        "obv": 330338420.0,
+        "obv_sma_20": 314289951.1,
+        "roc_10": 8.06,
+        "atr": 0.62,
+        "adx": 44.62,
+        "williams_r": -4.07,
+        "mfi": 70.97,
+        "cmf": -0.26
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 8.3
-        },
         {
           "date": "2025-01-29",
           "close": 8.39
@@ -37163,26 +37169,32 @@
         {
           "date": "2026-07-30",
           "close": 16.6
+        },
+        {
+          "date": "2026-08-02",
+          "close": 18.1
         }
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.383,
-        "score": 0.078,
-        "prob_buy": 0.383,
-        "prob_hold": 0.313,
-        "prob_sell": 0.305,
+        "confidence": 0.388,
+        "score": 0.061,
+        "prob_buy": 0.388,
+        "prob_hold": 0.284,
+        "prob_sell": 0.328,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
+          "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
+          "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 44 (اتجاه قوي ومحدد)",
-          "CMF عند -0.44 (ضغط بيعي قوي)"
+          "ADX عند 45 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "CMF عند -0.26 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 16.6,
-          "stop_loss": 15.82,
-          "take_profit": 17.02,
-          "atr_pct": 3.12,
+          "entry": 18.1,
+          "stop_loss": 17.17,
+          "take_profit": 18.55,
+          "atr_pct": 3.41,
           "level": "medium"
         },
         "source": "ml",
@@ -37195,22 +37207,24 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.551,
-        "score": 0.427,
-        "prob_buy": 0.551,
-        "prob_hold": 0.326,
-        "prob_sell": 0.123,
+        "confidence": 0.445,
+        "score": 0.333,
+        "prob_buy": 0.445,
+        "prob_hold": 0.442,
+        "prob_sell": 0.113,
         "reasons": [
-          "MACD سلبي (زخم هابط)",
+          "RSI عند 73 (تشبّع شرائي — حذر من التصحيح)",
+          "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 44 (اتجاه قوي ومحدد)",
-          "CMF عند -0.44 (ضغط بيعي قوي)"
+          "ADX عند 45 (اتجاه قوي ومحدد)",
+          "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)",
+          "CMF عند -0.26 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 16.6,
-          "stop_loss": 15.82,
-          "take_profit": 18.26,
-          "atr_pct": 3.12,
+          "entry": 18.1,
+          "stop_loss": 17.17,
+          "take_profit": 19.91,
+          "atr_pct": 3.41,
           "level": "medium"
         },
         "source": "ml",
@@ -37226,39 +37240,35 @@
       "symbol": "POUL.CA",
       "name": "القاهرة للدواجن",
       "sector": "سلع استهلاكية",
-      "close": 37.73,
-      "change_pct": -0.19,
-      "date": "2026-07-30",
+      "close": 37.92,
+      "change_pct": 0.5,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 32.88,
-        "macd": 0.09,
-        "macd_signal": 0.35,
-        "macd_hist": -0.26,
+        "rsi": 26.91,
+        "macd": 0.04,
+        "macd_signal": 0.29,
+        "macd_hist": -0.25,
         "sma_20": 38.9,
-        "sma_50": 37.83,
-        "sma_200": 30.89,
-        "ema_12": 38.43,
-        "ema_26": 38.35,
-        "bb_upper": 40.44,
-        "bb_lower": 37.36,
+        "sma_50": 37.86,
+        "sma_200": 30.97,
+        "ema_12": 38.35,
+        "ema_26": 38.31,
+        "bb_upper": 40.45,
+        "bb_lower": 37.35,
         "bb_width": 0.08,
-        "stoch_k": 24.75,
-        "stoch_d": 13.52,
-        "volume_ratio": 0.51,
-        "obv": 359935634.0,
-        "obv_sma_20": 362929626.25,
-        "roc_10": -3.41,
-        "atr": 0.98,
-        "adx": 24.42,
-        "williams_r": -75.25,
-        "mfi": 32.55,
-        "cmf": -0.02
+        "stoch_k": 35.59,
+        "stoch_d": 20.11,
+        "volume_ratio": 0.43,
+        "obv": 368625756.0,
+        "obv_sma_20": 371132747.7,
+        "roc_10": -4.0,
+        "atr": 0.9,
+        "adx": 22.72,
+        "williams_r": -64.41,
+        "mfi": 24.19,
+        "cmf": -0.04
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 15.95
-        },
         {
           "date": "2025-01-29",
           "close": 15.36
@@ -38714,24 +38724,29 @@
         {
           "date": "2026-07-30",
           "close": 37.73
+        },
+        {
+          "date": "2026-08-02",
+          "close": 37.92
         }
       ],
       "short_term": {
         "signal": "hold",
-        "confidence": 0.426,
-        "score": 0.022,
-        "prob_buy": 0.298,
-        "prob_hold": 0.426,
-        "prob_sell": 0.276,
+        "confidence": 0.421,
+        "score": 0.009,
+        "prob_buy": 0.294,
+        "prob_hold": 0.421,
+        "prob_sell": 0.285,
         "reasons": [
+          "RSI عند 27 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
         ],
         "risk": {
-          "entry": 37.73,
+          "entry": 37.92,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.59,
+          "atr_pct": 2.37,
           "level": "medium"
         },
         "source": "ml",
@@ -38744,20 +38759,21 @@
       },
       "long_term": {
         "signal": "buy",
-        "confidence": 0.36,
-        "score": 0.051,
-        "prob_buy": 0.36,
+        "confidence": 0.344,
+        "score": 0.02,
+        "prob_buy": 0.344,
         "prob_hold": 0.331,
-        "prob_sell": 0.309,
+        "prob_sell": 0.324,
         "reasons": [
+          "RSI عند 27 (تشبّع بيعي — فرصة شراء محتملة)",
           "MACD سلبي (زخم هابط)",
-          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)"
+          "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)"
         ],
         "risk": {
-          "entry": 37.73,
-          "stop_loss": 36.26,
-          "take_profit": 41.5,
-          "atr_pct": 2.59,
+          "entry": 37.92,
+          "stop_loss": 36.57,
+          "take_profit": 41.71,
+          "atr_pct": 2.37,
           "level": "medium"
         },
         "source": "ml",
@@ -38773,39 +38789,35 @@
       "symbol": "AMER.CA",
       "name": "أمريك جروب للضيافة والسياحة",
       "sector": "سياحة",
-      "close": 4.5,
-      "change_pct": -4.46,
-      "date": "2026-07-30",
+      "close": 4.86,
+      "change_pct": 8.0,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 82.38,
-        "macd": 0.52,
-        "macd_signal": 0.43,
+        "rsi": 84.0,
+        "macd": 0.54,
+        "macd_signal": 0.45,
         "macd_hist": 0.09,
-        "sma_20": 3.62,
-        "sma_50": 3.01,
-        "sma_200": 2.22,
-        "ema_12": 4.15,
-        "ema_26": 3.63,
-        "bb_upper": 5.2,
-        "bb_lower": 2.04,
-        "bb_width": 0.87,
-        "stoch_k": 83.43,
-        "stoch_d": 92.49,
-        "volume_ratio": 0.46,
-        "obv": 4068617560.0,
-        "obv_sma_20": 3881748798.2,
-        "roc_10": 27.12,
-        "atr": 0.3,
-        "adx": 59.06,
-        "williams_r": -16.57,
-        "mfi": 86.31,
-        "cmf": 0.47
+        "sma_20": 3.74,
+        "sma_50": 3.06,
+        "sma_200": 2.24,
+        "ema_12": 4.26,
+        "ema_26": 3.72,
+        "bb_upper": 5.31,
+        "bb_lower": 2.17,
+        "bb_width": 0.84,
+        "stoch_k": 100.0,
+        "stoch_d": 93.01,
+        "volume_ratio": 0.45,
+        "obv": 4087559430.0,
+        "obv_sma_20": 3908894889.15,
+        "roc_10": 25.26,
+        "atr": 0.31,
+        "adx": 60.38,
+        "williams_r": -0.0,
+        "mfi": 85.64,
+        "cmf": 0.48
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 1.2
-        },
         {
           "date": "2025-01-29",
           "close": 1.26
@@ -40261,28 +40273,32 @@
         {
           "date": "2026-07-30",
           "close": 4.5
+        },
+        {
+          "date": "2026-08-02",
+          "close": 4.86
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.507,
-        "score": -0.239,
-        "prob_buy": 0.269,
-        "prob_hold": 0.224,
-        "prob_sell": 0.507,
+        "confidence": 0.615,
+        "score": -0.43,
+        "prob_buy": 0.185,
+        "prob_hold": 0.2,
+        "prob_sell": 0.615,
         "reasons": [
-          "RSI عند 82 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 84 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 86 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 59 (اتجاه قوي ومحدد)",
+          "ADX عند 60 (اتجاه قوي ومحدد)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 4.5,
-          "stop_loss": 4.95,
-          "take_profit": 4.39,
-          "atr_pct": 6.6,
+          "entry": 4.86,
+          "stop_loss": 5.32,
+          "take_profit": 4.74,
+          "atr_pct": 6.33,
           "level": "high"
         },
         "source": "ml",
@@ -40294,25 +40310,25 @@
         }
       },
       "long_term": {
-        "signal": "sell",
-        "confidence": 0.484,
-        "score": -0.341,
-        "prob_buy": 0.143,
-        "prob_hold": 0.372,
-        "prob_sell": 0.484,
+        "signal": "hold",
+        "confidence": 0.44,
+        "score": -0.293,
+        "prob_buy": 0.133,
+        "prob_hold": 0.44,
+        "prob_sell": 0.427,
         "reasons": [
-          "RSI عند 82 (تشبّع شرائي — حذر من التصحيح)",
+          "RSI عند 84 (تشبّع شرائي — حذر من التصحيح)",
           "MFI عند 86 (تدفق شرائي مشبع — احتمال تصحيح)",
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
-          "ADX عند 59 (اتجاه قوي ومحدد)",
+          "ADX عند 60 (اتجاه قوي ومحدد)",
           "Williams %R في منطقة تشبّع شرائي (تراجع محتمل)"
         ],
         "risk": {
-          "entry": 4.5,
-          "stop_loss": 4.95,
-          "take_profit": 4.05,
-          "atr_pct": 6.6,
+          "entry": 4.86,
+          "stop_loss": null,
+          "take_profit": null,
+          "atr_pct": 6.33,
           "level": "high"
         },
         "source": "ml",
@@ -40328,39 +40344,35 @@
       "symbol": "BTFH.CA",
       "name": "بيلتون المالية القابضة",
       "sector": "خدمات مالية",
-      "close": 3.06,
-      "change_pct": -2.55,
-      "date": "2026-07-30",
+      "close": 3.11,
+      "change_pct": 1.63,
+      "date": "2026-08-02",
       "indicators": {
-        "rsi": 50.0,
+        "rsi": 54.17,
         "macd": 0.01,
         "macd_signal": 0.01,
         "macd_hist": 0.0,
-        "sma_20": 3.07,
+        "sma_20": 3.08,
         "sma_50": 3.06,
         "sma_200": 3.08,
         "ema_12": 3.09,
-        "ema_26": 3.07,
-        "bb_upper": 3.17,
-        "bb_lower": 2.98,
-        "bb_width": 0.06,
-        "stoch_k": 17.65,
+        "ema_26": 3.08,
+        "bb_upper": 3.16,
+        "bb_lower": 3.0,
+        "bb_width": 0.05,
+        "stoch_k": 47.06,
         "stoch_d": 43.14,
-        "volume_ratio": 1.21,
-        "obv": 4245572402.0,
-        "obv_sma_20": 4110739623.1,
-        "roc_10": 0.66,
+        "volume_ratio": 0.97,
+        "obv": 4321324954.0,
+        "obv_sma_20": 4142738163.45,
+        "roc_10": 0.65,
         "atr": 0.07,
-        "adx": 22.05,
-        "williams_r": -82.35,
-        "mfi": 50.35,
-        "cmf": -0.16
+        "adx": 21.87,
+        "williams_r": -52.94,
+        "mfi": 51.47,
+        "cmf": -0.19
       },
       "history": [
-        {
-          "date": "2025-01-28",
-          "close": 2.39
-        },
         {
           "date": "2025-01-29",
           "close": 2.44
@@ -41816,26 +41828,29 @@
         {
           "date": "2026-07-30",
           "close": 3.06
+        },
+        {
+          "date": "2026-08-02",
+          "close": 3.11
         }
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.51,
-        "score": -0.304,
-        "prob_buy": 0.206,
-        "prob_hold": 0.284,
-        "prob_sell": 0.51,
+        "confidence": 0.589,
+        "score": -0.435,
+        "prob_buy": 0.154,
+        "prob_hold": 0.258,
+        "prob_sell": 0.589,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
-          "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.16 (ضغط بيعي قوي)"
+          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
+          "CMF عند -0.19 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 3.06,
-          "stop_loss": 3.16,
-          "take_profit": 2.98,
-          "atr_pct": 2.12,
+          "entry": 3.11,
+          "stop_loss": 3.21,
+          "take_profit": 3.03,
+          "atr_pct": 2.14,
           "level": "medium"
         },
         "source": "ml",
@@ -41848,22 +41863,21 @@
       },
       "long_term": {
         "signal": "hold",
-        "confidence": 0.556,
-        "score": -0.146,
-        "prob_buy": 0.149,
-        "prob_hold": 0.556,
-        "prob_sell": 0.295,
+        "confidence": 0.548,
+        "score": 0.033,
+        "prob_buy": 0.243,
+        "prob_hold": 0.548,
+        "prob_sell": 0.209,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
-          "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-          "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)",
-          "CMF عند -0.16 (ضغط بيعي قوي)"
+          "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
+          "CMF عند -0.19 (ضغط بيعي قوي)"
         ],
         "risk": {
-          "entry": 3.06,
+          "entry": 3.11,
           "stop_loss": null,
           "take_profit": null,
-          "atr_pct": 2.12,
+          "atr_pct": 2.14,
           "level": "medium"
         },
         "source": "ml",
@@ -41881,35 +41895,36 @@
     "name": "الذهب",
     "currency": "EGP",
     "unit": "جرام",
-    "date": "2026-07-31",
-    "ounce_usd": 4107.0,
-    "usd_egp": 51.04,
+    "date": "2026-08-03",
+    "ounce_usd": 4092.8,
+    "usd_egp": 50.15,
     "grams": {
-      "24k": 6739.38,
-      "22k": 6177.77,
-      "21k": 5896.96,
-      "18k": 5054.54
+      "24k": 6598.54,
+      "22k": 6048.66,
+      "21k": 5773.72,
+      "18k": 4948.9
     },
-    "price_21k": 5896.96,
-    "change_pct": 0.96,
+    "price_21k": 5773.72,
+    "change_pct": -0.69,
     "short_term": {
       "signal": "hold",
-      "confidence": 0.379,
-      "score": -0.029,
-      "prob_buy": 0.2,
-      "prob_hold": 0.58,
-      "prob_sell": 0.22,
+      "confidence": 0.479,
+      "score": 0.129,
+      "prob_buy": 0.291,
+      "prob_hold": 0.509,
+      "prob_sell": 0.2,
       "reasons": [
+        "MFI عند 18 (تدفق بيعي قوي — ضغط شراء محتمل)",
         "MACD إيجابي (زخم صاعد)",
         "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-        "CMF عند +0.28 (ضغط شرائي قوي)",
-        "حجم تداول مرتفع (9.7× المتوسط)"
+        "CMF عند +0.29 (ضغط شرائي قوي)",
+        "حجم تداول مرتفع (7.4× المتوسط)"
       ],
       "risk": {
-        "entry": 5896.96,
+        "entry": 5773.72,
         "stop_loss": null,
         "take_profit": null,
-        "atr_pct": 1.73,
+        "atr_pct": 1.61,
         "level": "low"
       },
       "source": "rule",
@@ -41922,22 +41937,23 @@
     },
     "long_term": {
       "signal": "hold",
-      "confidence": 0.484,
-      "score": -0.134,
-      "prob_buy": 0.2,
-      "prob_hold": 0.506,
-      "prob_sell": 0.294,
+      "confidence": 0.374,
+      "score": 0.024,
+      "prob_buy": 0.217,
+      "prob_hold": 0.583,
+      "prob_sell": 0.2,
       "reasons": [
+        "MFI عند 18 (تدفق بيعي قوي — ضغط شراء محتمل)",
         "MACD إيجابي (زخم صاعد)",
         "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-        "CMF عند +0.28 (ضغط شرائي قوي)",
-        "حجم تداول مرتفع (9.7× المتوسط)"
+        "CMF عند +0.29 (ضغط شرائي قوي)",
+        "حجم تداول مرتفع (7.4× المتوسط)"
       ],
       "risk": {
-        "entry": 5896.96,
+        "entry": 5773.72,
         "stop_loss": null,
         "take_profit": null,
-        "atr_pct": 1.73,
+        "atr_pct": 1.61,
         "level": "low"
       },
       "source": "rule",
@@ -41949,17 +41965,13 @@
       }
     },
     "indicators": {
-      "rsi": 64.81,
-      "macd": -31.87,
-      "sma_50": 6013.02,
-      "sma_200": 6259.4,
-      "atr": 101.84
+      "rsi": 52.0,
+      "macd": -37.5,
+      "sma_50": 5991.51,
+      "sma_200": 6260.1,
+      "atr": 93.08
     },
     "history": [
-      {
-        "date": "2025-02-19",
-        "close": 4156.38
-      },
       {
         "date": "2025-02-20",
         "close": 4185.49
@@ -43414,82 +43426,86 @@
       },
       {
         "date": "2026-07-31",
-        "close": 5896.96
+        "close": 5813.83
+      },
+      {
+        "date": "2026-08-03",
+        "close": 5773.72
       }
     ]
   },
   "evaluation": {
     "short_5d": {
-      "accuracy": 0.355,
-      "balanced_accuracy": 0.365,
+      "accuracy": 0.354,
+      "balanced_accuracy": 0.363,
       "macro_f1": 0.351,
-      "buy_precision": 0.367,
-      "sell_precision": 0.259,
+      "buy_precision": 0.372,
+      "sell_precision": 0.256,
       "confusion": [
         [
-          713,
-          447,
-          420
+          703,
+          436,
+          438
         ],
         [
-          1054,
-          1035,
+          1072,
+          1001,
+          681
+        ],
+        [
+          973,
+          722,
           662
-        ],
-        [
-          989,
-          741,
-          627
         ]
       ],
-      "cum_return": 0.6484,
-      "buy_hold_return": 3.4375,
-      "excess_vs_bh": -2.7891,
-      "sharpe": 0.744,
-      "max_drawdown": -0.2447,
-      "win_rate": 0.516,
-      "n_trades": 448,
+      "cum_return": 0.5817,
+      "buy_hold_return": 3.4467,
+      "excess_vs_bh": -2.865,
+      "sharpe": 0.613,
+      "max_drawdown": -0.308,
+      "win_rate": 0.515,
+      "n_trades": 462,
       "n_stocks": 12,
       "n_folds": 175,
       "n_bars": 6688
     },
     "long_60d": {
-      "accuracy": 0.445,
-      "balanced_accuracy": 0.375,
-      "macro_f1": 0.366,
-      "buy_precision": 0.574,
-      "sell_precision": 0.104,
+      "accuracy": 0.439,
+      "balanced_accuracy": 0.372,
+      "macro_f1": 0.363,
+      "buy_precision": 0.563,
+      "sell_precision": 0.108,
       "confusion": [
         [
-          79,
-          292,
-          114
+          81,
+          277,
+          128
         ],
         [
-          293,
-          1256,
-          666
+          296,
+          1249,
+          671
         ],
         [
-          385,
-          1231,
-          1052
+          373,
+          1264,
+          1029
         ]
       ],
-      "cum_return": 0.8851,
-      "buy_hold_return": 2.2796,
-      "excess_vs_bh": -1.3945,
-      "sharpe": 1.067,
-      "max_drawdown": -0.3102,
-      "win_rate": 0.812,
-      "n_trades": 64,
+      "cum_return": 0.883,
+      "buy_hold_return": 2.2945,
+      "excess_vs_bh": -1.4115,
+      "sharpe": 1.121,
+      "max_drawdown": -0.2937,
+      "win_rate": 0.815,
+      "n_trades": 65,
       "n_stocks": 12,
       "n_folds": 141,
       "n_bars": 5368
     },
     "test_span": {
-      "start": "2023-06-20",
-      "end": "2026-02-04"
+      "start": "2023-06-21",
+      "end": "2026-02-05"
     },
     "cost_per_trade": 0.004,
     "method": "walk-forward OOS, embargo>=horizon, scaler refit per fold",
