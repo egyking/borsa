@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T19:13:23.860933+00:00",
+  "generated_at": "2026-10-18T18:17:14.696488+00:00",
   "currency": "EGP",
   "stocks": [
     {
@@ -23222,16 +23222,17 @@
       ],
       "short_term": {
         "signal": "sell",
-        "confidence": 0.408,
-        "score": -0.106,
-        "prob_buy": 0.302,
+        "confidence": 0.384,
+        "score": -0.058,
+        "prob_buy": 0.326,
         "prob_hold": 0.29,
-        "prob_sell": 0.408,
+        "prob_sell": 0.384,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
           "ADX عند 39 (اتجاه قوي ومحدد)",
-          "CMF عند +0.18 (ضغط شرائي قوي)"
+          "CMF عند +0.18 (ضغط شرائي قوي)",
+          "المعنويات الإخبارية إيجابية حالياً (يدعم الشراء)"
         ],
         "risk": {
           "entry": 145.0,
@@ -23242,19 +23243,19 @@
         },
         "source": "ml",
         "news": {
-          "score": 0.0,
-          "label": "محايدة",
-          "source": "macro",
-          "n_articles": 0
+          "score": 0.3,
+          "label": "إيجابية",
+          "source": "company",
+          "n_articles": 7
         }
       },
       "long_term": {
         "signal": "sell",
-        "confidence": 0.629,
-        "score": -0.494,
-        "prob_buy": 0.136,
+        "confidence": 0.619,
+        "score": -0.474,
+        "prob_buy": 0.146,
         "prob_hold": 0.235,
-        "prob_sell": 0.629,
+        "prob_sell": 0.619,
         "reasons": [
           "MACD إيجابي (زخم صاعد)",
           "السعر فوق المتوسطين 50 و200 (اتجاه صاعد قوي)",
@@ -23270,10 +23271,10 @@
         },
         "source": "ml",
         "news": {
-          "score": 0.0,
+          "score": 0.12,
           "label": "محايدة",
-          "source": "macro",
-          "n_articles": 0
+          "source": "company",
+          "n_articles": 7
         }
       }
     },
