@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T22:01:12.882617+00:00",
+  "generated_at": "2026-11-11T22:19:42.930817+00:00",
   "currency": "EGP",
   "stocks": [
     {
@@ -23208,11 +23208,11 @@
       ],
       "short_term": {
         "signal": "buy",
-        "confidence": 0.378,
-        "score": 0.048,
-        "prob_buy": 0.378,
+        "confidence": 0.388,
+        "score": 0.067,
+        "prob_buy": 0.388,
         "prob_hold": 0.292,
-        "prob_sell": 0.33,
+        "prob_sell": 0.32,
         "reasons": [
           "MACD سلبي (زخم هابط)",
           "السعر فوق متوسط 200 يوم (اتجاه طويل إيجابي)",
@@ -23227,10 +23227,10 @@
         },
         "source": "ml",
         "news": {
-          "score": 0.0,
+          "score": 0.12,
           "label": "محايدة",
-          "source": "macro",
-          "n_articles": 0
+          "source": "company",
+          "n_articles": 10
         }
       },
       "long_term": {
@@ -23254,10 +23254,10 @@
         },
         "source": "ml",
         "news": {
-          "score": 0.0,
+          "score": 0.048,
           "label": "محايدة",
-          "source": "macro",
-          "n_articles": 0
+          "source": "company",
+          "n_articles": 10
         }
       }
     },
@@ -41863,34 +41863,35 @@
     "name": "الذهب",
     "currency": "EGP",
     "unit": "جرام",
-    "date": "2026-11-06",
-    "ounce_usd": 4074.9,
-    "usd_egp": 53.87,
+    "date": "2026-11-11",
+    "ounce_usd": 3994.7,
+    "usd_egp": 53.5,
     "grams": {
-      "24k": 7058.07,
-      "22k": 6469.9,
-      "21k": 6175.81,
-      "18k": 5293.55
+      "24k": 6871.14,
+      "22k": 6298.54,
+      "21k": 6012.25,
+      "18k": 5153.35
     },
-    "price_21k": 6175.81,
-    "change_pct": -2.43,
+    "price_21k": 6012.25,
+    "change_pct": -1.53,
     "short_term": {
       "signal": "sell",
-      "confidence": 0.781,
-      "score": -0.431,
+      "confidence": 0.57,
+      "score": -0.22,
       "prob_buy": 0.2,
-      "prob_hold": 0.158,
-      "prob_sell": 0.642,
+      "prob_hold": 0.306,
+      "prob_sell": 0.494,
       "reasons": [
         "MACD سلبي (زخم هابط)",
         "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-        "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)"
+        "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
+        "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)"
       ],
       "risk": {
-        "entry": 6175.81,
-        "stop_loss": 6400.75,
-        "take_profit": 6052.3,
-        "atr_pct": 2.43,
+        "entry": 6012.25,
+        "stop_loss": 6249.83,
+        "take_profit": 5892.0,
+        "atr_pct": 2.63,
         "level": "medium"
       },
       "source": "rule",
@@ -41903,21 +41904,22 @@
     },
     "long_term": {
       "signal": "sell",
-      "confidence": 0.887,
-      "score": -0.537,
+      "confidence": 0.675,
+      "score": -0.325,
       "prob_buy": 0.2,
-      "prob_hold": 0.084,
-      "prob_sell": 0.716,
+      "prob_hold": 0.233,
+      "prob_sell": 0.567,
       "reasons": [
         "MACD سلبي (زخم هابط)",
         "السعر تحت المتوسطين 50 و200 (اتجاه هابط)",
-        "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)"
+        "ADX عند 11 (السوق يتأرجح — لا اتجاه واضح)",
+        "Williams %R في منطقة تشبّع بيعي (انتعاش محتمل)"
       ],
       "risk": {
-        "entry": 6175.81,
-        "stop_loss": 6400.75,
-        "take_profit": 5681.75,
-        "atr_pct": 2.43,
+        "entry": 6012.25,
+        "stop_loss": 6249.83,
+        "take_profit": 5531.27,
+        "atr_pct": 2.63,
         "level": "medium"
       },
       "source": "rule",
@@ -41929,25 +41931,13 @@
       }
     },
     "indicators": {
-      "rsi": 46.49,
-      "macd": 3.04,
-      "sma_50": 6271.06,
-      "sma_200": 6480.64,
-      "atr": 149.96
+      "rsi": 42.97,
+      "macd": -27.91,
+      "sma_50": 6258.73,
+      "sma_200": 6472.21,
+      "atr": 158.39
     },
     "history": [
-      {
-        "date": "2025-05-29",
-        "close": 4643.1
-      },
-      {
-        "date": "2025-05-30",
-        "close": 4601.62
-      },
-      {
-        "date": "2025-06-02",
-        "close": 4731.14
-      },
       {
         "date": "2025-06-03",
         "close": 4717.36
@@ -43395,6 +43385,18 @@
       {
         "date": "2026-11-06",
         "close": 6175.81
+      },
+      {
+        "date": "2026-11-09",
+        "close": 6222.94
+      },
+      {
+        "date": "2026-11-10",
+        "close": 6105.45
+      },
+      {
+        "date": "2026-11-11",
+        "close": 6012.25
       }
     ]
   },
